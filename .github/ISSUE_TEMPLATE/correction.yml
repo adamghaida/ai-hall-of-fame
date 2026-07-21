@@ -1,0 +1,30 @@
+name: ✏️ Report a correction
+description: Flag a factual error, broken link, or outdated claim in an existing entry
+title: "[Correction]: <entry>"
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Accuracy is the whole point of this project — thank you for helping keep it honest.
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry?
+      description: Path or link, e.g. materials-science/a-lab-autonomous-synthesis/.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: The incorrect/outdated statement or broken link.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What's correct, and how do we know?
+      description: Provide a source for the corrected information.
+    validations:
+      required: true

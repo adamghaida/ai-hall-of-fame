@@ -1,0 +1,70 @@
+name: 📇 Propose a new entry
+description: Suggest a documented AI achievement to add to the Hall of Fame
+title: "[Entry]: <AI system / result name>"
+labels: ["new-entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Entries must be **documented, concrete, and notable**.
+        You don't have to write the full entry — a good source is enough to get started.
+  - type: input
+    id: name
+    attributes:
+      label: What did the AI do?
+      description: One line, e.g. "AlphaDev discovered a faster sorting algorithm now in libc++".
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: Field
+      options:
+        - mathematics
+        - physics
+        - chemistry
+        - biology
+        - medicine
+        - computer-science
+        - materials-science
+        - astronomy
+        - climate-and-earth-science
+        - neuroscience
+        - games-and-strategy
+        - robotics
+        - (new field — describe below)
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When / where published
+      description: e.g. "October 2022 · Nature".
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source(s)
+      description: At least one primary or highly credible link (paper, official release, reputable reporting).
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs here
+      description: What record fell, what open problem was solved, what first was achieved?
+  - type: textarea
+    id: caveats
+    attributes:
+      label: Known caveats
+      description: Contested? Corrected? Proof-of-concept only? Limited scope? Be honest.
+  - type: checkboxes
+    id: bar
+    attributes:
+      label: Inclusion bar
+      options:
+        - label: This is a specific, documented result (not a vague "AI is transforming X" claim)
+          required: true
+        - label: I've linked at least one credible source
+          required: true
