@@ -9,7 +9,7 @@ Real breakthroughs. Peer-reviewed papers. Nobel Prizes. No hype.
 <br>
 
 ![Fields](https://img.shields.io/badge/fields-12-6e56cf)
-![Cases](https://img.shields.io/badge/documented%20cases-42-2ea043)
+![Cases](https://img.shields.io/badge/documented%20cases-43-2ea043)
 ![Sources](https://img.shields.io/badge/every%20entry-cited-0969da)
 ![Reproduce](https://img.shields.io/badge/every%20entry-how--to--recreate-f59e0b)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-ff69b4)
@@ -38,7 +38,7 @@ The bar for inclusion is high:
 - ✅ **Notable** — a record broken, an open problem cracked, a first-of-its-kind, or a real-world deployment.
 - ✅ **Honest** — where a result was contested, corrected, or is only a proof-of-concept, we say so.
 
-> **A note on what's *not* here:** we don't include things AI hasn't actually done. For example, the **Jacobian conjecture** and the **Riemann hypothesis** remain unsolved — by humans and AI alike — so there's no entry claiming otherwise. Accuracy is the whole point.
+> **A note on what's *not* here:** we don't include things AI hasn't actually done. The **Riemann hypothesis** and **P vs NP**, for instance, remain unsolved — by humans and AI alike — so there's no entry claiming otherwise. (The **Jacobian conjecture** was on this "not yet" list too — until July 2026, when an AI-assisted counterexample disproved it for n ≥ 3. It now has [its own entry](./mathematics/jacobian-conjecture-counterexample/). This list tracks reality, and reality moves fast.)
 
 ---
 
@@ -46,7 +46,7 @@ The bar for inclusion is high:
 
 | Field | Cases | A highlight |
 |-------|:-----:|-------------|
-| [🧮 Mathematics](./mathematics/) | 8 | AI won a **silver then gold medal** at the International Math Olympiad |
+| [🧮 Mathematics](./mathematics/) | 9 | AI helped **disprove the 87-year-old Jacobian conjecture** — and won IMO gold |
 | [⚛️ Physics](./physics/) | 2 | AI controlled **real fusion plasma** inside a tokamak reactor |
 | [🧪 Chemistry](./chemistry/) | 3 | AlphaFold's protein folding won a **Nobel Prize** |
 | [🧬 Biology](./biology/) | 3 | Generative AI **designs brand-new proteins** from scratch |
@@ -63,11 +63,12 @@ The bar for inclusion is high:
 
 ---
 
-## ⭐ Ten to start with
+## ⭐ Eleven to start with
 
 New here? These are among the most consequential entries in the collection:
 
-1. **[AlphaFold](./chemistry/alphafold-protein-structure/)** — solved a 50-year grand challenge and won the 2024 Nobel Prize in Chemistry.
+1. **[Jacobian conjecture counterexample](./mathematics/jacobian-conjecture-counterexample/)** — an AI-assisted result disproving an 87-year-old conjecture (n ≥ 3), July 2026.
+2. **[AlphaFold](./chemistry/alphafold-protein-structure/)** — solved a 50-year grand challenge and won the 2024 Nobel Prize in Chemistry.
 2. **[Fusion plasma control](./physics/fusion-plasma-control/)** — reinforcement learning drove a *real* nuclear-fusion reactor.
 3. **[FunSearch](./mathematics/funsearch-cap-set/)** — first LLM to produce a verifiable, genuinely new answer to an open math problem.
 4. **[AlphaProof](./mathematics/alphaproof-alphageometry-imo-2024/)** — silver-medal mathematics at the International Math Olympiad.

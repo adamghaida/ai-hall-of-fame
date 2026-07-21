@@ -4,6 +4,7 @@ Proving theorems, cracking open problems, and discovering algorithms that eluded
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[A counterexample to the Jacobian conjecture (with Claude Fable 5)](./jacobian-conjecture-counterexample/)** | July 2026 | An 87-year-old conjecture, disproven for n ≥ 3 by an explicit AI-found counterexample. |
 | **[AlphaProof & AlphaGeometry 2 — silver-medal math at the IMO](./alphaproof-alphageometry-imo-2024/)** | July 2024 · Nature (2025) | The first time a machine reached medal-level performance at the world's premier mathematics competition. |
 | **[Gemini Deep Think — an official IMO gold medal](./gemini-deep-think-imo-2025/)** | July 2025 | One year after silver, an AI hit gold — working end-to-end in natural language. |
 | **[FunSearch — a genuinely new answer to a long-open math problem](./funsearch-cap-set/)** | December 2023 · Nature | Believed to be the first time an LLM produced a verifiable, new discovery on an established open problem. |
