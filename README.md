@@ -6,11 +6,12 @@
 
 <br>
 
-[![Stars](https://img.shields.io/github/stars/adamghaida/ai-hall-of-fame?style=flat&logo=github&color=yellow)](https://github.com/adamghaida/ai-hall-of-fame/stargazers)
-[![Forks](https://img.shields.io/github/forks/adamghaida/ai-hall-of-fame?style=flat&logo=github&color=blue)](https://github.com/adamghaida/ai-hall-of-fame/network/members)
-[![Contributors](https://img.shields.io/github/contributors/adamghaida/ai-hall-of-fame?color=orange)](https://github.com/adamghaida/ai-hall-of-fame/graphs/contributors)
-[![Last commit](https://img.shields.io/github/last-commit/adamghaida/ai-hall-of-fame?color=success)](https://github.com/adamghaida/ai-hall-of-fame/commits/main)
-[![Open issues](https://img.shields.io/github/issues/adamghaida/ai-hall-of-fame)](https://github.com/adamghaida/ai-hall-of-fame/issues)
+[![Stars](https://shieldcn.dev/github/adamghaida/ai-hall-of-fame/stars.svg)](https://github.com/adamghaida/ai-hall-of-fame/stargazers)
+[![Forks](https://shieldcn.dev/github/adamghaida/ai-hall-of-fame/forks.svg)](https://github.com/adamghaida/ai-hall-of-fame/network/members)
+[![Contributors](https://shieldcn.dev/github/adamghaida/ai-hall-of-fame/contributors.svg)](https://github.com/adamghaida/ai-hall-of-fame/graphs/contributors)
+[![Last commit](https://shieldcn.dev/github/adamghaida/ai-hall-of-fame/last-commit.svg)](https://github.com/adamghaida/ai-hall-of-fame/commits/main)
+[![Issues](https://shieldcn.dev/github/adamghaida/ai-hall-of-fame/issues.svg)](https://github.com/adamghaida/ai-hall-of-fame/issues)
+[![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
 ![Fields](https://img.shields.io/badge/fields-12-6e56cf)
 ![Cases](https://img.shields.io/badge/documented%20cases-43-2ea043)
