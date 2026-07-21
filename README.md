@@ -2,9 +2,7 @@
 
 # 🏛️ AI Hall of Fame
 
-### A curated collection of documented cases where artificial intelligence did something genuinely *remarkable*, across the sciences and beyond.
-
-Real breakthroughs. Peer-reviewed papers. Nobel Prizes. No hype.
+### A curated collection of documented cases where artificial intelligence did something genuinely *remarkable*.
 
 <br>
 
