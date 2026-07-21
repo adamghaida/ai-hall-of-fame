@@ -6,12 +6,18 @@
 
 <br>
 
+[![Stars](https://img.shields.io/github/stars/adamghaida/ai-hall-of-fame?style=flat&logo=github&color=yellow)](https://github.com/adamghaida/ai-hall-of-fame/stargazers)
+[![Forks](https://img.shields.io/github/forks/adamghaida/ai-hall-of-fame?style=flat&logo=github&color=blue)](https://github.com/adamghaida/ai-hall-of-fame/network/members)
+[![Contributors](https://img.shields.io/github/contributors/adamghaida/ai-hall-of-fame?color=orange)](https://github.com/adamghaida/ai-hall-of-fame/graphs/contributors)
+[![Last commit](https://img.shields.io/github/last-commit/adamghaida/ai-hall-of-fame?color=success)](https://github.com/adamghaida/ai-hall-of-fame/commits/main)
+[![Open issues](https://img.shields.io/github/issues/adamghaida/ai-hall-of-fame)](https://github.com/adamghaida/ai-hall-of-fame/issues)
+
 ![Fields](https://img.shields.io/badge/fields-12-6e56cf)
 ![Cases](https://img.shields.io/badge/documented%20cases-43-2ea043)
 ![Sources](https://img.shields.io/badge/every%20entry-cited-0969da)
 ![Reproduce](https://img.shields.io/badge/every%20entry-how--to--recreate-f59e0b)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-ff69b4)
-![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-ff69b4)](./CONTRIBUTING.md)
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](./LICENSE)
 
 </div>
 
