@@ -1,23 +1,15 @@
 # 🧪 Chemistry
 
-The field where an AI breakthrough earned a share of a **Nobel Prize**.
+The field where an AI breakthrough earned a share of a Nobel Prize — and where AI now runs its own experiments.
+
+| Case | When | In one line |
+|------|------|-------------|
+| **[AlphaFold — solving protein folding (Nobel Prize in Chemistry 2024)](./alphafold-protein-structure/)** | 2020–2021 · Nobel 2024 | A 50-year grand challenge solved by AI — and recognized with a Nobel Prize. |
+| **[Halicin — a new antibiotic found by deep learning](./halicin-antibiotic/)** | February 2020 · Cell | The first genuinely new class of antibiotic candidate discovered primarily by AI. |
+| **[Coscientist — a GPT-4 agent that designs and runs its own experiments](./coscientist-autonomous-chemistry/)** | December 2023 · Nature | An LLM that planned real chemistry and executed it on lab robots from a plain-English prompt. |
+
+### Also relevant (full write-up in another field)
+- **[RFdiffusion](../biology/rfdiffusion-protein-design/)** — de novo protein design (Nobel 2024)
 
 ---
-
-### AlphaFold — solving the protein-folding problem (Nobel Prize in Chemistry 2024)
-
-- **What happened:** AlphaFold2 predicts a protein's 3D structure directly from its amino-acid sequence with accuracy rivaling experimental methods (backbone accuracy ~1Å). DeepMind then released predicted structures for **~200 million proteins** — nearly every catalogued protein known to science — free to all researchers.
-- **When:** AlphaFold2 in 2020; the **AlphaFold Protein Structure Database** in 2021; the Nobel in October 2024.
-- **Why it's a big deal:** Predicting protein structure was a **50-year grand challenge** in biology and chemistry. Demis Hassabis and John Jumper shared the 2024 Nobel Prize in Chemistry for it (alongside David Baker for protein design) — the first Nobel recognizing a breakthrough enabled by AI. The database has been used by **millions of researchers in 190+ countries**.
-- **Sources:** [Nobel Prize press release](https://www.nobelprize.org/prizes/chemistry/2024/press-release/) · [DeepMind blog](https://deepmind.google/discover/blog/demis-hassabis-john-jumper-awarded-nobel-prize-in-chemistry/) · [Nature coverage](https://www.nature.com/articles/d41586-024-03214-7)
-
-### Halicin — a new antibiotic found by deep learning
-
-- **What happened:** MIT researchers trained a neural network to predict antibacterial activity, then screened over **100 million molecules**. It surfaced **halicin**, a compound structurally unlike any known antibiotic, which kills a broad range of drug-resistant pathogens — including strains for which no current treatment works — and cleared infections in mice.
-- **When:** February 2020 (*Cell*).
-- **Why it's a big deal:** The first genuinely new class of antibiotic candidate discovered primarily by AI, in an era where the antibiotic-discovery pipeline had nearly dried up. The team later used the same approach to find **abaucin**, targeting *Acinetobacter baumannii*.
-- **Sources:** [Broad Institute](https://www.broadinstitute.org/news/researchers-use-ai-identify-new-class-antibiotic-candidates) · [Cell paper](https://www.cell.com/cell/fulltext/S0092-8674(20)30102-1)
-
----
-
-> **See also:** [Materials Science](../materials-science/) for GNoME's discovery of 2.2 million new crystalline compounds, and [Biology](../biology/) for AI-designed proteins.
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

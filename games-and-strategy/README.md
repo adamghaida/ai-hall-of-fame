@@ -1,19 +1,16 @@
 # ♟️ Games & Strategy
 
-The arena where AI first showed it could out-*create*, not just out-calculate, the best humans — and the research lineage that seeded breakthroughs across every other field in this repo.
+Where AI first showed it could out-create, not just out-calculate — the research lineage behind everything else here.
+
+| Case | When | In one line |
+|------|------|-------------|
+| **[AlphaGo & 'Move 37'](./alphago-move-37/)** | March 2016 | The moment AI showed genuine creativity, not just calculation. |
+| **[AlphaZero — mastering Go, chess, and shogi from scratch](./alphazero-self-play/)** | 2017–2018 · Science | Given only the rules, it surpassed the best programs in hours of self-play. |
+| **[AlphaStar — Grandmaster at StarCraft II](./alphastar-starcraft/)** | 2019 · Nature | Superhuman play in a real-time game of hidden information and vast action spaces. |
+| **[Pluribus — superhuman six-player poker](./pluribus-poker/)** | July 2019 · Science | The first AI to beat pros at multiplayer poker — the long-standing open case. |
+| **[CICERO — human-level play in Diplomacy, negotiation included](./cicero-diplomacy/)** | November 2022 · Science | An AI that had to *talk* its way to victory, blending language and strategy. |
+| **[DeepNash — expert Stratego without any search](./deepnash-stratego/)** | December 2022 · Science | Mastering a game with a game tree 10^175 times larger than Go's. |
+| **[Gran Turismo Sophy — outracing the world's best sim drivers](./gran-turismo-sophy/)** | February 2022 · Nature | A racing AI that beat champion e-sport drivers wheel-to-wheel, cleanly. |
 
 ---
-
-### AlphaGo & "Move 37"
-
-- **What happened:** In March 2016, DeepMind's **AlphaGo** beat 18-time world champion **Lee Sedol** 4–1 at Go — a game long considered a grand challenge for AI because of its astronomical complexity and reliance on intuition. In game 2, AlphaGo played **Move 37**, a shoulder-hit so unconventional that commentators assumed it was a mistake; it had roughly a **1-in-10,000** chance of being chosen by a human, and it proved brilliant.
-- **When:** March 2016.
-- **Why it's a big deal:** Move 37 is remembered as the moment AI demonstrated genuine **creativity** — discovering strategy no human had taught it, and inspiring human Go players to rethink centuries-old theory.
-- **Sources:** [DeepMind — AlphaGo](https://deepmind.google/research/breakthroughs/alphago/) · [The story of Move 37](https://www.deepmind.com/research/highlighted-research/alphago)
-
-### AlphaZero — mastering Go, chess, and shogi from scratch
-
-- **What happened:** **AlphaZero** was given only the rules of each game and learned entirely through **self-play**, starting from random moves. Within hours it surpassed the strongest existing chess, shogi, and Go programs, playing in a strikingly dynamic, sacrificial style that reshaped human opening theory.
-- **When:** 2017 (paper in *Science*, 2018).
-- **Why it's a big deal:** A single, general self-play algorithm reached superhuman play with **zero human game data** — the conceptual engine that later powered [AlphaTensor](../mathematics/), [AlphaDev](../computer-science/), and [plasma control](../physics/).
-- **Sources:** [DeepMind — AlphaZero](https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/) · [Science paper](https://www.science.org/doi/10.1126/science.aar6404)
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

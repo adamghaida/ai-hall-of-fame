@@ -1,16 +1,12 @@
 # 🔬 Materials Science
 
-An AI that expanded the catalogue of known stable materials by an order of magnitude.
+Expanding the catalogue of known materials by an order of magnitude — and synthesizing them autonomously.
+
+| Case | When | In one line |
+|------|------|-------------|
+| **[GNoME — 2.2 million new crystals, 380,000 of them stable](./gnome-materials-discovery/)** | November 2023 · Nature | An order-of-magnitude expansion of the stable materials known to science. |
+| **[A-Lab — a robotic lab that makes new materials on its own](./a-lab-autonomous-synthesis/)** | November 2023 · Nature | An autonomous lab that synthesized dozens of new inorganic compounds in 17 days. |
+| **[An AI-screened battery electrolyte using ~70% less lithium](./microsoft-battery-electrolyte/)** | January 2024 | From 32 million candidates to a synthesized new material in weeks, not years. |
 
 ---
-
-### GNoME — 2.2 million new crystals, 380,000 of them stable
-
-- **What happened:** DeepMind's **Graph Networks for Materials Exploration (GNoME)** predicted the stability of new inorganic crystals at massive scale, discovering **2.2 million** new structures — including **380,000 stable candidates** for technologies like batteries, solar cells, and superconductors. DeepMind added ~380,000 of them to the public Materials Project database.
-- **When:** November 2023 (*Nature*).
-- **Why it's a big deal:** An **order-of-magnitude expansion** of stable materials known to science — the paper described it as roughly 800 years' worth of prior discovery compressed into one effort. External labs have already synthesized and verified hundreds of the predicted materials in independent experiments.
-- **Sources:** [DeepMind blog](https://deepmind.google/discover/blog/millions-of-new-materials-discovered-with-deep-learning/) · [Nature paper](https://www.nature.com/articles/s41586-023-06735-9) · [Berkeley Lab](https://newscenter.lbl.gov/2023/11/29/google-deepmind-new-compounds-materials-project/)
-
----
-
-> **See also:** [Chemistry](../chemistry/) and [Physics](../physics/) for related molecular and physical-systems breakthroughs.
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

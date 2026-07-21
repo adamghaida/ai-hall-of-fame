@@ -1,16 +1,15 @@
 # ⚛️ Physics
 
-Where AI has taken the controls of some of the most complex physical systems humans have ever built.
+AI at the controls of some of the most complex physical systems ever built — and rediscovering the laws behind them.
+
+| Case | When | In one line |
+|------|------|-------------|
+| **[Controlling fusion plasma inside a real tokamak](./fusion-plasma-control/)** | February 2022 · Nature | Reinforcement learning drove a real nuclear-fusion reactor's magnetic coils on its first try. |
+| **[AI Feynman — rediscovering the laws of physics from data](./ai-feynman-symbolic-regression/)** | April 2020 · Science Advances | An algorithm that re-derived 100 equations from the Feynman Lectures straight from raw data. |
+
+### Also relevant (full write-up in another field)
+- **[GNoME](../materials-science/gnome-materials-discovery/)** — new stable materials
+- **[Kepler-90i](../astronomy/kepler-90i-exoplanet/)** — exoplanet discovery
 
 ---
-
-### Controlling fusion plasma inside a real tokamak
-
-- **What happened:** DeepMind and EPFL's Swiss Plasma Center trained a **deep reinforcement-learning** controller to manipulate the magnetic coils of the TCV (Tokamak à Configuration Variable) reactor, then deployed it on the **real machine**. The AI held superheated plasma steady and sculpted it into a range of shapes — elongated, "snowflake," and negative-triangularity configurations — and even sustained two separate plasma "droplets" at once, all without additional fine-tuning on the hardware.
-- **When:** February 2022 (*Nature*).
-- **Why it's a big deal:** Magnetically confining plasma at 100-million-degree temperatures is one of the hardest control problems in science and central to the dream of clean fusion energy. A single learned controller replaced painstakingly hand-designed control systems and drove a real reactor on its first try.
-- **Sources:** [DeepMind blog](https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/) · [Nature paper](https://www.nature.com/articles/s41586-021-04301-9) · [MIT Tech Review](https://www.technologyreview.com/2022/02/16/1045470/deepminds-ai-can-control-superheated-plasma-inside-a-fusion-reactor/)
-
----
-
-> **See also:** Much of modern physics runs through simulation and materials — check [Materials Science](../materials-science/) (GNoME crystal discovery) and [Astronomy](../astronomy/) (exoplanet detection) for physics-adjacent breakthroughs.
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

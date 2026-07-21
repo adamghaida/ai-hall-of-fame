@@ -14,20 +14,16 @@ When in doubt, prefer the primary source (the paper or the lab's own announcemen
 
 ## How to add an entry
 
+Each case is a **folder** inside a field, containing three files. The easiest path is to copy an existing entry folder and edit it.
+
 1. Find the right field folder (e.g. `mathematics/`, `medicine/`). If no field fits, open an issue to propose a new one.
-2. Add your entry to that folder's `README.md`, matching the existing format:
-
-   ```markdown
-   ### Project / result name — one-line hook
-
-   - **What happened:** A plain-language summary of the achievement.
-   - **When:** Date and venue (e.g. "October 2022 (*Nature*)").
-   - **Why it's a big deal:** The significance — what record fell, what became possible.
-   - **Sources:** [Primary source](url) · [Secondary](url)
-   ```
-
-3. If the achievement spans multiple fields, put the **full write-up in the most fitting field** and add a short cross-reference (`> **See also:** ...`) elsewhere.
-4. Update the counts in the root [README.md](./README.md) table if needed.
+2. Create a new folder named with a short kebab-case slug (e.g. `alphafold-protein-structure/`) containing:
+   - **`README.md`** — the discovery: what happened, when (date + venue), why it matters, and a **Sources** section. This is the canonical record.
+   - **`PROMPT.md`** — how to recreate it: code repos, datasets, models, and the actual prompt/method where one exists. Be honest when something isn't fully reproducible (proprietary weights, required hardware) and point to open reimplementations.
+   - **`CONTEXT.md`** — deeper background, the people involved, and honest caveats (contested results, corrections, proof-of-concept status).
+3. Add a row for your entry to the field's index `README.md` table.
+4. If the achievement spans multiple fields, put the **full folder in the most fitting field** and add a cross-reference row ("Also relevant") in the other field's index.
+5. Update the counts/badges in the root [README.md](./README.md) if needed.
 
 ## Style
 
