@@ -13,12 +13,12 @@
 [![Issues](https://shieldcn.dev/github/adamghaida/ai-hall-of-fame/issues.svg)](https://github.com/adamghaida/ai-hall-of-fame/issues)
 [![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
-![Fields](https://img.shields.io/badge/fields-12-6e56cf)
-![Cases](https://img.shields.io/badge/documented%20cases-43-2ea043)
-![Sources](https://img.shields.io/badge/every%20entry-cited-0969da)
-![Reproduce](https://img.shields.io/badge/every%20entry-how--to--recreate-f59e0b)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-ff69b4)](./CONTRIBUTING.md)
-[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](./LICENSE)
+![12 fields](https://shieldcn.dev/badge/12_fields.svg)
+![43 cases](https://shieldcn.dev/badge/43_cases.svg)
+![every entry cited](https://shieldcn.dev/badge/every_entry_cited.svg)
+![reproducible](https://shieldcn.dev/badge/reproducible.svg)
+[![PRs welcome](https://shieldcn.dev/badge/PRs_welcome.svg)](./CONTRIBUTING.md)
+[![CC BY 4.0](https://shieldcn.dev/badge/CC_BY_4.0.svg)](./LICENSE)
 
 </div>
 
