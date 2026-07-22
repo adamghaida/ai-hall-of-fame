@@ -15,4 +15,4 @@ It showed an end-to-end AI+HPC funnel — from massive virtual screening to a ph
 - [Chemistry World](https://www.chemistryworld.com/research/microsofts-ai-and-high-performance-computing-system-powers-new-battery-discovery/4018731.article)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🔬 Materials Science](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🔬 Materials Science](../).*

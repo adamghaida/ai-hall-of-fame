@@ -15,4 +15,4 @@ Because every proof is checked by the Lean proof assistant, the answers are **pr
 - [Nature paper (2025)](https://www.nature.com/articles/s41586-025-09833-y)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧮 Mathematics](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧮 Mathematics](../).*

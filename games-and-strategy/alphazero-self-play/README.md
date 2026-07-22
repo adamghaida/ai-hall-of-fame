@@ -15,4 +15,4 @@ A single, general self-play algorithm reached superhuman play across three very 
 - [Science paper](https://www.science.org/doi/10.1126/science.aar6404)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [♟️ Games & Strategy](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [♟️ Games & Strategy](../).*

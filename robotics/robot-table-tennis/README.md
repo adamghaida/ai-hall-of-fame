@@ -15,4 +15,4 @@ Table tennis compresses perception, prediction, and high-speed precise control i
 - [MIT Tech Review](https://www.technologyreview.com/2024/08/09/1096102/google-deepmind-trained-a-robot-to-beat-humans-at-table-tennis/)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🤖 Robotics](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🤖 Robotics](../).*

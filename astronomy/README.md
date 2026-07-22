@@ -8,4 +8,4 @@ Finding worlds and sharpening black holes hidden in noisy data humans scrolled p
 | **[PRIMO — a sharper image of the M87 black hole](./primo-black-hole-image/)** | April 2023 · Astrophysical Journal | Machine learning filled in the gaps to reach the full resolution of the black-hole telescope. |
 
 ---
-*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (a prompt to explore it with AI), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

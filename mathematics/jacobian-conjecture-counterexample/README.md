@@ -26,4 +26,4 @@ It is arguably the **hardest long-standing mathematical conjecture disproven wit
 - [Hacker News discussion](https://news.ycombinator.com/item?id=48973869)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it — includes a verification script that was actually run) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧮 Mathematics](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI — includes a verification script that was actually run) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧮 Mathematics](../).*

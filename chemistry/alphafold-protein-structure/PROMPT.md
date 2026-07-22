@@ -1,10 +1,34 @@
-# 🛠️ How to recreate: AlphaFold — solving protein folding (Nobel Prize in Chemistry 2024)
+# 🤖 Explore this with AI: AlphaFold — solving protein folding (Nobel Prize in Chemistry 2024)
 
-*This file is a practical starting point for reproducing or exploring the result — code, data, models, and (where one exists) the actual prompt or method. It is not official documentation; always defer to the primary sources.*
+Paste the prompt below into your favorite AI assistant (Claude, ChatGPT, Gemini, or a local model). If your assistant can browse the web, tell it to read the sources first. The point is a clear, honest, grounded explanation of what happened and why it mattered.
 
-Open-sourced: **github.com/google-deepmind/alphafold** (AF2) and **alphafold3** (2024, under a research license). You rarely need to run it: look up any structure in the **AlphaFold Protein Structure Database** (alphafold.ebi.ac.uk). To run inference yourself you need the sequence, a multiple-sequence alignment (MSA) from genetic databases, and a GPU; **ColabFold** offers a free, lightweight route in a browser.
+> A 50-year grand challenge solved by AI — and recognized with a Nobel Prize.
 
-## Primary sources & code
+---
+
+```text
+You are a sharp, honest science explainer. Walk me through a specific, real AI achievement so that I actually understand it, not just the headline.
+
+Topic: AlphaFold — solving protein folding (Nobel Prize in Chemistry 2024)
+
+Please cover, in plain language a curious non-expert can follow:
+1. What actually happened, and why this was hard or unsolved before.
+2. How the AI approach worked. Explain the core idea rather than the buzzwords, and where it fits in the wider machine-learning landscape.
+3. Why it mattered. What changed in the field, and what became possible next?
+4. The honest caveats. What did it NOT do? Any disputes, corrections, hype, or limitations I should know about?
+5. What I should read or explore next to go deeper.
+
+Ground your answer in these primary sources (read them if you can, and cite them as you go):
+- Nobel press release: https://www.nobelprize.org/prizes/chemistry/2024/press-release/
+- DeepMind blog: https://deepmind.google/discover/blog/demis-hassabis-john-jumper-awarded-nobel-prize-in-chemistry/
+- Nature coverage: https://www.nature.com/articles/d41586-024-03214-7
+
+Be concrete, use real numbers where they matter, and if you are unsure about a detail, say so instead of guessing.
+```
+
+---
+
+## Sources
 - [Nobel press release](https://www.nobelprize.org/prizes/chemistry/2024/press-release/)
 - [DeepMind blog](https://deepmind.google/discover/blog/demis-hassabis-john-jumper-awarded-nobel-prize-in-chemistry/)
 - [Nature coverage](https://www.nature.com/articles/d41586-024-03214-7)

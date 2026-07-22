@@ -1,10 +1,33 @@
-# 🛠️ How to recreate: Rentosertib — a generative-AI-designed drug reaches human trials
+# 🤖 Explore this with AI: Rentosertib — a generative-AI-designed drug reaches human trials
 
-*This file is a practical starting point for reproducing or exploring the result — code, data, models, and (where one exists) the actual prompt or method. It is not official documentation; always defer to the primary sources.*
+Paste the prompt below into your favorite AI assistant (Claude, ChatGPT, Gemini, or a local model). If your assistant can browse the web, tell it to read the sources first. The point is a clear, honest, grounded explanation of what happened and why it mattered.
 
-The specific pipeline (PandaOmics for target discovery, Chemistry42 for generative molecule design) is a commercial platform, but the *methods* are publishable and echoed in open tools: generative models (VAEs, GANs, RL, diffusion) that propose molecules optimized for predicted potency, selectivity, and drug-likeness, filtered by docking and ADMET predictors. Open analogues include REINVENT and various generative-chemistry libraries.
+> The first drug with both an AI-discovered target and AI-designed molecule to post Phase 2 results.
 
-## Primary sources & code
+---
+
+```text
+You are a sharp, honest science explainer. Walk me through a specific, real AI achievement so that I actually understand it, not just the headline.
+
+Topic: Rentosertib — a generative-AI-designed drug reaches human trials
+
+Please cover, in plain language a curious non-expert can follow:
+1. What actually happened, and why this was hard or unsolved before.
+2. How the AI approach worked. Explain the core idea rather than the buzzwords, and where it fits in the wider machine-learning landscape.
+3. Why it mattered. What changed in the field, and what became possible next?
+4. The honest caveats. What did it NOT do? Any disputes, corrections, hype, or limitations I should know about?
+5. What I should read or explore next to go deeper.
+
+Ground your answer in these primary sources (read them if you can, and cite them as you go):
+- Nature Medicine paper: https://www.nature.com/articles/s41591-025-03743-2
+- Insilico announcement: https://insilico.com/news/tnrecuxsc1-insilico-announces-nature-medicine-publi
+
+Be concrete, use real numbers where they matter, and if you are unsure about a detail, say so instead of guessing.
+```
+
+---
+
+## Sources
 - [Nature Medicine paper](https://www.nature.com/articles/s41591-025-03743-2)
 - [Insilico announcement](https://insilico.com/news/tnrecuxsc1-insilico-announces-nature-medicine-publi)
 

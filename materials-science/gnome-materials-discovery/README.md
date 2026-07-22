@@ -16,4 +16,4 @@ It expanded known stable materials by ~an order of magnitude — described as ~8
 - [Berkeley Lab](https://newscenter.lbl.gov/2023/11/29/google-deepmind-new-compounds-materials-project/)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🔬 Materials Science](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🔬 Materials Science](../).*

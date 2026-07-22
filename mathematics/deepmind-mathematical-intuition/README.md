@@ -16,4 +16,4 @@ This established a repeatable template for AI-assisted pure mathematics: the mac
 - [Univ. of Sydney](https://www.sydney.edu.au/news-opinion/news/2021/12/02/mathematicians-use-deepmind-ai-develop-new-methods-problem-solving-proofs-conjectures.html)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧮 Mathematics](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧮 Mathematics](../).*

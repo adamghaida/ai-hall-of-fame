@@ -15,4 +15,4 @@ It closed the loop from natural-language goal → literature reasoning → exper
 - [CMU Engineering](https://engineering.cmu.edu/news-events/news/2023/12/20-ai-coscientist.html)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧪 Chemistry](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧪 Chemistry](../).*

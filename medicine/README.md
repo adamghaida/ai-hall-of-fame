@@ -9,9 +9,10 @@ From reading scans to restoring speech and designing drugs now in human trials.
 | **[Detecting diabetic retinopathy at specialist level](./diabetic-retinopathy-detection/)** | 2016 · JAMA | One of the first deep-learning systems to match specialists on a real diagnostic task. |
 | **[Dermatologist-level skin-cancer classification](./skin-cancer-dermatology/)** | 2017 · Nature | A neural net matched 21 board-certified dermatologists at spotting skin cancer from photos. |
 | **[Rentosertib — a generative-AI-designed drug reaches human trials](./insilico-rentosertib/)** | June 2025 · Nature Medicine | The first drug with both an AI-discovered target and AI-designed molecule to post Phase 2 results. |
+| **[An AI reading of a cheap ECG spots a weak heart before symptoms](./ai-ecg-heart-function/)** | January 2019 · Nature Medicine | A 10-second ECG, read by AI, flags a dangerously weak heart that normally takes an ultrasound to find. |
 
 ### Also relevant (full write-up in another field)
 - **[Halicin antibiotic](../chemistry/halicin-antibiotic/)** — AI-discovered antibiotic
 
 ---
-*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (a prompt to explore it with AI), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

@@ -14,4 +14,4 @@ Diabetic retinopathy is a leading cause of preventable blindness, and screening 
 - [JAMA paper](https://jamanetwork.com/journals/jama/fullarticle/2588763)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🩺 Medicine](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🩺 Medicine](../).*

@@ -14,7 +14,7 @@
 [![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
 ![12 fields](https://shieldcn.dev/badge/12_fields.svg)
-![43 cases](https://shieldcn.dev/badge/43_cases.svg)
+![52 cases](https://shieldcn.dev/badge/52_cases.svg)
 ![every entry cited](https://shieldcn.dev/badge/every_entry_cited.svg)
 ![reproducible](https://shieldcn.dev/badge/reproducible.svg)
 [![PRs welcome](https://shieldcn.dev/badge/PRs_welcome.svg)](./CONTRIBUTING.md)
@@ -33,7 +33,7 @@ This repository collects those moments, organized by field. **Every case gets it
 | File | What's in it |
 |------|--------------|
 | 📄 **`README.md`** | What happened, when, why it matters, plus **links to the primary sources** (the record of the discovery). |
-| 🛠️ **`PROMPT.md`** | **How to recreate it**: the code repos, datasets, models, and (where one exists) the actual prompt or method. |
+| 🤖 **`PROMPT.md`** | **A copy-paste prompt** that gets an AI assistant to explain the discovery, grounded in the sources. |
 | 📚 **`CONTEXT.md`** | Deeper background, the people involved, and the **honest caveats**. |
 
 The bar for inclusion is high:
@@ -51,18 +51,18 @@ The bar for inclusion is high:
 
 | Field | Cases | A highlight |
 |-------|:-----:|-------------|
-| [🧮 Mathematics](./mathematics/) | 9 | AI helped **disprove the 87-year-old Jacobian conjecture**, and won IMO gold |
+| [🧮 Mathematics](./mathematics/) | 10 | AI helped **disprove the 87-year-old Jacobian conjecture**, and won IMO gold |
 | [⚛️ Physics](./physics/) | 2 | AI controlled **real fusion plasma** inside a tokamak reactor |
-| [🧪 Chemistry](./chemistry/) | 3 | AlphaFold's protein folding won a **Nobel Prize** |
-| [🧬 Biology](./biology/) | 3 | Generative AI **designs brand-new proteins** from scratch |
-| [🩺 Medicine](./medicine/) | 5 | AI **restores speech** after paralysis; an AI-designed drug reaches trials |
+| [🧪 Chemistry](./chemistry/) | 4 | AlphaFold's protein folding won a **Nobel Prize** |
+| [🧬 Biology](./biology/) | 4 | Generative AI **designs brand-new proteins** from scratch |
+| [🩺 Medicine](./medicine/) | 6 | AI **restores speech** after paralysis; an AI-designed drug reaches trials |
 | [💻 Computer Science](./computer-science/) | 3 | An AI-found sorting algorithm ships in the **C++ standard library** |
-| [🔬 Materials Science](./materials-science/) | 3 | **2.2 million** new crystals discovered in one effort |
+| [🔬 Materials Science](./materials-science/) | 4 | **2.2 million** new crystals discovered in one effort |
 | [🔭 Astronomy](./astronomy/) | 2 | A neural net found a **hidden 8th planet** in Kepler data |
-| [🌍 Climate & Earth Science](./climate-and-earth-science/) | 3 | AI weather models **beat the world's best** supercomputer forecasts |
-| [🧠 Neuroscience](./neuroscience/) | 2 | The **first complete wiring map** of an adult brain |
-| [♟️ Games & Strategy](./games-and-strategy/) | 7 | "**Move 37**": the moment AI showed genuine creativity |
-| [🤖 Robotics](./robotics/) | 1 | A robot reached **amateur human level** at table tennis |
+| [🌍 Climate & Earth Science](./climate-and-earth-science/) | 4 | AI weather models **beat the world's best** supercomputer forecasts |
+| [🧠 Neuroscience](./neuroscience/) | 3 | The **first complete wiring map** of an adult brain |
+| [♟️ Games & Strategy](./games-and-strategy/) | 8 | "**Move 37**": the moment AI showed genuine creativity |
+| [🤖 Robotics](./robotics/) | 2 | A robot reached **amateur human level** at table tennis |
 
 *Some landmark systems (AlphaFold, AlphaTensor, the speech neuroprosthesis, and more) matter to several fields, so each has one full write-up, cross-linked from the others.*
 

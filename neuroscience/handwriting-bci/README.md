@@ -15,4 +15,4 @@ By decoding the fast, distinctive neural patterns of *imagined writing* rather t
 - [Stanford / Wu Tsai](https://neuroscience.stanford.edu/news/composing-thoughts-mental-handwriting-produces-brain-activity-can-be-turned-text)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧠 Neuroscience](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧠 Neuroscience](../).*

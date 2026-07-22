@@ -1,10 +1,32 @@
-# 🛠️ How to recreate: Gemini Deep Think — an official IMO gold medal
+# 🤖 Explore this with AI: Gemini Deep Think — an official IMO gold medal
 
-*This file is a practical starting point for reproducing or exploring the result — code, data, models, and (where one exists) the actual prompt or method. It is not official documentation; always defer to the primary sources.*
+Paste the prompt below into your favorite AI assistant (Claude, ChatGPT, Gemini, or a local model). If your assistant can browse the web, tell it to read the sources first. The point is a clear, honest, grounded explanation of what happened and why it mattered.
 
-The exact model is proprietary. The reproducible part is the evaluation protocol: give a frontier reasoning model (Gemini Deep Think, or comparable) the six official 2025 IMO problems under a 4.5-hour budget per session, no tools/internet, and have expert graders score full written proofs against the official mark scheme. Problems: https://www.imo-official.org/problems.aspx
+> One year after silver, an AI hit gold — working end-to-end in natural language.
 
-## Primary sources & code
+---
+
+```text
+You are a sharp, honest science explainer. Walk me through a specific, real AI achievement so that I actually understand it, not just the headline.
+
+Topic: Gemini Deep Think — an official IMO gold medal
+
+Please cover, in plain language a curious non-expert can follow:
+1. What actually happened, and why this was hard or unsolved before.
+2. How the AI approach worked. Explain the core idea rather than the buzzwords, and where it fits in the wider machine-learning landscape.
+3. Why it mattered. What changed in the field, and what became possible next?
+4. The honest caveats. What did it NOT do? Any disputes, corrections, hype, or limitations I should know about?
+5. What I should read or explore next to go deeper.
+
+Ground your answer in these primary sources (read them if you can, and cite them as you go):
+- DeepMind blog: https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/
+
+Be concrete, use real numbers where they matter, and if you are unsure about a detail, say so instead of guessing.
+```
+
+---
+
+## Sources
 - [DeepMind blog](https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/)
 
 ---

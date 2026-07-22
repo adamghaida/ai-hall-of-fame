@@ -15,4 +15,4 @@ The AI caught a signal too faint for earlier searches and did in minutes what to
 - [UT Austin](https://news.utexas.edu/2017/12/14/using-ai-to-discover-new-worlds/)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🔭 Astronomy](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🔭 Astronomy](../).*

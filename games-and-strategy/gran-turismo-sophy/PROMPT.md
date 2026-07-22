@@ -1,10 +1,33 @@
-# 🛠️ How to recreate: Gran Turismo Sophy — outracing the world's best sim drivers
+# 🤖 Explore this with AI: Gran Turismo Sophy — outracing the world's best sim drivers
 
-*This file is a practical starting point for reproducing or exploring the result — code, data, models, and (where one exists) the actual prompt or method. It is not official documentation; always defer to the primary sources.*
+Paste the prompt below into your favorite AI assistant (Claude, ChatGPT, Gemini, or a local model). If your assistant can browse the web, tell it to read the sources first. The point is a clear, honest, grounded explanation of what happened and why it mattered.
 
-No public code (it runs inside a licensed PlayStation game), but the paper details the approach: deep reinforcement learning (a QR-SAC variant) with carefully engineered reward terms that balance lap time against a learned sense of sportsmanship/collision-avoidance. GT Sophy was later released as a feature inside *Gran Turismo 7* for players to race against.
+> A racing AI that beat champion e-sport drivers wheel-to-wheel, cleanly.
 
-## Primary sources & code
+---
+
+```text
+You are a sharp, honest science explainer. Walk me through a specific, real AI achievement so that I actually understand it, not just the headline.
+
+Topic: Gran Turismo Sophy — outracing the world's best sim drivers
+
+Please cover, in plain language a curious non-expert can follow:
+1. What actually happened, and why this was hard or unsolved before.
+2. How the AI approach worked. Explain the core idea rather than the buzzwords, and where it fits in the wider machine-learning landscape.
+3. Why it mattered. What changed in the field, and what became possible next?
+4. The honest caveats. What did it NOT do? Any disputes, corrections, hype, or limitations I should know about?
+5. What I should read or explore next to go deeper.
+
+Ground your answer in these primary sources (read them if you can, and cite them as you go):
+- Nature paper: https://www.nature.com/articles/s41586-021-04357-7
+- Sony AI: https://ai.sony/articles/sonyai009/
+
+Be concrete, use real numbers where they matter, and if you are unsure about a detail, say so instead of guessing.
+```
+
+---
+
+## Sources
 - [Nature paper](https://www.nature.com/articles/s41586-021-04357-7)
 - [Sony AI](https://ai.sony/articles/sonyai009/)
 

@@ -15,4 +15,4 @@ Earlier, more accurate detection directly saves lives, and an instant automated 
 - [MIT Tech Review](https://www.technologyreview.com/2020/01/03/238154/googles-ai-breast-cancer-screening-tool-is-learning-to-generalize-across-countries/)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🩺 Medicine](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🩺 Medicine](../).*

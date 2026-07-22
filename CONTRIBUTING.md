@@ -19,7 +19,7 @@ Each case is a **folder** inside a field, containing **exactly these three files
 | File | Required content |
 |------|------------------|
 | **`README.md`** | A `#` title; a `**Field:**` / `**When:**` line; `## What happened`; `## Why it matters`; a `## Sources` section with **≥ 1 http(s) link**. This is the canonical record. |
-| **`PROMPT.md`** | How to recreate it — code repos, datasets, models, and the actual prompt/method where one exists (with **≥ 1 link**). Be honest when something isn't fully reproducible (proprietary weights, required hardware) and point to open reimplementations. |
+| **`PROMPT.md`** | A copy-paste **prompt that gets an AI assistant to explain the discovery**, grounded in the sources (which are listed with **≥ 1 http(s) link**). If the result is a concrete, checkable object (a formula, an algorithm), add a "have the agent verify it" snippet too. Regenerate/format it like the other entries. |
 | **`CONTEXT.md`** | Deeper background, the people involved, and **honest caveats** (contested results, corrections, proof-of-concept status), plus a `## Sources` section. |
 
 > Start by copying the skeleton in [`.github/ENTRY_TEMPLATE/`](./.github/ENTRY_TEMPLATE) — it has all three files pre-structured. Or copy an existing entry folder.

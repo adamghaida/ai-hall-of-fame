@@ -1,10 +1,33 @@
-# 🛠️ How to recreate: AlphaMissense — classifying 71 million genetic mutations
+# 🤖 Explore this with AI: AlphaMissense — classifying 71 million genetic mutations
 
-*This file is a practical starting point for reproducing or exploring the result — code, data, models, and (where one exists) the actual prompt or method. It is not official documentation; always defer to the primary sources.*
+Paste the prompt below into your favorite AI assistant (Claude, ChatGPT, Gemini, or a local model). If your assistant can browse the web, tell it to read the sources first. The point is a clear, honest, grounded explanation of what happened and why it mattered.
 
-Open-sourced: **github.com/google-deepmind/alphamissense**, and — more useful for most people — the **precomputed predictions for all 71M variants are downloadable**, so you can simply look up a variant. To run the model, start from AlphaFold-style structural features plus evolutionary conservation from an MSA; the network is fine-tuned to score how damaging a substitution is.
+> A single model rated the disease risk of nearly every possible human missense mutation.
 
-## Primary sources & code
+---
+
+```text
+You are a sharp, honest science explainer. Walk me through a specific, real AI achievement so that I actually understand it, not just the headline.
+
+Topic: AlphaMissense — classifying 71 million genetic mutations
+
+Please cover, in plain language a curious non-expert can follow:
+1. What actually happened, and why this was hard or unsolved before.
+2. How the AI approach worked. Explain the core idea rather than the buzzwords, and where it fits in the wider machine-learning landscape.
+3. Why it mattered. What changed in the field, and what became possible next?
+4. The honest caveats. What did it NOT do? Any disputes, corrections, hype, or limitations I should know about?
+5. What I should read or explore next to go deeper.
+
+Ground your answer in these primary sources (read them if you can, and cite them as you go):
+- Science paper: https://www.science.org/doi/10.1126/science.adg7492
+- DeepMind blog: https://deepmind.google/discover/blog/a-catalogue-of-genetic-mutations-to-help-pinpoint-the-cause-of-diseases/
+
+Be concrete, use real numbers where they matter, and if you are unsure about a detail, say so instead of guessing.
+```
+
+---
+
+## Sources
 - [Science paper](https://www.science.org/doi/10.1126/science.adg7492)
 - [DeepMind blog](https://deepmind.google/discover/blog/a-catalogue-of-genetic-mutations-to-help-pinpoint-the-cause-of-diseases/)
 

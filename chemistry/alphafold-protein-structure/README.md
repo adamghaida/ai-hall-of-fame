@@ -16,4 +16,4 @@ Protein shape determines function, so this reshaped biology, drug discovery, and
 - [Nature coverage](https://www.nature.com/articles/d41586-024-03214-7)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧪 Chemistry](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧪 Chemistry](../).*

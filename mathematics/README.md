@@ -13,6 +13,7 @@ Proving theorems, cracking open problems, and discovering algorithms that eluded
 | **[Guiding human intuition — a new knot-theory theorem](./deepmind-mathematical-intuition/)** | December 2021 · Nature | AI spotted patterns that led mathematicians to prove brand-new theorems. |
 | **[The Ramanujan Machine — a conjecture generator for fundamental constants](./ramanujan-machine/)** | February 2021 · Nature | Algorithms that dream up new formulas for π, e, and the Riemann zeta function. |
 | **[Symbolic transformers find Lyapunov functions](./lyapunov-functions-transformers/)** | 2024 · NeurIPS | AI made progress on a problem with no known general solution — proving systems are stable. |
+| **[AlphaGeometry — olympiad geometry at gold-medal level](./alphageometry/)** | January 2024 · Nature | A neuro-symbolic AI solved hard olympiad geometry nearly as well as a human gold medalist, with no human-written solutions to learn from. |
 
 ---
-*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (a prompt to explore it with AI), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

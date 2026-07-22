@@ -15,4 +15,4 @@ Diffusion models pushed lab success rates from roughly 1-in-10,000 to a few perc
 - [Institute for Protein Design](https://www.ipd.uw.edu/2022/12/a-diffusion-model-for-protein-design/)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧬 Biology](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧬 Biology](../).*

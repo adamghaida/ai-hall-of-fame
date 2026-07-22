@@ -6,9 +6,10 @@ Decoding intention directly from the brain — and mapping every neuron in one.
 |------|------|-------------|
 | **[Handwriting BCI — thinking letters onto a screen](./handwriting-bci/)** | May 2021 · Nature | Imagined handwriting decoded into text at 90 characters per minute. |
 | **[FlyWire — the first complete wiring map of an adult brain](./flywire-connectome/)** | October 2024 · Nature | AI segmentation mapped 140,000 neurons and 50 million connections — a whole brain. |
+| **[Reconstructing seen images from brain scans with Stable Diffusion](./brain-image-reconstruction/)** | 2023 · CVPR | Show someone a photo, scan their brain, and reconstruct a recognizable version of what they saw. |
 
 ### Also relevant (full write-up in another field)
 - **[Speech neuroprosthesis](../medicine/speech-neuroprosthesis/)** — decoding speech from the brain
 
 ---
-*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (a prompt to explore it with AI), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

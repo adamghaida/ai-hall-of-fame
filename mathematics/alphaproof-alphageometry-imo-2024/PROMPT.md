@@ -1,12 +1,33 @@
-# 🛠️ How to recreate: AlphaProof & AlphaGeometry 2 — silver-medal math at the IMO
+# 🤖 Explore this with AI: AlphaProof & AlphaGeometry 2 — silver-medal math at the IMO
 
-*This file is a practical starting point for reproducing or exploring the result — code, data, models, and (where one exists) the actual prompt or method. It is not official documentation; always defer to the primary sources.*
+Paste the prompt below into your favorite AI assistant (Claude, ChatGPT, Gemini, or a local model). If your assistant can browse the web, tell it to read the sources first. The point is a clear, honest, grounded explanation of what happened and why it mattered.
 
-Not fully reproducible from open weights — AlphaProof is unreleased. But the pipeline is public in outline: (1) auto-formalize natural-language problems into **Lean** statements with a fine-tuned Gemini; (2) search for a proof term with an AlphaZero-style prover that is rewarded only when Lean type-checks the proof; (3) train on millions of self-generated formal problems. To experiment yourself, install **Lean 4 + Mathlib**, take a past IMO problem, formalize it, and try to close the goal — the same verification standard the AI met.
+> The first time a machine reached medal-level performance at the world's premier mathematics competition.
 
-The 2024 IMO problems (public): https://www.imo-official.org/problems.aspx
+---
 
-## Primary sources & code
+```text
+You are a sharp, honest science explainer. Walk me through a specific, real AI achievement so that I actually understand it, not just the headline.
+
+Topic: AlphaProof & AlphaGeometry 2 — silver-medal math at the IMO
+
+Please cover, in plain language a curious non-expert can follow:
+1. What actually happened, and why this was hard or unsolved before.
+2. How the AI approach worked. Explain the core idea rather than the buzzwords, and where it fits in the wider machine-learning landscape.
+3. Why it mattered. What changed in the field, and what became possible next?
+4. The honest caveats. What did it NOT do? Any disputes, corrections, hype, or limitations I should know about?
+5. What I should read or explore next to go deeper.
+
+Ground your answer in these primary sources (read them if you can, and cite them as you go):
+- DeepMind blog: https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/
+- Nature paper (2025): https://www.nature.com/articles/s41586-025-09833-y
+
+Be concrete, use real numbers where they matter, and if you are unsure about a detail, say so instead of guessing.
+```
+
+---
+
+## Sources
 - [DeepMind blog](https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/)
 - [Nature paper (2025)](https://www.nature.com/articles/s41586-025-09833-y)
 

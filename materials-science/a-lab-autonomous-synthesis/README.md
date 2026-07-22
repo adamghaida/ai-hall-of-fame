@@ -15,4 +15,4 @@ It demonstrated a genuinely self-driving experimental loop for materials — pai
 - [Berkeley Lab](https://newscenter.lbl.gov/2023/04/17/meet-the-autonomous-lab-of-the-future/)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🔬 Materials Science](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🔬 Materials Science](../).*

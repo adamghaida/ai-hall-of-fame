@@ -11,6 +11,7 @@ Where AI first showed it could out-create, not just out-calculate — the resear
 | **[CICERO — human-level play in Diplomacy, negotiation included](./cicero-diplomacy/)** | November 2022 · Science | An AI that had to *talk* its way to victory, blending language and strategy. |
 | **[DeepNash — expert Stratego without any search](./deepnash-stratego/)** | December 2022 · Science | Mastering a game with a game tree 10^175 times larger than Go's. |
 | **[Gran Turismo Sophy — outracing the world's best sim drivers](./gran-turismo-sophy/)** | February 2022 · Nature | A racing AI that beat champion e-sport drivers wheel-to-wheel, cleanly. |
+| **[OpenAI Five — beating the Dota 2 world champions](./openai-five/)** | April 2019 | The first AI to beat reigning world champions at an esport, live on stream. |
 
 ---
-*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (a prompt to explore it with AI), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

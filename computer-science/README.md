@@ -13,4 +13,4 @@ AI rewriting the fundamental algorithms and hardware that run on billions of dev
 - **[AlphaEvolve](../mathematics/alphaevolve-algorithm-discovery/)** — evolutionary algorithm discovery
 
 ---
-*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (a prompt to explore it with AI), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*

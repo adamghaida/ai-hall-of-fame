@@ -15,4 +15,4 @@ It is a landmark clinical proof-of-concept that AI-driven drug discovery can pro
 - [Insilico announcement](https://insilico.com/news/tnrecuxsc1-insilico-announces-nature-medicine-publi)
 
 ---
-*In this folder: **[PROMPT.md](./PROMPT.md)** (how to recreate it) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🩺 Medicine](../).*
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🩺 Medicine](../).*

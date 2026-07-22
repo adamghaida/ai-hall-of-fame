@@ -12,4 +12,4 @@ AI at the controls of some of the most complex physical systems ever built — a
 - **[Kepler-90i](../astronomy/kepler-90i-exoplanet/)** — exoplanet discovery
 
 ---
-*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (how to recreate it), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
+*Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (a prompt to explore it with AI), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
