@@ -6,6 +6,7 @@ Proving theorems, cracking open problems, and discovering algorithms that eluded
 |------|------|-------------|
 | **[A counterexample to the Jacobian conjecture (with Claude Fable 5)](./jacobian-conjecture-counterexample/)** | July 2026 | An 87-year-old conjecture, disproven for n ≥ 3 by an explicit AI-found counterexample. |
 | **[Disproving the Dinitz–Garg–Goemans conjecture (with GPT-5.6 Pro)](./dinitz-garg-goemans-counterexample/)** | July 2026 | A ~30-year-old unsplittable-flow conjecture, disproved by a counterexample found in a chat with GPT-5.6 Pro. |
+| **[Six open Erdős problems solved in five days with GPT-5.6](./erdos-problems-gpt-5.6/)** | July 2026 | One researcher, thirteen attempts, six previously-open Erdős problems closed in under a week with a structured prompting workflow. |
 | **[AlphaProof & AlphaGeometry 2 — silver-medal math at the IMO](./alphaproof-alphageometry-imo-2024/)** | July 2024 · Nature (2025) | The first time a machine reached medal-level performance at the world's premier mathematics competition. |
 | **[Gemini Deep Think — an official IMO gold medal](./gemini-deep-think-imo-2025/)** | July 2025 | One year after silver, an AI hit gold — working end-to-end in natural language. |
 | **[FunSearch — a genuinely new answer to a long-open math problem](./funsearch-cap-set/)** | December 2023 · Nature | Believed to be the first time an LLM produced a verifiable, new discovery on an established open problem. |

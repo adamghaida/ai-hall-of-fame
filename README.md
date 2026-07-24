@@ -14,7 +14,7 @@
 [![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
 ![13 fields](https://shieldcn.dev/badge/13_fields.svg)
-![54 cases](https://shieldcn.dev/badge/54_cases.svg)
+![55 cases](https://shieldcn.dev/badge/55_cases.svg)
 ![every entry cited](https://shieldcn.dev/badge/every_entry_cited.svg)
 ![reproducible](https://shieldcn.dev/badge/reproducible.svg)
 [![PRs welcome](https://shieldcn.dev/badge/PRs_welcome.svg)](./CONTRIBUTING.md)
@@ -51,7 +51,7 @@ The bar for inclusion is high:
 
 | Field | Cases | A highlight |
 |-------|:-----:|-------------|
-| [🧮 Mathematics](./mathematics/) | 11 | AI helped **disprove the 87-year-old Jacobian conjecture**, and won IMO gold |
+| [🧮 Mathematics](./mathematics/) | 12 | AI helped **disprove the 87-year-old Jacobian conjecture**, and won IMO gold |
 | [⚛️ Physics](./physics/) | 2 | AI controlled **real fusion plasma** inside a tokamak reactor |
 | [🧪 Chemistry](./chemistry/) | 4 | AlphaFold's protein folding won a **Nobel Prize** |
 | [🧬 Biology](./biology/) | 4 | Generative AI **designs brand-new proteins** from scratch |
