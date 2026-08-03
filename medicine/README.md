@@ -10,6 +10,7 @@ From reading scans to restoring speech and designing drugs now in human trials.
 | **[Dermatologist-level skin-cancer classification](./skin-cancer-dermatology/)** | 2017 · Nature | A neural net matched 21 board-certified dermatologists at spotting skin cancer from photos. |
 | **[Rentosertib — a generative-AI-designed drug reaches human trials](./insilico-rentosertib/)** | June 2025 · Nature Medicine | The first drug with both an AI-discovered target and AI-designed molecule to post Phase 2 results. |
 | **[An AI reading of a cheap ECG spots a weak heart before symptoms](./ai-ecg-heart-function/)** | January 2019 · Nature Medicine | A 10-second ECG, read by AI, flags a dangerously weak heart that normally takes an ultrasound to find. |
+| **[Two years of a speech brain-computer interface, used at home with nobody from the lab present](./speech-bci-two-years-at-home/)** | June 2026 · Nature Medicine | A man with ALS spoke nearly 2 million words through an AI decoder over almost two years, independently, at home. |
 
 ### Also relevant (full write-up in another field)
 - **[Halicin antibiotic](../chemistry/halicin-antibiotic/)** — AI-discovered antibiotic
