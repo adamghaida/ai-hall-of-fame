@@ -14,7 +14,7 @@
 [![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
 ![13 fields](https://shieldcn.dev/badge/13_fields.svg)
-![62 cases](https://shieldcn.dev/badge/62_cases.svg)
+![63 cases](https://shieldcn.dev/badge/63_cases.svg)
 ![every entry cited](https://shieldcn.dev/badge/every_entry_cited.svg)
 ![reproducible](https://shieldcn.dev/badge/reproducible.svg)
 [![PRs welcome](https://shieldcn.dev/badge/PRs_welcome.svg)](./CONTRIBUTING.md)
@@ -60,7 +60,7 @@ The bar for inclusion is high:
 | [🛡️ Cybersecurity](./cybersecurity/) | 3 | An AI-found attack got a **NIST post-quantum candidate withdrawn** |
 | [🔬 Materials Science](./materials-science/) | 4 | **2.2 million** new crystals discovered in one effort |
 | [🔭 Astronomy](./astronomy/) | 3 | A neural net found a **hidden 8th planet** in Kepler data |
-| [🌍 Climate & Earth Science](./climate-and-earth-science/) | 4 | AI weather models **beat the world's best** supercomputer forecasts |
+| [🌍 Climate & Earth Science](./climate-and-earth-science/) | 5 | AI weather models **beat the world's best** supercomputer forecasts, and now run **operationally** |
 | [🧠 Neuroscience](./neuroscience/) | 3 | The **first complete wiring map** of an adult brain |
 | [♟️ Games & Strategy](./games-and-strategy/) | 8 | "**Move 37**": the moment AI showed genuine creativity |
 | [🤖 Robotics](./robotics/) | 2 | A robot reached **amateur human level** at table tennis |
