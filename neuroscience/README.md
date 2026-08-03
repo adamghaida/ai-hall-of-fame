@@ -10,6 +10,7 @@ Decoding intention directly from the brain — and mapping every neuron in one.
 
 ### Also relevant (full write-up in another field)
 - **[Speech neuroprosthesis](../medicine/speech-neuroprosthesis/)** — decoding speech from the brain
+- **[Two years of at-home speech BCI use](../medicine/speech-bci-two-years-at-home/)** — a speech neuroprosthesis used independently, outside the lab
 
 ---
 *Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (a prompt to explore it with AI), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
