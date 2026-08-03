@@ -14,7 +14,7 @@
 [![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
 ![13 fields](https://shieldcn.dev/badge/13_fields.svg)
-![60 cases](https://shieldcn.dev/badge/60_cases.svg)
+![61 cases](https://shieldcn.dev/badge/61_cases.svg)
 ![every entry cited](https://shieldcn.dev/badge/every_entry_cited.svg)
 ![reproducible](https://shieldcn.dev/badge/reproducible.svg)
 [![PRs welcome](https://shieldcn.dev/badge/PRs_welcome.svg)](./CONTRIBUTING.md)
@@ -59,7 +59,7 @@ The bar for inclusion is high:
 | [💻 Computer Science](./computer-science/) | 3 | An AI-found sorting algorithm ships in the **C++ standard library** |
 | [🛡️ Cybersecurity](./cybersecurity/) | 3 | An AI-found attack got a **NIST post-quantum candidate withdrawn** |
 | [🔬 Materials Science](./materials-science/) | 4 | **2.2 million** new crystals discovered in one effort |
-| [🔭 Astronomy](./astronomy/) | 2 | A neural net found a **hidden 8th planet** in Kepler data |
+| [🔭 Astronomy](./astronomy/) | 3 | A neural net found a **hidden 8th planet** in Kepler data |
 | [🌍 Climate & Earth Science](./climate-and-earth-science/) | 4 | AI weather models **beat the world's best** supercomputer forecasts |
 | [🧠 Neuroscience](./neuroscience/) | 3 | The **first complete wiring map** of an adult brain |
 | [♟️ Games & Strategy](./games-and-strategy/) | 8 | "**Move 37**": the moment AI showed genuine creativity |
