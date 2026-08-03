@@ -6,6 +6,7 @@ AI at the controls of some of the most complex physical systems ever built — a
 |------|------|-------------|
 | **[Controlling fusion plasma inside a real tokamak](./fusion-plasma-control/)** | February 2022 · Nature | Reinforcement learning drove a real nuclear-fusion reactor's magnetic coils on its first try. |
 | **[AI Feynman — rediscovering the laws of physics from data](./ai-feynman-symbolic-regression/)** | April 2020 · Science Advances | An algorithm that re-derived 100 equations from the Feynman Lectures straight from raw data. |
+| **[A neural network measures the non-reciprocal forces in a dusty plasma](./dusty-plasma-nonreciprocal-forces/)** | July 2025 · PNAS | A physics-structured neural network measured the forces between levitated dust grains to R² > 0.99 and found significant discrepancies with two standard theoretical assumptions. |
 
 ### Also relevant (full write-up in another field)
 - **[GNoME](../materials-science/gnome-materials-discovery/)** — new stable materials

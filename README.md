@@ -14,7 +14,7 @@
 [![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
 ![13 fields](https://shieldcn.dev/badge/13_fields.svg)
-![61 cases](https://shieldcn.dev/badge/61_cases.svg)
+![62 cases](https://shieldcn.dev/badge/62_cases.svg)
 ![every entry cited](https://shieldcn.dev/badge/every_entry_cited.svg)
 ![reproducible](https://shieldcn.dev/badge/reproducible.svg)
 [![PRs welcome](https://shieldcn.dev/badge/PRs_welcome.svg)](./CONTRIBUTING.md)
@@ -52,7 +52,7 @@ The bar for inclusion is high:
 | Field | Cases | A highlight |
 |-------|:-----:|-------------|
 | [🧮 Mathematics](./mathematics/) | 15 | AI helped **disprove the 87-year-old Jacobian conjecture**, won **IMO gold**, and reportedly scored a perfect 42/42 |
-| [⚛️ Physics](./physics/) | 2 | AI controlled **real fusion plasma** inside a tokamak reactor |
+| [⚛️ Physics](./physics/) | 3 | AI controlled **real fusion plasma** inside a tokamak reactor |
 | [🧪 Chemistry](./chemistry/) | 4 | AlphaFold's protein folding won a **Nobel Prize** |
 | [🧬 Biology](./biology/) | 4 | Generative AI **designs brand-new proteins** from scratch |
 | [🩺 Medicine](./medicine/) | 6 | AI **restores speech** after paralysis; an AI-designed drug reaches trials |
