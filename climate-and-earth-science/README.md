@@ -8,6 +8,7 @@ AI weather models that beat the supercomputer systems the world has relied on fo
 | **[GenCast — state-of-the-art ensemble weather forecasting](./gencast-ensemble-weather/)** | December 2024 · Nature | A diffusion model that beat the top ensemble forecast on 97% of targets. |
 | **[DGMR — 'nowcasting' the next 90 minutes of rain](./dgmr-nowcasting/)** | September 2021 · Nature | Meteorologists preferred the AI's rain forecasts 89% of the time. |
 | **[NeuralGCM — a hybrid AI-and-physics climate model](./neuralgcm/)** | July 2024 · Nature | Bolt a neural network onto a physics solver and get fast, accurate weather plus decades-long climate runs. |
+| **[AI weather models go operational at national forecasting agencies](./ai-weather-models-operational/)** | December 2025 · NOAA/NCEP | NOAA ran the first hybrid AI-plus-physics ensemble in operations, and an AI model beat the National Hurricane Center's own track forecast at several lead times. |
 
 ---
 *Each case folder contains `README.md` (the discovery + sources), `PROMPT.md` (a prompt to explore it with AI), and `CONTEXT.md` (background & caveats). Back to the [AI Hall of Fame](../README.md).*
