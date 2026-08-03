@@ -4,6 +4,7 @@ Proving theorems, cracking open problems, and discovering algorithms that eluded
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[Ten open problems closed at once, each with a Lean 4 certificate (OpenAI "Astra")](./astra-ten-proofs/)** | August 2026 | Ten decade-plus-open results in math and theoretical CS, every one shipped with a machine-checked Lean proof. |
 | **[A counterexample to the Jacobian conjecture (with Claude Fable 5)](./jacobian-conjecture-counterexample/)** | July 2026 | An 87-year-old conjecture, disproven for n ≥ 3 by an explicit AI-found counterexample. |
 | **[Disproving the Dinitz–Garg–Goemans conjecture (with GPT-5.6 Pro)](./dinitz-garg-goemans-counterexample/)** | July 2026 | A ~30-year-old unsplittable-flow conjecture, disproved by a counterexample found in a chat with GPT-5.6 Pro. |
 | **[Six open Erdős problems solved in five days with GPT-5.6](./erdos-problems-gpt-5.6/)** | July 2026 | One researcher, thirteen attempts, six previously-open Erdős problems closed in under a week with a structured prompting workflow. |
