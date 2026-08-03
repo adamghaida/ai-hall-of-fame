@@ -14,7 +14,7 @@
 [![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
 ![13 fields](https://shieldcn.dev/badge/13_fields.svg)
-![66 cases](https://shieldcn.dev/badge/66_cases.svg)
+![67 cases](https://shieldcn.dev/badge/67_cases.svg)
 ![every entry cited](https://shieldcn.dev/badge/every_entry_cited.svg)
 ![reproducible](https://shieldcn.dev/badge/reproducible.svg)
 [![PRs welcome](https://shieldcn.dev/badge/PRs_welcome.svg)](./CONTRIBUTING.md)
@@ -54,7 +54,7 @@ The bar for inclusion is high:
 | [🧮 Mathematics](./mathematics/) | 15 | AI helped **disprove the 87-year-old Jacobian conjecture**, won **IMO gold**, and reportedly scored a perfect 42/42 |
 | [⚛️ Physics](./physics/) | 3 | AI controlled **real fusion plasma** inside a tokamak reactor |
 | [🧪 Chemistry](./chemistry/) | 4 | AlphaFold's protein folding won a **Nobel Prize** |
-| [🧬 Biology](./biology/) | 6 | Generative AI **designs brand-new proteins** from scratch |
+| [🧬 Biology](./biology/) | 7 | Generative AI **designs brand-new proteins** from scratch |
 | [🩺 Medicine](./medicine/) | 7 | AI **restores speech** after paralysis, at home for two years; an AI-designed drug reaches trials |
 | [💻 Computer Science](./computer-science/) | 3 | An AI-found sorting algorithm ships in the **C++ standard library** |
 | [🛡️ Cybersecurity](./cybersecurity/) | 3 | An AI-found attack got a **NIST post-quantum candidate withdrawn** |

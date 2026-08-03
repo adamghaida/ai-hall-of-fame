@@ -10,6 +10,7 @@ AI didn't just read the language of life — it started writing in it.
 | **[AlphaFold3 — the structure of life's molecules, together](./alphafold3/)** | May 2024 · Nature | Beyond single proteins: predicting how proteins, DNA, RNA, and drug-like molecules actually fit together. |
 | **[AlphaGenome — reading a million bases of DNA at base-pair resolution](./alphagenome/)** | January 2026 · Nature | One model predicts thousands of functional genomic tracks from 1 Mb of DNA, extending variant scoring into the non-coding genome. |
 | **[SynTnpBs — AI-designed compact genome editors that beat the natural enzyme](./ai-designed-genome-editors/)** | July 2026 · Science | An inverse-folding model rewrote a miniature CRISPR-like nuclease; some synthetic versions out-edited the wild type in human cells. |
+| **[AI-redesigned starting points make laboratory evolution work better](./ai-primed-directed-evolution/)** | July 2026 · Nature | Stabilize the enzyme with a neural network first, and directed evolution goes 79-fold further than it does from the natural protein. |
 
 ### Also relevant (full write-up in another field)
 - **[AlphaFold](../chemistry/alphafold-protein-structure/)** — protein structure prediction (Nobel 2024)
