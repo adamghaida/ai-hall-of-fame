@@ -2,7 +2,7 @@
 
 Paste the prompt below into your favorite AI assistant (Claude, ChatGPT, Gemini, or a local model). If your assistant can browse the web, tell it to read the sources first. The point is a clear, honest, grounded explanation of what happened and why it mattered.
 
-> The first drug with both an AI-discovered target and AI-designed molecule to post Phase 2 results.
+> The first drug with both an AI-discovered target and AI-designed molecule to reach late-stage (Phase 3) clinical development.
 
 ---
 
@@ -21,6 +21,9 @@ Please cover, in plain language a curious non-expert can follow:
 Ground your answer in these primary sources (read them if you can, and cite them as you go):
 - Nature Medicine paper: https://www.nature.com/articles/s41591-025-03743-2
 - Insilico announcement: https://insilico.com/news/tnrecuxsc1-insilico-announces-nature-medicine-publi
+- Insilico announces the initiation of the Phase III trial (July 7, 2026): https://insilico.com/news/xmjsn4l091-insilico-initiates-phase-iii-clinical-tr
+- Chemistry World, no AI-designed drug had yet entered a Phase 3 (July 2025): https://www.chemistryworld.com/news/as-ai-designed-drug-looks-to-pass-final-hurdle-will-this-tech-change-drug-discovery-forever/4021894.article
+- ClinicalTrials.gov registry record for the Phase III trial: https://clinicaltrials.gov/study/NCT07687459
 
 Be concrete, use real numbers where they matter, and if you are unsure about a detail, say so instead of guessing.
 ```
@@ -30,6 +33,9 @@ Be concrete, use real numbers where they matter, and if you are unsure about a d
 ## Sources
 - [Nature Medicine paper](https://www.nature.com/articles/s41591-025-03743-2)
 - [Insilico announcement](https://insilico.com/news/tnrecuxsc1-insilico-announces-nature-medicine-publi)
+- [Insilico announces the initiation of the Phase III trial (July 7, 2026)](https://insilico.com/news/xmjsn4l091-insilico-initiates-phase-iii-clinical-tr)
+- [Chemistry World: no AI-designed drug had yet entered a Phase 3 (July 2025)](https://www.chemistryworld.com/news/as-ai-designed-drug-looks-to-pass-final-hurdle-will-this-tech-change-drug-discovery-forever/4021894.article)
+- [ClinicalTrials.gov NCT07687459 — registry record](https://clinicaltrials.gov/study/NCT07687459)
 
 ---
 *Back to **[README.md](./README.md)** · **[CONTEXT.md](./CONTEXT.md)**.*
