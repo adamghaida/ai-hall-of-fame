@@ -7,57 +7,61 @@
 <meta name="description" content="Documented cases of AI systems breaking records, solving open problems, or restoring lost abilities. A timeline of selected moments and 68 sourced entries.">
 <meta property="og:title" content="AI Hall of Fame">
 <meta property="og:description" content="Documented cases of what AI systems have done. Every entry cites its sources.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23fbfaf7'/%3E%3Crect x='4' y='4' width='8' height='8' fill='%231a1a1a'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23ffffff'/%3E%3Crect x='2' y='11' width='3' height='3' fill='%23111418'/%3E%3Crect x='6.5' y='8' width='3' height='6' fill='%23111418'/%3E%3Crect x='11' y='2' width='3' height='12' fill='%231f4fd6'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<aside class="side-nav">
-  <a class="logo" href="./" aria-label="AI Hall of Fame">■</a>
+<header class="top"><div class="wrap">
+  <a class="wordmark" href="./">AI Hall of Fame</a>
   <nav aria-label="Site">
-    <a href="./" aria-current="page">Home</a>
     <a href="#timeline">Timeline</a>
     <a href="explore.html">All cases</a>
     <a href="#fields">Fields</a>
     <a href="#criteria">Criteria</a>
-    <a href="#contribute">Contribute</a>
+    <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a>
   </nav>
-  <div class="side-foot"><a class="btn" href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a></div>
-</aside>
+</div></header>
 
-<main class="content">
-<section id="top">
-  <span class="num">01</span>
+<main class="wrap">
+<div class="head">
   <h1>AI Hall of Fame</h1>
-  <p class="byline" id="byline">Documented cases · every entry cited</p>
+  <p class="metaline"><span id="m-cases">68 documented cases</span><span id="m-fields">13 fields</span><span>every entry cited</span><span id="m-gen"></span></p>
   <p class="lede">Documented cases where an AI system broke a record, solved an open problem, or restored a lost ability. Each entry cites the paper, the code, or the proof certificate, and notes where a result is contested or only a proof of concept.</p>
 
-  <figure class="figure" aria-labelledby="figcap" style="margin-left:0;margin-right:0">
-    <svg id="strip" role="img" aria-label="Every timeline item placed to scale from 1950 to today. Most are in the last two years."></svg>
-    <figcaption class="figcap" id="figcap">
-      <span><b>Figure 1.</b> <span id="figtext">Timeline items placed to scale, 1950 to today. Click a mark to jump to it.</span></span>
-      <span class="k ach"><i></i>documented case</span>
-      <span class="k lau"><i></i>model release</span>
-      <span class="k pri"><i></i>prize</span>
-      <span class="k ori"><i></i>origin</span>
+  <figure class="figure" aria-labelledby="figcap">
+    <div class="plot"><svg id="strip" role="img" aria-label="Every timeline item placed to scale from 1950 to today. Most are in the last two years."></svg></div>
+    <figcaption>
+      <p class="figcap" id="figcap"><b>Figure 1.</b> <span id="figtext">Timeline items placed to scale, 1950 to today. Click a mark to jump to it.</span></p>
+      <div class="legend">
+        <span class="k ach"><i></i>documented case</span>
+        <span class="k lau"><i></i>model release</span>
+        <span class="k pri"><i></i>prize</span>
+        <span class="k ori"><i></i>origin</span>
+      </div>
     </figcaption>
   </figure>
-</section>
+</div>
 
 <section id="timeline">
-  <div class="section-head">
-    <h2><span class="num">02</span>Timeline</h2>
+  <div class="sec-head">
+    <h2>Timeline</h2>
     <p>36 selected items. Rows with a field link have a full entry. Model releases are included for context.</p>
   </div>
-  <div class="rows" id="moments"></div>
+  <p class="tcap"><b>Table 1.</b> Selected moments, 1950 to 2026, in date order.</p>
+  <div class="tbl-wrap"><table class="tbl" id="tl-tbl">
+    <thead><tr><th>Date</th><th>Event</th><th class="hide-sm">Link</th></tr></thead>
+    <tbody id="moments"></tbody>
+  </table></div>
 </section>
 
 <section id="fields">
-  <div class="section-head">
-    <h2><span class="num">03</span>Fields</h2>
+  <div class="sec-head">
+    <h2>Fields</h2>
     <p>The full collection, by field. <a href="explore.html">All cases</a> lists everything with search.</p>
   </div>
+  <p class="tcap"><b>Table 2.</b> Fields and number of documented cases in each.</p>
   <div class="tbl-wrap"><table class="tbl" id="fields-tbl">
     <thead><tr><th>Field</th><th>Cases</th><th class="hide-sm">Scope</th></tr></thead>
     <tbody></tbody>
@@ -65,8 +69,8 @@
 </section>
 
 <section id="criteria">
-  <h2><span class="num">04</span>Criteria</h2>
-  <div class="prose" style="margin-top:14px">
+  <div class="sec-head"><h2>Criteria</h2></div>
+  <div class="prose">
     <p>An entry has to meet four conditions.</p>
     <p><strong>Documented.</strong> Backed by a peer-reviewed paper, an official research release, or credible reporting. Every entry links at least one primary source.</p>
     <p><strong>Concrete.</strong> A specific result: a record broken, an open problem resolved, a first of its kind, or a real deployment. Not a general claim about AI transforming a field.</p>
@@ -77,15 +81,15 @@
 </section>
 
 <section id="contribute">
-  <h2><span class="num">05</span>Contribute</h2>
-  <div class="prose" style="margin-top:14px">
+  <div class="sec-head"><h2>Contribute</h2></div>
+  <div class="prose">
     <p>Entries live as markdown folders in the <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub repository</a>, one folder per case with a record, a context file, and a prompt. This site is generated from those folders. See <a href="https://github.com/adamghaida/ai-hall-of-fame/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a> for the format. To report an error, <a href="https://github.com/adamghaida/ai-hall-of-fame/issues" target="_blank" rel="noopener">open an issue</a>.</p>
   </div>
 </section>
 
 <footer class="foot">
   <span>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Linked papers and trademarks belong to their owners.</span>
-  <span id="gen"></span>
+  <span><a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">Source on GitHub</a></span>
 </footer>
 </main>
 <script src="assets/home.js"></script>

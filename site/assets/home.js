@@ -10,8 +10,9 @@
   const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const $ = id => document.getElementById(id);
 
-  $('byline').textContent = `${db.entries.length} documented cases · ${db.fields.length} fields · every entry cited`;
-  $('gen').textContent = `Data generated ${db.generated}`;
+  $('m-cases').textContent = `${db.entries.length} documented cases`;
+  $('m-fields').textContent = `${db.fields.length} fields`;
+  $('m-gen').textContent = `updated ${db.generated}`;
 
   // ---------------- figure 1: every item placed to scale; marks stack where they collide
   const svg = $('strip');
@@ -55,21 +56,22 @@
   let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(drawStrip, 120); });
   $('figtext').textContent = `All ${items.length} timeline items placed to scale, 1950 to today; ${recent} are from January 2025 or later. Click a mark to jump to it.`;
 
-  // ---------------- timeline rows
+  // ---------------- table 1: the timeline
   let lastYear = null, html = '';
   items.forEach((it, i) => {
     const d = fmt(it.date);
-    if (d.y !== lastYear) { html += `<div class="yr-sep">${d.y}</div>`; lastYear = d.y; }
+    if (d.y !== lastYear) { html += `<tr class="yr"><td colspan="3">${d.y}</td></tr>`; lastYear = d.y; }
     const e = it.entry ? entries[it.entry] : null;
     const day = it.date.endsWith('-01') || it.approx ? '' : ` ${d.day}`;
     const tag = it.kind === 'launch' ? '<span class="tag">release</span>' : it.kind === 'prize' ? '<span class="tag">prize</span>' : it.kind === 'origin' ? '<span class="tag">origin</span>' : '';
     let links = '';
-    if (e) links = `<a href="explore.html?field=${e.field}">${esc(e.fieldName)}</a><a href="${e.url}">Read the entry ↗</a>`;
-    else if (it.source) links = `<a href="${esc(it.source)}" target="_blank" rel="noopener">Source: ${esc(it.source_label || 'link')} ↗</a>`;
-    html += `<article class="row ${it.kind}" id="m-${i}">
-      <div class="row-date">${d.m}${day} ${d.y}</div>
-      <div><h3>${e ? `<a href="${e.url}">${esc(it.title)}</a>` : esc(it.title)}${tag}</h3><p>${esc(it.blurb || (e ? e.hook : ''))}</p><div class="row-links">${links}</div></div>
-    </article>`;
+    if (e) links = `<a href="${e.url}">Entry ↗</a><a href="explore.html?field=${e.field}" style="color:var(--muted)">${esc(e.fieldName)}</a>`;
+    else if (it.source) links = `<a href="${esc(it.source)}" target="_blank" rel="noopener">${esc(it.source_label || 'Source')} ↗</a>`;
+    html += `<tr class="row ${it.kind}" id="m-${i}">
+      <td class="n">${d.m}${day} ${d.y}</td>
+      <td>${e ? `<a class="t" href="${e.url}">${esc(it.title)}</a>` : `<span class="t" style="font-weight:600">${esc(it.title)}</span>`}${tag}<span class="sum">${esc(it.blurb || (e ? e.hook : ''))}</span></td>
+      <td class="lnk hide-sm">${links}</td>
+    </tr>`;
   });
   $('moments').innerHTML = html;
 
