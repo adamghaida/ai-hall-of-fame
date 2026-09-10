@@ -7,61 +7,87 @@
 <meta name="description" content="Documented cases of AI systems breaking records, solving open problems, or restoring lost abilities. A timeline of selected moments and 68 sourced entries.">
 <meta property="og:title" content="AI Hall of Fame">
 <meta property="og:description" content="Documented cases of what AI systems have done. Every entry cites its sources.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230B1E38'/%3E%3Crect x='3' y='3' width='10' height='10' fill='%23C9A24A'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23fbfaf7'/%3E%3Crect x='4' y='4' width='8' height='8' fill='%231a1a1a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
-<body class="blueprint">
-<header class="mast"><div class="wrap">
-  <a class="wordmark" href="./"><span class="plaque" aria-hidden="true"></span>AI Hall of Fame</a>
-  <nav class="nav" aria-label="Site">
-    <a href="./" aria-current="page">Timeline</a>
-    <a href="explore.html">Explore</a>
-    <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a>
+<body>
+<aside class="side-nav">
+  <a class="logo" href="./" aria-label="AI Hall of Fame">■</a>
+  <nav aria-label="Site">
+    <a href="./" aria-current="page">Home</a>
+    <a href="#timeline">Timeline</a>
+    <a href="explore.html">All cases</a>
+    <a href="#fields">Fields</a>
+    <a href="#criteria">Criteria</a>
+    <a href="#contribute">Contribute</a>
   </nav>
-</div></header>
+  <div class="side-foot"><a class="btn" href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a></div>
+</aside>
 
-<main>
-<section class="hero"><div class="wrap">
-  <p class="eyebrow" id="eyebrow">A documented record · every case cited</p>
-  <h1>What AI<br>has <em>done</em>.</h1>
-  <p class="deck">Documented cases where an AI system <strong>broke a record, solved an open problem, or restored a lost ability</strong>. Each entry cites the paper, the code, or the proof certificate.</p>
+<main class="content">
+<section id="top">
+  <span class="num">01</span>
+  <h1>AI Hall of Fame</h1>
+  <p class="byline" id="byline">Documented cases · every entry cited</p>
+  <p class="lede">Documented cases where an AI system broke a record, solved an open problem, or restored a lost ability. Each entry cites the paper, the code, or the proof certificate, and notes where a result is contested or only a proof of concept.</p>
 
-  <figure class="strip" aria-labelledby="strip-cap">
-    <svg id="strip" viewBox="0 0 1000 170" preserveAspectRatio="none" role="img" aria-label="Every moment on the timeline below, placed to scale from 1950 to today. Most of them are in the last two years."></svg>
-    <figcaption class="strip-cap" id="strip-cap">
-      <span>Each mark is one item on the timeline below, placed to scale. Click to jump.</span>
+  <figure class="figure" aria-labelledby="figcap" style="margin-left:0;margin-right:0">
+    <svg id="strip" role="img" aria-label="Every timeline item placed to scale from 1950 to today. Most are in the last two years."></svg>
+    <figcaption class="figcap" id="figcap">
+      <span><b>Figure 1.</b> <span id="figtext">Timeline items placed to scale, 1950 to today. Click a mark to jump to it.</span></span>
       <span class="k ach"><i></i>documented case</span>
       <span class="k lau"><i></i>model release</span>
       <span class="k pri"><i></i>prize</span>
       <span class="k ori"><i></i>origin</span>
     </figcaption>
   </figure>
-</div></section>
+</section>
 
-<section class="tl" id="timeline"><div class="wrap">
-  <div class="tl-head">
-    <h2>Timeline</h2>
-    <p>36 selected items. Filled squares link to a full entry. Rings are model releases, included for context. The rest of the collection is on the <a href="explore.html" style="color:var(--brass-2)">explore page</a>.</p>
+<section id="timeline">
+  <div class="section-head">
+    <h2><span class="num">02</span>Timeline</h2>
+    <p>36 selected items. Rows with a field link have a full entry. Model releases are included for context.</p>
   </div>
-  <div id="moments"></div>
-</div></section>
+  <div class="rows" id="moments"></div>
+</section>
 
-<section class="cta"><div class="wrap cta-grid">
-  <div>
-    <h2>The full<br>collection.</h2>
-    <p id="cta-copy">68 cases across 13 fields. Each has its sources, its caveats, and a prompt for an AI assistant.</p>
-    <a class="btn" href="explore.html">All cases <span aria-hidden="true">→</span></a>
+<section id="fields">
+  <div class="section-head">
+    <h2><span class="num">03</span>Fields</h2>
+    <p>The full collection, by field. <a href="explore.html">All cases</a> lists everything with search.</p>
   </div>
-  <div class="fields" id="fields" aria-label="Fields"></div>
-</div></section>
+  <div class="tbl-wrap"><table class="tbl" id="fields-tbl">
+    <thead><tr><th>Field</th><th>Cases</th><th class="hide-sm">Scope</th></tr></thead>
+    <tbody></tbody>
+  </table></div>
+</section>
+
+<section id="criteria">
+  <h2><span class="num">04</span>Criteria</h2>
+  <div class="prose" style="margin-top:14px">
+    <p>An entry has to meet four conditions.</p>
+    <p><strong>Documented.</strong> Backed by a peer-reviewed paper, an official research release, or credible reporting. Every entry links at least one primary source.</p>
+    <p><strong>Concrete.</strong> A specific result: a record broken, an open problem resolved, a first of its kind, or a real deployment. Not a general claim about AI transforming a field.</p>
+    <p><strong>Notable.</strong> Significant within its field.</p>
+    <p><strong>Honest.</strong> Where a result was contested, corrected, or is only a proof of concept, the entry says so.</p>
+    <p>Unsolved problems are not listed. The Riemann hypothesis and P vs NP have no entry. The Jacobian conjecture was on that list until July 2026, when an AI-assisted counterexample disproved it for n ≥ 3; it now has an entry.</p>
+  </div>
+</section>
+
+<section id="contribute">
+  <h2><span class="num">05</span>Contribute</h2>
+  <div class="prose" style="margin-top:14px">
+    <p>Entries live as markdown folders in the <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub repository</a>, one folder per case with a record, a context file, and a prompt. This site is generated from those folders. See <a href="https://github.com/adamghaida/ai-hall-of-fame/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a> for the format. To report an error, <a href="https://github.com/adamghaida/ai-hall-of-fame/issues" target="_blank" rel="noopener">open an issue</a>.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Linked papers and trademarks belong to their owners.</span>
+  <span id="gen"></span>
+</footer>
 </main>
-
-<footer class="foot"><div class="wrap">
-  <div>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · If a fact is wrong or out of date, <a href="https://github.com/adamghaida/ai-hall-of-fame/issues" target="_blank" rel="noopener">open an issue</a>.</div>
-  <div><a href="https://github.com/adamghaida/ai-hall-of-fame/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute a case</a></div>
-</div></footer>
 <script src="assets/home.js"></script>
 </body>
 </html>

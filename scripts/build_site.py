@@ -232,6 +232,8 @@ def split_readme(t):
             continue
         body.append(line)
     body_md = "\n".join(body).strip()
+    # the Sources section is rendered separately as a table on the page
+    body_md = re.split(r"^##\s+Sources.*$", body_md, maxsplit=1, flags=re.M)[0].strip()
     body_md = re.sub(r"\n-{3,}\s*$", "", body_md)
     sources = []
     sm = re.search(r"^##\s+Sources.*?$", t, re.M)
@@ -344,10 +346,12 @@ def main():
         prompt_html = md_to_html(e["_prompt"], link_fn) if e["_prompt"] else "<p>No prompt file.</p>"
         more = [x for x in by_field[e["field"]] if x["id"] != e["id"]][:4]
         more_html = "".join(
-            '<a class="more-card" href="%s%s"><span class="more-when">%s</span><span class="more-title">%s</span></a>'
-            % (rel_root, x["url"], html.escape(x["when"]), html.escape(x["title"])) for x in more)
-        src_html = "".join('<li><a href="%s" target="_blank" rel="noopener">%s</a></li>'
-                           % (html.escape(s["url"], quote=True), html.escape(s["label"])) for s in e["sources"])
+            '<li><span class="w">%s</span><a href="%s%s">%s</a></li>'
+            % (html.escape(x["when"].split("·")[0].strip()), rel_root, x["url"], html.escape(x["title"])) for x in more)
+        src_html = "".join('<tr><td><a href="%s" target="_blank" rel="noopener">%s</a></td><td class="dom">%s</td></tr>'
+                           % (html.escape(s["url"], quote=True), html.escape(s["label"]),
+                              html.escape(re.sub(r"^https?://(www\.)?", "", s["url"]).split("/")[0]))
+                           for s in e["sources"])
         page = template
         for k, v in {
             "title": html.escape(e["title"]),
