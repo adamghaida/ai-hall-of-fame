@@ -49,7 +49,7 @@ The bar for inclusion is high:
 
 ## 🌐 The website
 
-The collection is also a website: **[adamghaida.github.io/ai-hall-of-fame](https://adamghaida.github.io/ai-hall-of-fame/)**. The home page is a timeline of 36 selected moments, drawn to scale. The explore page lists every case, filterable by field. Each case has its own page with the entry, the caveats, and the prompt.
+The collection is also a website: **[hof.adam.cm](https://hof.adam.cm/)**. The home page is a timeline of 36 selected moments, drawn to scale. The explore page lists every case, filterable by field. Each case has its own page with the entry, the caveats, and the prompt.
 
 The site is generated from the entry folders by [`scripts/build_site.py`](./scripts/build_site.py) and deployed by GitHub Actions on every push to `main`, so adding an entry here adds it to the site. The timeline itself is hand-curated in [`site/data/timeline.json`](./site/data/timeline.json). To preview locally:
 
