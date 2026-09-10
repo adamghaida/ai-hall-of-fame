@@ -53,39 +53,70 @@
     svg.innerHTML = s;
   }
   drawStrip();
-  let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(drawStrip, 120); });
+  let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { drawStrip(); if (typeof renderTable === 'function') renderTable(); }, 120); });
   $('figtext').textContent = `All ${items.length} timeline items placed to scale, 1950 to today; ${recent} are from January 2025 or later. Click a mark to jump to it.`;
 
-  // ---------------- table 1: the timeline
-  let lastYear = null, html = '';
-  items.forEach((it, i) => {
-    const d = fmt(it.date);
-    if (d.y !== lastYear) { html += `<tr class="yr"><td colspan="3">${d.y}</td></tr>`; lastYear = d.y; }
+  // ---------------- table 1: the timeline, with filters
+  const params = new URLSearchParams(location.search);
+  const f = { kind: params.get('type') || '', field: params.get('field') || '', q: params.get('q') || '' };
+  const tlFields = [...new Set(items.filter(it => it.entry && entries[it.entry]).map(it => entries[it.entry].field))]
+    .map(slug => db.fields.find(x => x.slug === slug)).filter(Boolean).sort((a, b) => a.name.localeCompare(b.name));
+  $('tl-field').innerHTML += tlFields.map(x => `<option value="${x.slug}">${esc(x.name)}</option>`).join('');
+  $('tl-kind').value = f.kind; $('tl-field').value = f.field; $('tl-q').value = f.q;
+
+  function matches(it) {
     const e = it.entry ? entries[it.entry] : null;
-    const day = it.date.endsWith('-01') || it.approx ? '' : ` ${d.day}`;
-    const tag = it.kind === 'launch' ? '<span class="tag">release</span>' : it.kind === 'prize' ? '<span class="tag">prize</span>' : it.kind === 'origin' ? '<span class="tag">origin</span>' : '';
-    let links = '';
-    if (e) links = `<a href="${e.url}">Entry ↗</a><a href="explore.html?field=${e.field}" style="color:var(--muted)">${esc(e.fieldName)}</a>`;
-    else if (it.source) links = `<a href="${esc(it.source)}" target="_blank" rel="noopener">${esc(it.source_label || 'Source')} ↗</a>`;
-    html += `<tr class="row ${it.kind}" id="m-${i}">
-      <td class="n">${d.m}${day} ${d.y}</td>
-      <td>${e ? `<a class="t" href="${e.url}">${esc(it.title)}</a>` : `<span class="t" style="font-weight:600">${esc(it.title)}</span>`}${tag}<span class="sum">${esc(it.blurb || (e ? e.hook : ''))}</span></td>
-      <td class="lnk hide-sm">${links}</td>
-    </tr>`;
-  });
-  $('moments').innerHTML = html;
+    if (f.kind && it.kind !== f.kind) return false;
+    if (f.field && (!e || e.field !== f.field)) return false;
+    const needle = f.q.trim().toLowerCase();
+    if (needle && !(it.title + ' ' + (it.blurb || '') + ' ' + (e ? e.fieldName : '')).toLowerCase().includes(needle)) return false;
+    return true;
+  }
+  let io;
+  function renderTable() {
+    let lastYear = null, html = '', shown = 0;
+    items.forEach((it, i) => {
+      const ok = matches(it);
+      const mk = svg.querySelectorAll('.m')[i];
+      if (mk) mk.classList.toggle('dim', !ok);
+      if (!ok) return;
+      shown++;
+      const d = fmt(it.date);
+      if (d.y !== lastYear) { html += `<tr class="yr"><td colspan="3">${d.y}</td></tr>`; lastYear = d.y; }
+      const e = it.entry ? entries[it.entry] : null;
+      const day = it.date.endsWith('-01') || it.approx ? '' : ` ${d.day}`;
+      const tag = it.kind === 'launch' ? '<span class="tag">release</span>' : it.kind === 'prize' ? '<span class="tag">prize</span>' : it.kind === 'origin' ? '<span class="tag">origin</span>' : '';
+      let links = '';
+      if (e) links = `<a href="${e.url}">Entry ↗</a><a href="explore.html?field=${e.field}" style="color:var(--muted)">${esc(e.fieldName)}</a>`;
+      else if (it.source) links = `<a href="${esc(it.source)}" target="_blank" rel="noopener">${esc(it.source_label || 'Source')} ↗</a>`;
+      html += `<tr class="row ${it.kind}" id="m-${i}">
+        <td class="n">${d.m}${day} ${d.y}</td>
+        <td>${e ? `<a class="t" href="${e.url}">${esc(it.title)}</a>` : `<span class="t" style="font-weight:600">${esc(it.title)}</span>`}${tag}<span class="sum">${esc(it.blurb || (e ? e.hook : ''))}</span></td>
+        <td class="lnk hide-sm">${links}</td>
+      </tr>`;
+    });
+    $('moments').innerHTML = html || `<tr><td colspan="3" class="empty">Nothing matches. Clear a filter or try fewer words.</td></tr>`;
+    const filtered = f.kind || f.field || f.q.trim();
+    $('tl-cap').textContent = filtered ? `${shown} of ${items.length} selected moments shown, in date order.` : 'Selected moments, 1950 to 2026, in date order.';
+    const u = new URL(location);
+    for (const [k, v] of [['type', f.kind], ['field', f.field], ['q', f.q.trim()]]) v ? u.searchParams.set(k, v) : u.searchParams.delete(k);
+    history.replaceState(null, '', u);
+    if (io) io.disconnect();
+    if ('IntersectionObserver' in window) {
+      io = new IntersectionObserver(es => es.forEach(en => {
+        const mk = svg.querySelectorAll('.m')[+en.target.id.slice(2)];
+        mk && mk.classList.toggle('active', en.isIntersecting);
+      }), { rootMargin: '-10% 0px -10% 0px' });
+      document.querySelectorAll('.row').forEach(r => io.observe(r));
+    }
+  }
+  renderTable();
+  $('tl-kind').addEventListener('change', ev => { f.kind = ev.target.value; renderTable(); });
+  $('tl-field').addEventListener('change', ev => { f.field = ev.target.value; renderTable(); });
+  $('tl-q').addEventListener('input', ev => { f.q = ev.target.value; renderTable(); });
 
   // ---------------- fields table
   document.querySelector('#fields-tbl tbody').innerHTML = db.fields.map(f =>
     `<tr><td><a class="t" href="explore.html?field=${f.slug}">${esc(f.name)}</a></td><td class="n">${f.count}</td><td class="hide-sm" style="color:var(--text-2)">${esc(f.description)}</td></tr>`).join('');
 
-  // ---------------- highlight the figure mark for rows in view
-  const rows = [...document.querySelectorAll('.row')];
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver(es => es.forEach(en => {
-      const mk = svg.querySelectorAll('.m')[+en.target.id.slice(2)];
-      mk && mk.classList.toggle('active', en.isIntersecting);
-    }), { rootMargin: '-10% 0px -10% 0px' });
-    rows.forEach(r => io.observe(r));
-  }
 })();
