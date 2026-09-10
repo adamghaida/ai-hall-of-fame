@@ -4,6 +4,7 @@ Proving theorems, cracking open problems, and discovering algorithms that eluded
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[Finite-time blowup for the (forced) Navier–Stokes equations — an AI claim on a Millennium Prize Problem](./navier-stokes-finite-time-blowup/)** | September 2026 | OpenAI says ~10,000 agents proved a smooth fluid can blow up under a smooth force, with a Lean certificate. Forced only, unverified outside OpenAI, and a credit dispute with the mathematicians who got there first on Euler. |
 | **[Ten open problems closed at once, each with a Lean 4 certificate (OpenAI "Astra")](./astra-ten-proofs/)** | August 2026 | Ten decade-plus-open results in math and theoretical CS, every one shipped with a machine-checked Lean proof. |
 | **[IMO 2026 — the first perfect 42/42 AI scores](./imo-2026-perfect-score/)** | July 2026 | Two years after silver and one after gold, AI systems reported flawless papers at the IMO. Only 7 of 666 humans did the same. |
 | **[A counterexample to the Jacobian conjecture (with Claude Fable 5)](./jacobian-conjecture-counterexample/)** | July 2026 | An 87-year-old conjecture, disproven for n ≥ 3 by an explicit AI-found counterexample. |

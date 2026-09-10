@@ -14,7 +14,7 @@
 [![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
 ![13 fields](https://shieldcn.dev/badge/13_fields.svg)
-![67 cases](https://shieldcn.dev/badge/67_cases.svg)
+![68 cases](https://shieldcn.dev/badge/68_cases.svg)
 ![every entry cited](https://shieldcn.dev/badge/every_entry_cited.svg)
 ![reproducible](https://shieldcn.dev/badge/reproducible.svg)
 [![PRs welcome](https://shieldcn.dev/badge/PRs_welcome.svg)](./CONTRIBUTING.md)
@@ -47,11 +47,23 @@ The bar for inclusion is high:
 
 ---
 
+## 🌐 The website
+
+The collection is also a website: **[adamghaida.github.io/ai-hall-of-fame](https://adamghaida.github.io/ai-hall-of-fame/)**. The home page is a to-scale timeline of the moments a newcomer needs; the explore page has every case, searchable and filterable by field; each case gets its own page with the record, the caveats, and the prompt.
+
+The site is generated from the entry folders by [`scripts/build_site.py`](./scripts/build_site.py) and deployed by GitHub Actions on every push to `main`, so adding an entry here adds it to the site. The timeline itself is hand-curated in [`site/data/timeline.json`](./site/data/timeline.json). To preview locally:
+
+```bash
+python3 scripts/build_site.py && python3 -m http.server 8765 --directory site
+```
+
+---
+
 ## 🗂️ Explore by field
 
 | Field | Cases | A highlight |
 |-------|:-----:|-------------|
-| [🧮 Mathematics](./mathematics/) | 15 | AI helped **disprove the 87-year-old Jacobian conjecture**, won **IMO gold**, and reportedly scored a perfect 42/42 |
+| [🧮 Mathematics](./mathematics/) | 16 | An AI-claimed **Millennium Prize blowup proof**, the **Jacobian conjecture** disproved, and a perfect 42/42 at the IMO |
 | [⚛️ Physics](./physics/) | 3 | AI controlled **real fusion plasma** inside a tokamak reactor |
 | [🧪 Chemistry](./chemistry/) | 4 | AlphaFold's protein folding won a **Nobel Prize** |
 | [🧬 Biology](./biology/) | 7 | Generative AI **designs brand-new proteins** from scratch |
@@ -69,21 +81,22 @@ The bar for inclusion is high:
 
 ---
 
-## ⭐ Eleven to start with
+## ⭐ Twelve to start with
 
 New here? These are among the most consequential entries in the collection:
 
-1. **[Jacobian conjecture counterexample](./mathematics/jacobian-conjecture-counterexample/)**: an AI-assisted result disproving an 87-year-old conjecture (n ≥ 3), July 2026.
-2. **[AlphaFold](./chemistry/alphafold-protein-structure/)**: solved a 50-year grand challenge and won the 2024 Nobel Prize in Chemistry.
-3. **[Fusion plasma control](./physics/fusion-plasma-control/)**: reinforcement learning drove a *real* nuclear-fusion reactor.
-4. **[FunSearch](./mathematics/funsearch-cap-set/)**: first LLM to produce a verifiable, genuinely new answer to an open math problem.
-5. **[AlphaProof](./mathematics/alphaproof-alphageometry-imo-2024/)**: silver-medal mathematics at the International Math Olympiad.
-6. **[AlphaDev sorting](./computer-science/alphadev-sorting/)**: an AI-discovered algorithm merged into the C++ standard library.
-7. **[Speech neuroprosthesis](./medicine/speech-neuroprosthesis/)**: conversational-speed communication restored after paralysis.
-8. **[GNoME](./materials-science/gnome-materials-discovery/)**: 380,000 newly predicted stable materials.
-9. **[GraphCast](./climate-and-earth-science/graphcast-weather/)**: 10-day global weather forecasts in under a minute.
-10. **[AlphaGo "Move 37"](./games-and-strategy/alphago-move-37/)**: the move that showed AI could be creative.
-11. **[RFdiffusion](./biology/rfdiffusion-protein-design/)**: generative design of proteins that don't exist in nature.
+1. **[Navier–Stokes finite-time blowup](./mathematics/navier-stokes-finite-time-blowup/)**: an AI-claimed proof on a Millennium Prize Problem (forced case, Lean-checked, not yet independently verified), September 2026.
+2. **[Jacobian conjecture counterexample](./mathematics/jacobian-conjecture-counterexample/)**: an AI-assisted result disproving an 87-year-old conjecture (n ≥ 3), July 2026.
+3. **[AlphaFold](./chemistry/alphafold-protein-structure/)**: solved a 50-year grand challenge and won the 2024 Nobel Prize in Chemistry.
+4. **[Fusion plasma control](./physics/fusion-plasma-control/)**: reinforcement learning drove a *real* nuclear-fusion reactor.
+5. **[FunSearch](./mathematics/funsearch-cap-set/)**: first LLM to produce a verifiable, genuinely new answer to an open math problem.
+6. **[AlphaProof](./mathematics/alphaproof-alphageometry-imo-2024/)**: silver-medal mathematics at the International Math Olympiad.
+7. **[AlphaDev sorting](./computer-science/alphadev-sorting/)**: an AI-discovered algorithm merged into the C++ standard library.
+8. **[Speech neuroprosthesis](./medicine/speech-neuroprosthesis/)**: conversational-speed communication restored after paralysis.
+9. **[GNoME](./materials-science/gnome-materials-discovery/)**: 380,000 newly predicted stable materials.
+10. **[GraphCast](./climate-and-earth-science/graphcast-weather/)**: 10-day global weather forecasts in under a minute.
+11. **[AlphaGo "Move 37"](./games-and-strategy/alphago-move-37/)**: the move that showed AI could be creative.
+12. **[RFdiffusion](./biology/rfdiffusion-protein-design/)**: generative design of proteins that don't exist in nature.
 
 ---
 

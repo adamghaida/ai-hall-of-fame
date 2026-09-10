@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explore every case — AI Hall of Fame</title>
+<meta name="description" content="Search and filter every documented case in the AI Hall of Fame by field, date and keyword.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230B1E38'/%3E%3Crect x='3' y='3' width='10' height='10' fill='%23C9A24A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="mast"><div class="wrap">
+  <a class="wordmark" href="./"><span class="plaque" aria-hidden="true"></span>AI Hall of Fame</a>
+  <nav class="nav" aria-label="Site">
+    <a href="./">Timeline</a>
+    <a href="explore.html" aria-current="page">Explore</a>
+    <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <div class="print-head">
+    <p class="eyebrow">The full collection</p>
+    <h1 id="h1">Every case.</h1>
+    <p id="lede">Every entry here is documented, concrete and notable, and says so honestly when a result is contested or only a proof of concept.</p>
+  </div>
+
+  <div class="controls" role="search">
+    <label class="search"><span class="sr">Search cases</span><input id="q" type="search" placeholder="Search titles and summaries…" autocomplete="off"></label>
+    <div class="chips" id="chips" aria-label="Filter by field"></div>
+    <label><span class="sr">Sort</span><select class="sort" id="sort"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="az">A – Z</option></select></label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · If a fact here is wrong or out of date, <a href="https://github.com/adamghaida/ai-hall-of-fame/issues" target="_blank" rel="noopener">open an issue</a>.</div>
+  <div><a href="https://github.com/adamghaida/ai-hall-of-fame/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute a case</a></div>
+</div></footer>
+<script>
+(async function () {
+  const db = await fetch('data/entries.json').then(r => r.json());
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const strip = s => s.replace(/[*_`]/g, '');
+  const params = new URLSearchParams(location.search);
+  let field = params.get('field') || '';
+  let q = params.get('q') || '';
+  let sort = 'new';
+  const $ = id => document.getElementById(id);
+  $('q').value = q;
+
+  function chips() {
+    const all = [{ slug: '', emoji: '', name: 'All', count: db.entries.length }, ...db.fields];
+    $('chips').innerHTML = all.map(f =>
+      `<button type="button" data-f="${f.slug}" aria-pressed="${f.slug === field}">${f.emoji ? f.emoji + ' ' : ''}${esc(f.name)} <span style="opacity:.6">${f.count}</span></button>`).join('');
+  }
+  function render() {
+    const needle = q.trim().toLowerCase();
+    let list = db.entries.filter(e => (!field || e.field === field) &&
+      (!needle || (e.title + ' ' + e.hook + ' ' + e.fieldName + ' ' + e.when).toLowerCase().includes(needle)));
+    if (sort === 'old') list = list.slice().sort((a, b) => a.date.localeCompare(b.date));
+    else if (sort === 'az') list = list.slice().sort((a, b) => a.title.localeCompare(b.title));
+    const f = db.fields.find(x => x.slug === field);
+    $('h1').textContent = f ? f.name + '.' : 'Every case.';
+    $('lede').textContent = f ? f.description : 'Every entry here is documented, concrete and notable, and says so honestly when a result is contested or only a proof of concept.';
+    $('count').textContent = `${list.length} case${list.length === 1 ? '' : 's'}${field || needle ? ' shown' : ''}`;
+    $('grid').innerHTML = list.length ? list.map(e => `<a class="card" href="${e.url}">
+      <span class="ey"><span>${e.emoji} ${esc(e.fieldName)}</span><span>${esc(e.when.split('·')[0].trim())}</span></span>
+      <h3>${esc(e.title)}</h3><p>${esc(strip(e.hook))}</p>
+      <span class="src">${e.sources.length} source${e.sources.length === 1 ? '' : 's'} · read the record ↗</span></a>`).join('')
+      : `<p class="empty">Nothing matches. Try fewer words, or clear the field filter.</p>`;
+    const u = new URL(location); field ? u.searchParams.set('field', field) : u.searchParams.delete('field');
+    q ? u.searchParams.set('q', q) : u.searchParams.delete('q'); history.replaceState(null, '', u);
+    document.title = (f ? f.name + ' — ' : 'Explore every case — ') + 'AI Hall of Fame';
+  }
+  chips(); render();
+  $('chips').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; field = b.dataset.f; chips(); render(); });
+  $('q').addEventListener('input', ev => { q = ev.target.value; render(); });
+  $('sort').addEventListener('change', ev => { sort = ev.target.value; render(); });
+})();
+</script>
+</body>
+</html>

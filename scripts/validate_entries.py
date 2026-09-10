@@ -27,7 +27,7 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-IGNORE_TOP = {".git", ".github", "scripts"}
+IGNORE_TOP = {".git", ".github", ".claude", "scripts", "site"}
 REQUIRED_FILES = ["README.md", "PROMPT.md", "CONTEXT.md"]
 README_MARKERS = ["**Field:**", "**When:**", "## What happened", "## Why it matters", "## Sources"]
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")

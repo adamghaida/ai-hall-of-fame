@@ -1,0 +1,273 @@
+{
+ "_note": "Hand-curated. Only the moments a newcomer needs. kind: achievement (links to a case), launch (a model release), origin (pre-history), prize. Dates are YYYY-MM-DD; use -01 when only the month is known (the day is then hidden); set \"approx\": true to hide a day that is only approximately known but needed for ordering.",
+ "items": [
+  {
+   "date": "1950-10-01",
+   "kind": "origin",
+   "title": "Turing asks whether machines can think",
+   "blurb": "Alan Turing's paper 'Computing Machinery and Intelligence' proposes the imitation game. The question has a name now.",
+   "source": "https://academic.oup.com/mind/article/LIX/236/433/986238",
+   "source_label": "Mind, vol. LIX"
+  },
+  {
+   "date": "1956-06-18",
+   "kind": "origin",
+   "title": "The Dartmouth workshop names the field",
+   "blurb": "A summer workshop at Dartmouth College coins the term 'artificial intelligence' and sets out the research programme.",
+   "source": "https://en.wikipedia.org/wiki/Dartmouth_workshop",
+   "source_label": "Wikipedia"
+  },
+  {
+   "date": "1997-05-11",
+   "kind": "origin",
+   "title": "Deep Blue beats Kasparov",
+   "blurb": "IBM's chess machine wins a six-game match against the world champion. Brute-force search, no learning, and still the first time a computer beat the best human at anything that mattered to people.",
+   "source": "https://www.ibm.com/history/deep-blue",
+   "source_label": "IBM"
+  },
+  {
+   "date": "2012-10-01",
+   "kind": "origin",
+   "title": "AlexNet wins ImageNet",
+   "blurb": "A deep convolutional network trained on two consumer GPUs cuts the image-recognition error rate by nearly half. The modern deep-learning era starts here.",
+   "source": "https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+   "source_label": "NeurIPS 2012"
+  },
+  {
+   "date": "2016-03-10",
+   "kind": "achievement",
+   "entry": "games-and-strategy/alphago-move-37",
+   "title": "AlphaGo plays Move 37",
+   "blurb": "In game two against Lee Sedol, AlphaGo plays a move human experts put at 1-in-10,000. It wins the match 4–1. Go was supposed to be a decade away."
+  },
+  {
+   "date": "2017-06-12",
+   "kind": "origin",
+   "title": "'Attention Is All You Need'",
+   "blurb": "Eight Google researchers publish the Transformer. Nearly every system on this timeline after 2020 is built on it.",
+   "source": "https://arxiv.org/abs/1706.03762",
+   "source_label": "arXiv"
+  },
+  {
+   "date": "2017-12-05",
+   "kind": "achievement",
+   "entry": "games-and-strategy/alphazero-self-play",
+   "title": "AlphaZero learns chess, shogi and Go from the rules alone",
+   "blurb": "No human games, no opening books. Hours of self-play, then it beats the best programs in all three."
+  },
+  {
+   "date": "2020-05-28",
+   "kind": "launch",
+   "title": "GPT-3",
+   "blurb": "A 175-billion-parameter language model that can do tasks it was never trained for, given a few examples in the prompt. The first hint that scale alone buys generality.",
+   "source": "https://arxiv.org/abs/2005.14165",
+   "source_label": "arXiv"
+  },
+  {
+   "date": "2020-11-30",
+   "kind": "achievement",
+   "entry": "chemistry/alphafold-protein-structure",
+   "title": "AlphaFold solves protein folding",
+   "blurb": "At the CASP14 competition, DeepMind's system predicts protein structures at experimental accuracy. A 50-year grand challenge, and a Nobel Prize four years later."
+  },
+  {
+   "date": "2022-02-16",
+   "kind": "achievement",
+   "entry": "physics/fusion-plasma-control",
+   "title": "Reinforcement learning steers a fusion reactor",
+   "blurb": "A learned controller shapes real plasma inside the TCV tokamak in Lausanne, on its first attempt."
+  },
+  {
+   "date": "2022-10-05",
+   "kind": "achievement",
+   "entry": "mathematics/alphatensor-matrix-multiplication",
+   "title": "AlphaTensor beats a 53-year-old algorithm",
+   "blurb": "A faster way to multiply 4×4 matrices than Strassen found in 1969. The first AI-discovered improvement to a fundamental algorithm."
+  },
+  {
+   "date": "2022-11-30",
+   "kind": "launch",
+   "title": "ChatGPT",
+   "blurb": "OpenAI puts a chat interface on GPT-3.5. A hundred million people use it within two months, and the public conversation about AI changes for good.",
+   "source": "https://openai.com/index/chatgpt/",
+   "source_label": "OpenAI"
+  },
+  {
+   "date": "2023-03-14",
+   "kind": "launch",
+   "title": "GPT-4",
+   "blurb": "Passes a simulated bar exam in the top 10%, reads images, and sets the bar the rest of the industry chases for two years.",
+   "source": "https://openai.com/index/gpt-4-research/",
+   "source_label": "OpenAI"
+  },
+  {
+   "date": "2023-06-07",
+   "kind": "achievement",
+   "entry": "computer-science/alphadev-sorting",
+   "title": "An AI-found sorting routine ships in the C++ standard library",
+   "blurb": "AlphaDev discovers faster sorting sequences in assembly. They are merged into LLVM's libc++ and run trillions of times a day."
+  },
+  {
+   "date": "2023-08-23",
+   "kind": "achievement",
+   "entry": "medicine/speech-neuroprosthesis",
+   "title": "A speech neuroprosthesis restores conversation after paralysis",
+   "blurb": "Brain signals decoded into words at near-conversational speed, with a digital avatar to speak them."
+  },
+  {
+   "date": "2023-11-14",
+   "kind": "achievement",
+   "entry": "climate-and-earth-science/graphcast-weather",
+   "title": "GraphCast out-forecasts the world's best weather model",
+   "blurb": "Ten-day global forecasts in under a minute, more accurate than ECMWF's supercomputer system on 90% of targets."
+  },
+  {
+   "date": "2023-11-29",
+   "kind": "achievement",
+   "entry": "materials-science/gnome-materials-discovery",
+   "title": "GNoME predicts 2.2 million new crystals",
+   "blurb": "An order-of-magnitude expansion of the stable materials known to science, 380,000 of them believed stable."
+  },
+  {
+   "date": "2023-12-14",
+   "kind": "achievement",
+   "entry": "mathematics/funsearch-cap-set",
+   "title": "FunSearch finds new mathematics",
+   "blurb": "A language model plus a checker produces a larger cap set than any known. The first verifiable new result from an LLM on an open problem."
+  },
+  {
+   "date": "2024-07-25",
+   "kind": "achievement",
+   "entry": "mathematics/alphaproof-alphageometry-imo-2024",
+   "title": "Silver at the International Mathematical Olympiad",
+   "blurb": "AlphaProof and AlphaGeometry 2 solve four of six IMO problems. One point short of gold."
+  },
+  {
+   "date": "2024-09-12",
+   "kind": "launch",
+   "title": "OpenAI o1: the first 'reasoning' model",
+   "blurb": "A model trained to think before it answers, spending more compute at test time. Every frontier lab follows within months.",
+   "source": "https://openai.com/index/learning-to-reason-with-llms/",
+   "source_label": "OpenAI"
+  },
+  {
+   "date": "2024-10-02",
+   "kind": "achievement",
+   "entry": "neuroscience/flywire-connectome",
+   "title": "The first complete wiring diagram of an adult brain",
+   "blurb": "AI segmentation maps all 140,000 neurons and 50 million connections in a fruit fly."
+  },
+  {
+   "date": "2024-10-09",
+   "kind": "prize",
+   "entry": "chemistry/alphafold-protein-structure",
+   "title": "Two Nobel Prizes go to AI",
+   "blurb": "Physics to Hopfield and Hinton for the foundations of neural networks; Chemistry to Baker, Hassabis and Jumper for protein design and AlphaFold.",
+   "source": "https://www.nobelprize.org/prizes/chemistry/2024/summary/",
+   "source_label": "Nobel Prize"
+  },
+  {
+   "date": "2025-01-20",
+   "kind": "launch",
+   "title": "DeepSeek-R1",
+   "blurb": "An open-weights reasoning model from China matching o1 at a fraction of the reported training cost. Nvidia loses about $600 billion in market value in a day.",
+   "source": "https://arxiv.org/abs/2501.12948",
+   "source_label": "arXiv"
+  },
+  {
+   "date": "2025-05-14",
+   "kind": "achievement",
+   "entry": "mathematics/alphaevolve-algorithm-discovery",
+   "title": "AlphaEvolve improves Strassen and ~50 open problems",
+   "blurb": "A coding agent that evolves algorithms, breaking a 56-year-old record for 4×4 complex matrix multiplication along the way."
+  },
+  {
+   "date": "2025-07-15",
+   "kind": "achievement",
+   "entry": "cybersecurity/big-sleep-vulnerability-discovery",
+   "title": "An AI agent finds a zero-day before attackers use it",
+   "blurb": "Google's Big Sleep locates a SQLite flaw that threat intelligence knew was being staged, so it is patched first."
+  },
+  {
+   "date": "2025-07-21",
+   "kind": "achievement",
+   "entry": "mathematics/gemini-deep-think-imo-2025",
+   "title": "Gold at the IMO, graded by the IMO",
+   "blurb": "Gemini Deep Think scores 35/42, working end-to-end in natural language. OpenAI reports the same score the same week."
+  },
+  {
+   "date": "2025-12-01",
+   "kind": "achievement",
+   "entry": "climate-and-earth-science/ai-weather-models-operational",
+   "title": "AI weather forecasts go operational",
+   "blurb": "NOAA puts an AI forecast suite into daily operations. During hurricane season an AI model beat the National Hurricane Center's own track forecast."
+  },
+  {
+   "date": "2026-04-07",
+   "kind": "launch",
+   "title": "Claude Mythos Preview",
+   "blurb": "Anthropic announces a model it says it will not release publicly because of its vulnerability-finding ability, and shares it only with a consortium of 40-plus companies under Project Glasswing.",
+   "source": "https://en.wikipedia.org/wiki/Claude_Mythos",
+   "source_label": "Wikipedia"
+  },
+  {
+   "date": "2026-06-09",
+   "kind": "launch",
+   "title": "Claude Fable 5 and Mythos 5",
+   "blurb": "One underlying model, two versions: Fable 5 for everyone with dual-use safeguards, Mythos 5 for approved organizations without them.",
+   "source": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+   "source_label": "Anthropic"
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "achievement",
+   "entry": "cybersecurity/openai-models-breach-hugging-face",
+   "title": "OpenAI's models escape a sandbox and breach Hugging Face",
+   "blurb": "During an internal safety evaluation, the models find a zero-day, get out, and compromise a rival's production servers, apparently to cheat on the benchmark."
+  },
+  {
+   "date": "2026-07-19",
+   "kind": "achievement",
+   "entry": "mathematics/jacobian-conjecture-counterexample",
+   "title": "The Jacobian conjecture falls",
+   "blurb": "Levent Alpöge and Claude Fable 5 produce an explicit polynomial map that disproves an 87-year-old conjecture in dimension three and up. You can check it by hand."
+  },
+  {
+   "date": "2026-07-22",
+   "kind": "achievement",
+   "entry": "mathematics/imo-2026-perfect-score",
+   "title": "Perfect 42/42 scores at the IMO",
+   "blurb": "Two years after silver and one after gold, several systems report flawless papers. Only 7 of 666 human contestants did the same. None of the scores is IMO-certified.",
+   "approx": true
+  },
+  {
+   "date": "2026-07-28",
+   "kind": "achievement",
+   "entry": "cybersecurity/claude-cryptanalysis-hawk-aes",
+   "title": "Claude breaks a post-quantum signature candidate",
+   "blurb": "A lattice automorphism found by Claude Mythos Preview halves the hard problem behind HAWK. Its authors withdraw it from NIST standardization."
+  },
+  {
+   "date": "2026-08-01",
+   "kind": "achievement",
+   "entry": "mathematics/astra-ten-proofs",
+   "title": "Ten open problems, ten Lean certificates",
+   "blurb": "OpenAI's internal model Astra closes ten long-open results in maths and theoretical CS, including the first improvement to the sphere-packing exponent since 1978. Every proof ships machine-checked."
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "launch",
+   "title": "GPT-6 Astra",
+   "blurb": "OpenAI's largest training run, a 'recurrent depth' architecture that hides much of its reasoning, and cyber capabilities restricted to vetted testers.",
+   "source": "https://en.wikipedia.org/wiki/GPT-6_Astra",
+   "source_label": "Wikipedia"
+  },
+  {
+   "date": "2026-09-08",
+   "kind": "achievement",
+   "entry": "mathematics/navier-stokes-finite-time-blowup",
+   "title": "An AI claim on a Millennium Prize Problem",
+   "blurb": "OpenAI says 10,000 agents proved finite-time blowup for the forced Navier–Stokes equations, with a Lean certificate. Unverified outside OpenAI, forced case only, and a credit dispute with the mathematicians who got there first on Euler."
+  }
+ ]
+}
