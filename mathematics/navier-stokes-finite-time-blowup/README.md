@@ -1,0 +1,36 @@
+# Finite-time blowup for the (forced) Navier–Stokes equations: an AI claim on a Millennium Prize Problem
+
+**Field:** 🧮 Mathematics  ·  **When:** September 2026
+
+> OpenAI reports that an internal model, run as about 10,000 agents for 88 hours, proved that a smooth fluid at rest can develop a singularity in finite time under a smooth external force. It published a 166-page manuscript and a Lean formalization and is not claiming the $1 million prize. No one outside OpenAI has verified the proof. Tristan Buckmaster and Levent Alpöge, who proved the corresponding result for the Euler equations three weeks earlier, dispute how independent OpenAI's work was.
+
+## What happened
+The **Navier–Stokes existence and smoothness problem** is one of the seven Millennium Prize Problems posed by the Clay Mathematics Institute in 2000. In Charles Fefferman's official statement it comes in four flavours: prove that smooth, finite-energy solutions of the 3D incompressible Navier–Stokes equations always exist forever (**A** on ℝ³, **B** on the torus 𝕋³), *or* exhibit a smooth initial state that breaks down in finite time (**C** on ℝ³, **D** on 𝕋³). Statements C and D **permit a smooth external forcing term**; A and B do not.
+
+On **September 8, 2026**, OpenAI published *On the Navier–Stokes Millennium Prize Problem*: a 166-page manuscript titled *Finite Time Blowup for Navier–Stokes*, a companion Euler result, and a public Lean 4 formalization of both in [`openai/NavierStokesAndEuler`](https://github.com/openai/NavierStokesAndEuler). The claim: an initially smooth, finite-energy fluid at rest, driven by a smooth force, develops a **finite-time singularity** (velocities become infinite) at a fixed time, on both ℝ³ and 𝕋³. That is the forced version of statements **C and D**. The construction is axisymmetric, a "spinning top" that grows thinner and shorter until it becomes singular near the origin, with total kinetic energy staying finite throughout.
+
+OpenAI's account of how it was produced: an unreleased internal model, described as "significantly more capable than GPT-6 Astra", ran as roughly **10,000 coordinating agents**, partly orchestrated through Codex, from **September 1 to September 5**. The Navier–Stokes run alone took **88 hours**, about **2.7 million messages** and roughly **130 billion output tokens**, with the Lean formalization taking a further **17 hours**. Estimates of the compute bill run into the millions of dollars. The company said it would **not claim the Clay prize**.
+
+NYU's **Tristan Buckmaster** and Anthropic's **Levent Alpöge** (a personal collaboration, not a company project) had spent about a year on a programme opened by **Diego Córdoba and Luis Martínez-Zoroa**: forced blowup constructions, first for rough forcing, then smooth. On **August 15** they obtained finite-time blowup with smooth forcing for the 2D Boussinesq system and the **3D incompressible Euler equations** (Navier–Stokes without viscosity), verified it in Lean on **August 22**, and posted three preprints with Lean certificates on **September 7**, one day before OpenAI. They used Claude, Codex and GPT-5.6 Sol throughout. Terence Tao called the work "a remarkable achievement" and noted that forced Navier–Stokes itself was, as of that day, still open.
+
+Buckmaster then published a [four-page statement](https://cims.nyu.edu/~tristanb/statement.pdf) describing calls with OpenAI's Sébastien Bubeck on September 6, in which he says he was told the model had solved the forced problem with "very little human input" (which he says turned out not to be true), that the first prompt had been sent only days earlier after news of their progress reached OpenAI, and that he was offered two publication arrangements, one of which required removing Alpöge, an Anthropic employee, from authorship. He declined both. OpenAI's response: "We did not use their prompts or proofs to prompt our models or direct our agents", while acknowledging that "we cannot rule out that de-identified data derived from their usage of our products helped improve our models."
+
+## Why it matters
+If it holds up, it is the first time an AI system has produced a proof of a statement in the Clay Institute's own formulation of a Millennium Prize Problem, and only the second Millennium problem to be touched at all since Perelman's proof of the Poincaré conjecture. Both teams published Lean proofs, so the logical soundness of each argument can be checked by running a build.
+
+Three things it does **not** settle. First, the result is for the **forced** equations. Statements C and D allow that, but most fluid dynamicists regard the unforced problem (whether the equations break down on their own) as the real question, and that remains open. Second, **nobody outside OpenAI has verified it yet**. Lean checks that the proof proves the Lean statement; humans still have to confirm the statement says what mathematicians mean, and the Clay Institute's president Martin Bridson said its review would be "deliberately unhurried" and "absolutely rigorous"; the Institute still lists the problem as unsolved. Third, the credit dispute is unresolved. Tao has also written that closing famous problems by brute compute, without the surrounding understanding, is of "far less intrinsic significance to mathematics". See **[CONTEXT.md](./CONTEXT.md)**.
+
+## Sources — the record of the discovery
+- [OpenAI — "On the Navier–Stokes Millennium Prize Problem" (announcement, write-up, manuscript)](https://openai.com/index/navier-stokes-solution/)
+- [Lean 4 certificates for the Navier–Stokes and Euler results (GitHub)](https://github.com/openai/NavierStokesAndEuler)
+- [Terence Tao — on the Buckmaster–Alpöge blowup results and what they leave open](https://terrytao.wordpress.com/2026/09/07/finite-time-blowup-with-smooth-forcing-term-for-the-incompressible-porous-medium-boussinesq-and-incompressible-euler-equations/)
+- [Tristan Buckmaster — public statement (PDF)](https://cims.nyu.edu/~tristanb/statement.pdf)
+- [Quanta Magazine — "AI Has Solved One of Math's $1 Million Millennium Prize Problems"](https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/)
+- [Nature — "OpenAI claims huge maths breakthrough on a famed 'Millennium Problem'"](https://www.nature.com/articles/d41586-026-02842-5)
+- [Scientific American — "OpenAI claims blockbuster math breakthrough amid swirl of controversy"](https://www.scientificamerican.com/article/openai-claims-blockbuster-math-breakthrough-amid-swirl-of-controversy/)
+- [Fortune — the Buckmaster accusations and Tao's comments](https://fortune.com/2026/09/08/openai-says-it-cracked-navier-stokes-math-grand-challenge-buckmaster-accusation-cheating-intimidation-tao-lament/)
+- [Clay Mathematics Institute — the official problem statement](https://www.claymath.org/millennium/navier-stokes-equation/)
+- [Wikipedia — Navier–Stokes existence and smoothness (tracks the 2026 claims)](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_existence_and_smoothness)
+
+---
+*In this folder: **[PROMPT.md](./PROMPT.md)** (a prompt to explore it with AI, including how to check the Lean certificate) · **[CONTEXT.md](./CONTEXT.md)** (background & caveats). Part of the [AI Hall of Fame](../../README.md) → [🧮 Mathematics](../).*
