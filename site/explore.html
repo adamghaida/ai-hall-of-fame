@@ -5,45 +5,42 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>All cases — AI Hall of Fame</title>
 <meta name="description" content="Every entry in the AI Hall of Fame, filterable by field and searchable by keyword.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23fbfaf7'/%3E%3Crect x='4' y='4' width='8' height='8' fill='%231a1a1a'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23ffffff'/%3E%3Crect x='2' y='11' width='3' height='3' fill='%23111418'/%3E%3Crect x='6.5' y='8' width='3' height='6' fill='%23111418'/%3E%3Crect x='11' y='2' width='3' height='12' fill='%231f4fd6'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<aside class="side-nav">
-  <a class="logo" href="./" aria-label="AI Hall of Fame">■</a>
+<header class="top"><div class="wrap">
+  <a class="wordmark" href="./">AI Hall of Fame</a>
   <nav aria-label="Site">
-    <a href="./">Home</a>
     <a href="./#timeline">Timeline</a>
     <a href="explore.html" aria-current="page">All cases</a>
     <a href="./#fields">Fields</a>
     <a href="./#criteria">Criteria</a>
-    <a href="./#contribute">Contribute</a>
+    <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a>
   </nav>
-  <div class="side-foot"><a class="btn" href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a></div>
-</aside>
+</div></header>
 
-<main class="content">
-<section>
-  <span class="num">01</span>
+<main class="wrap">
+<div class="head">
   <h1 id="h1">All cases</h1>
   <p class="lede" id="lede">Every entry cites a primary source. Contested results and proofs of concept are labelled as such.</p>
-
-  <div class="controls" role="search">
-    <label class="field">Search<input id="q" type="search" placeholder="Title or summary" autocomplete="off"></label>
-    <label class="field">Field<select id="field"></select></label>
-    <label class="field">Sort<select id="sort"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="az">A to Z</option></select></label>
-  </div>
-  <p class="count" id="count"></p>
-  <div class="tbl-wrap"><table class="tbl">
-    <thead><tr><th>Date</th><th>Case</th><th class="hide-sm">Field</th><th class="hide-sm">Sources</th></tr></thead>
-    <tbody id="tbody"></tbody>
-  </table></div>
-  <p class="empty" id="empty" hidden>Nothing matches. Try fewer words, or set the field to All.</p>
-</section>
+</div>
+<div class="controls" role="search">
+  <label class="field">Search<input id="q" type="search" placeholder="Title or summary" autocomplete="off"></label>
+  <label class="field">Field<select id="field"></select></label>
+  <label class="field">Sort<select id="sort"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="az">A to Z</option></select></label>
+</div>
+<p class="tcap"><b>Table 1.</b> <span id="count"></span></p>
+<div class="tbl-wrap"><table class="tbl">
+  <thead><tr><th>Date</th><th>Case</th><th class="hide-sm">Field</th><th class="hide-sm">Sources</th></tr></thead>
+  <tbody id="tbody"></tbody>
+</table></div>
+<p class="empty" id="empty" hidden>Nothing matches. Try fewer words, or set the field to All.</p>
 <footer class="foot">
   <span>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. If a fact is wrong or out of date, <a href="https://github.com/adamghaida/ai-hall-of-fame/issues" target="_blank" rel="noopener">open an issue</a>.</span>
+  <span><a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">Source on GitHub</a></span>
 </footer>
 </main>
 <script>
@@ -66,7 +63,7 @@
     const f = db.fields.find(x => x.slug === field);
     $('h1').textContent = f ? f.name : 'All cases';
     $('lede').textContent = f ? f.description : 'Every entry cites a primary source. Contested results and proofs of concept are labelled as such.';
-    $('count').textContent = `${list.length} of ${db.entries.length} cases`;
+    $('count').textContent = `${list.length} of ${db.entries.length} cases${f ? ', ' + f.name : ''}${needle ? ', matching "' + q.trim() + '"' : ''}.`;
     $('tbody').innerHTML = list.map(e => `<tr>
       <td class="n">${esc(e.when.split('·')[0].trim())}</td>
       <td><a class="t" href="${e.url}">${esc(e.title)}</a><span class="sum">${esc(strip(e.hook))}</span></td>

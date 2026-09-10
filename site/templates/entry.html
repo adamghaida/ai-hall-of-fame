@@ -7,59 +7,66 @@
 <meta name="description" content="{{hook_plain}}">
 <meta property="og:title" content="{{title_attr}}">
 <meta property="og:description" content="{{hook_plain}}">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23fbfaf7'/%3E%3Crect x='4' y='4' width='8' height='8' fill='%231a1a1a'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23ffffff'/%3E%3Crect x='2' y='11' width='3' height='3' fill='%23111418'/%3E%3Crect x='6.5' y='8' width='3' height='6' fill='%23111418'/%3E%3Crect x='11' y='2' width='3' height='12' fill='%231f4fd6'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{root}}assets/site.css">
 </head>
 <body>
-<aside class="side-nav">
-  <a class="logo" href="{{root}}" aria-label="AI Hall of Fame">■</a>
+<header class="top"><div class="wrap">
+  <a class="wordmark" href="{{root}}">AI Hall of Fame</a>
   <nav aria-label="Site">
-    <a href="{{root}}">Home</a>
+    <a href="{{root}}#timeline">Timeline</a>
     <a href="{{root}}explore.html">All cases</a>
-    <a href="{{root}}explore.html?field={{field}}">{{field_name}}</a>
+    <a href="{{root}}explore.html?field={{field}}" aria-current="page">{{field_name}}</a>
+    <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a>
   </nav>
-  <nav class="sub" aria-label="On this page">
-    <a href="#record">01 Record</a>
-    <a href="#context">02 Context</a>
-    <a href="#prompt">03 Prompt</a>
-    <a href="#sources">04 Sources</a>
-  </nav>
-  <div class="side-foot"><a class="btn" href="{{repo_dir}}" target="_blank" rel="noopener">View on GitHub</a></div>
-</aside>
+</div></header>
 
-<main class="content">
-  <p class="crumbs"><a href="{{root}}explore.html">All cases</a><span>/</span><a href="{{root}}explore.html?field={{field}}">{{field_name}}</a></p>
-  <h1 class="entry-title">{{title}}</h1>
-  <p class="meta">{{field_name}} · {{when}}</p>
-  <p class="hook">{{hook}}</p>
-
-  <div class="entry-sections">
+<main class="wrap">
+<div class="entry-grid">
+  <article>
+    <div class="head">
+      <p class="crumbs"><a href="{{root}}explore.html">All cases</a><span>/</span><a href="{{root}}explore.html?field={{field}}">{{field_name}}</a></p>
+      <h1 class="entry-title">{{title}}</h1>
+      <p class="metaline"><span>{{field_name}}</span><span>{{when}}</span><span><a href="{{repo_dir}}" target="_blank" rel="noopener">Source folder</a></span></p>
+      <p class="hook">{{hook}}</p>
+    </div>
     <section id="record">
-      <h2><span class="num">01</span>Record</h2>
-      <div class="prose" style="margin-top:12px">{{body}}</div>
+      <div class="sec-head"><h2>Record</h2><p>What happened and why it matters.</p></div>
+      <div class="prose">{{body}}</div>
     </section>
     <section id="context">
-      <h2><span class="num">02</span>Context and caveats</h2>
-      <div class="prose" style="margin-top:12px">{{context}}</div>
+      <div class="sec-head"><h2>Context and caveats</h2><p>Background, the people involved, and limits of the result.</p></div>
+      <div class="prose">{{context}}</div>
     </section>
     <section id="prompt">
-      <h2><span class="num">03</span>Prompt</h2>
-      <div class="prose" id="prompt-prose" style="margin-top:12px">{{prompt}}</div>
+      <div class="sec-head"><h2>Prompt</h2><p>Paste into an AI assistant to have it explain the case from the sources.</p></div>
+      <div class="prose" id="prompt-prose">{{prompt}}</div>
     </section>
     <section id="sources">
-      <h2><span class="num">04</span>Sources</h2>
-      <div class="tbl-wrap" style="margin-top:14px"><table class="tbl src-tbl"><tbody>{{sources}}</tbody></table></div>
+      <div class="sec-head"><h2>Sources</h2></div>
+      <div class="tbl-wrap"><table class="tbl src-tbl"><tbody>{{sources}}</tbody></table></div>
       <p style="font-size:13px;color:var(--muted);margin:14px 0 0">Wrong or out of date? <a href="https://github.com/adamghaida/ai-hall-of-fame/issues/new/choose" target="_blank" rel="noopener">Report a correction</a> or <a href="{{repo_dir}}" target="_blank" rel="noopener">edit the entry on GitHub</a>.</p>
     </section>
     <section id="more">
-      <h2><span class="num">05</span>More in {{field_name}}</h2>
-      <ul class="more-list" style="margin-top:12px">{{more}}</ul>
+      <div class="sec-head"><h2>More in {{field_name}}</h2></div>
+      <ul class="more-list">{{more}}</ul>
       <p style="font-size:13px;margin:12px 0 0"><a href="{{root}}explore.html?field={{field}}">All {{field_name}} cases</a></p>
     </section>
-  </div>
-  <footer class="foot"><span>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</span></footer>
+  </article>
+  <aside class="toc" aria-label="On this page">
+    <h4>On this page</h4>
+    <ol>
+      <li><a href="#record">Record</a></li>
+      <li><a href="#context">Context and caveats</a></li>
+      <li><a href="#prompt">Prompt</a></li>
+      <li><a href="#sources">Sources</a></li>
+      <li><a href="#more">More in {{field_name}}</a></li>
+    </ol>
+  </aside>
+</div>
+<footer class="foot"><span>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</span><span><a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">Source on GitHub</a></span></footer>
 </main>
 <script>
 (function(){
@@ -68,7 +75,7 @@
     b.addEventListener('click',function(){navigator.clipboard.writeText(pre.querySelector('code').textContent).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)})});
     pre.appendChild(b);
   });
-  var links=[].slice.call(document.querySelectorAll('.side-nav .sub a'));
+  var links=[].slice.call(document.querySelectorAll('.toc a'));
   var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){links.forEach(function(a){a.getAttribute('href')==='#'+en.target.id?a.setAttribute('aria-current','true'):a.removeAttribute('aria-current')})}})},{rootMargin:'-15% 0px -75% 0px'});
