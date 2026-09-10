@@ -49,8 +49,8 @@
     const recent = items.filter(it => it.date >= since).length;
     const xs = x(since);
     s += `<path class="brace" d="M${xs} ${AX + 34} v6 H${xNow} v-6"/>`;
-    const label = W < 700 ? `${recent} of ${items.length} since Jan 2025` : `${recent} of ${items.length} items on this timeline are from January 2025 or later`;
-    s += `<text class="callout" x="${xNow}" y="${AX + 58}" text-anchor="end"><tspan class="n">${label.split(' since')[0]}</tspan> since${label.split(' since')[1]}</text>`;
+    const rest = W < 700 ? ' since Jan 2025' : ' items on this timeline are from January 2025 or later';
+    s += `<text class="callout" x="${xNow}" y="${AX + 58}" text-anchor="end"><tspan class="n">${recent} of ${items.length}</tspan>${rest}</text>`;
     svg.innerHTML = s;
   }
   drawStrip();
