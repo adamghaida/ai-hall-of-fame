@@ -49,7 +49,7 @@ The bar for inclusion is high:
 
 ## 🌐 The website
 
-The collection is also a website: **[adamghaida.github.io/ai-hall-of-fame](https://adamghaida.github.io/ai-hall-of-fame/)**. The home page is a to-scale timeline of the moments a newcomer needs; the explore page has every case, searchable and filterable by field; each case gets its own page with the record, the caveats, and the prompt.
+The collection is also a website: **[adamghaida.github.io/ai-hall-of-fame](https://adamghaida.github.io/ai-hall-of-fame/)**. The home page is a timeline of 36 selected moments, drawn to scale. The explore page lists every case, filterable by field. Each case has its own page with the entry, the caveats, and the prompt.
 
 The site is generated from the entry folders by [`scripts/build_site.py`](./scripts/build_site.py) and deployed by GitHub Actions on every push to `main`, so adding an entry here adds it to the site. The timeline itself is hand-curated in [`site/data/timeline.json`](./site/data/timeline.json). To preview locally:
 
@@ -63,7 +63,7 @@ python3 scripts/build_site.py && python3 -m http.server 8765 --directory site
 
 | Field | Cases | A highlight |
 |-------|:-----:|-------------|
-| [🧮 Mathematics](./mathematics/) | 16 | An AI-claimed **Millennium Prize blowup proof**, the **Jacobian conjecture** disproved, and a perfect 42/42 at the IMO |
+| [🧮 Mathematics](./mathematics/) | 16 | A **Millennium Prize blowup proof** (forced case, unverified), the **Jacobian conjecture** disproved, and a perfect 42/42 at the IMO |
 | [⚛️ Physics](./physics/) | 3 | AI controlled **real fusion plasma** inside a tokamak reactor |
 | [🧪 Chemistry](./chemistry/) | 4 | AlphaFold's protein folding won a **Nobel Prize** |
 | [🧬 Biology](./biology/) | 7 | Generative AI **designs brand-new proteins** from scratch |
@@ -85,7 +85,7 @@ python3 scripts/build_site.py && python3 -m http.server 8765 --directory site
 
 New here? These are among the most consequential entries in the collection:
 
-1. **[Navier–Stokes finite-time blowup](./mathematics/navier-stokes-finite-time-blowup/)**: an AI-claimed proof on a Millennium Prize Problem (forced case, Lean-checked, not yet independently verified), September 2026.
+1. **[Navier–Stokes finite-time blowup](./mathematics/navier-stokes-finite-time-blowup/)**: an AI-produced proof for the forced case of a Millennium Prize Problem, Lean-checked, not yet independently verified, September 2026.
 2. **[Jacobian conjecture counterexample](./mathematics/jacobian-conjecture-counterexample/)**: an AI-assisted result disproving an 87-year-old conjecture (n ≥ 3), July 2026.
 3. **[AlphaFold](./chemistry/alphafold-protein-structure/)**: solved a 50-year grand challenge and won the 2024 Nobel Prize in Chemistry.
 4. **[Fusion plasma control](./physics/fusion-plasma-control/)**: reinforcement learning drove a *real* nuclear-fusion reactor.

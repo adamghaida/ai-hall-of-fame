@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Explore every case — AI Hall of Fame</title>
-<meta name="description" content="Search and filter every documented case in the AI Hall of Fame by field, date and keyword.">
+<title>All cases — AI Hall of Fame</title>
+<meta name="description" content="Every entry in the AI Hall of Fame, filterable by field and searchable by keyword.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230B1E38'/%3E%3Crect x='3' y='3' width='10' height='10' fill='%23C9A24A'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
@@ -23,8 +23,8 @@
 <main class="wrap">
   <div class="print-head">
     <p class="eyebrow">The full collection</p>
-    <h1 id="h1">Every case.</h1>
-    <p id="lede">Every entry here is documented, concrete and notable, and says so honestly when a result is contested or only a proof of concept.</p>
+    <h1 id="h1">All cases.</h1>
+    <p id="lede">Every entry cites a primary source. Contested results and proofs of concept are labelled as such.</p>
   </div>
 
   <div class="controls" role="search">
@@ -37,7 +37,7 @@
 </main>
 
 <footer class="foot"><div class="wrap">
-  <div>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · If a fact here is wrong or out of date, <a href="https://github.com/adamghaida/ai-hall-of-fame/issues" target="_blank" rel="noopener">open an issue</a>.</div>
+  <div>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · If a fact is wrong or out of date, <a href="https://github.com/adamghaida/ai-hall-of-fame/issues" target="_blank" rel="noopener">open an issue</a>.</div>
   <div><a href="https://github.com/adamghaida/ai-hall-of-fame/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute a case</a></div>
 </div></footer>
 <script>
@@ -64,17 +64,17 @@
     if (sort === 'old') list = list.slice().sort((a, b) => a.date.localeCompare(b.date));
     else if (sort === 'az') list = list.slice().sort((a, b) => a.title.localeCompare(b.title));
     const f = db.fields.find(x => x.slug === field);
-    $('h1').textContent = f ? f.name + '.' : 'Every case.';
-    $('lede').textContent = f ? f.description : 'Every entry here is documented, concrete and notable, and says so honestly when a result is contested or only a proof of concept.';
+    $('h1').textContent = f ? f.name + '.' : 'All cases.';
+    $('lede').textContent = f ? f.description : 'Every entry cites a primary source. Contested results and proofs of concept are labelled as such.';
     $('count').textContent = `${list.length} case${list.length === 1 ? '' : 's'}${field || needle ? ' shown' : ''}`;
     $('grid').innerHTML = list.length ? list.map(e => `<a class="card" href="${e.url}">
       <span class="ey"><span>${e.emoji} ${esc(e.fieldName)}</span><span>${esc(e.when.split('·')[0].trim())}</span></span>
       <h3>${esc(e.title)}</h3><p>${esc(strip(e.hook))}</p>
-      <span class="src">${e.sources.length} source${e.sources.length === 1 ? '' : 's'} · read the record ↗</span></a>`).join('')
+      <span class="src">${e.sources.length} source${e.sources.length === 1 ? '' : 's'} · read the entry ↗</span></a>`).join('')
       : `<p class="empty">Nothing matches. Try fewer words, or clear the field filter.</p>`;
     const u = new URL(location); field ? u.searchParams.set('field', field) : u.searchParams.delete('field');
     q ? u.searchParams.set('q', q) : u.searchParams.delete('q'); history.replaceState(null, '', u);
-    document.title = (f ? f.name + ' — ' : 'Explore every case — ') + 'AI Hall of Fame';
+    document.title = (f ? f.name + ' — ' : 'All cases — ') + 'AI Hall of Fame';
   }
   chips(); render();
   $('chips').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; field = b.dataset.f; chips(); render(); });

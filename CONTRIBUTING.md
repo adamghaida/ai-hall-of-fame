@@ -31,7 +31,7 @@ Each case is a **folder** inside a field, containing **exactly these three files
 3. Add a row for your entry to the field's index `README.md` table (**every entry must be linked from its field index** — the validator enforces this).
 4. If the achievement spans multiple fields, put the **full folder in the most fitting field** and add a cross-reference row ("Also relevant") in the other field's index.
 5. Update the counts/badges in the root [README.md](./README.md) if needed.
-6. The website rebuilds itself from the entry folders on merge. If the case is one of the handful a newcomer must know, also add it to the curated timeline in [`site/data/timeline.json`](./site/data/timeline.json).
+6. The website rebuilds itself from the entry folders on merge. If it belongs among the few dozen items on the home-page timeline, also add it to the curated timeline in [`site/data/timeline.json`](./site/data/timeline.json).
 
 ## Rules (enforced by CI)
 

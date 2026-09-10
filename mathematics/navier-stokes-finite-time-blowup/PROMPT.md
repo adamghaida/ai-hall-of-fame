@@ -2,7 +2,7 @@
 
 Paste the prompt below into your favorite AI assistant (Claude, ChatGPT, Gemini, or a local model). If your assistant can browse the web, tell it to read the sources first. The point is a clear, honest, grounded explanation of what happened and why it mattered.
 
-> OpenAI says an internal model proved that a smooth fluid at rest can blow up in finite time under a smooth external force, and shipped a Lean certificate. Mathematicians got there first on the Euler equations. Nobody outside OpenAI has verified the Navier–Stokes proof yet.
+> OpenAI reports that an internal model proved finite-time blowup for the forced Navier–Stokes equations and published a Lean formalization. Buckmaster and Alpöge proved the Euler case first. No one outside OpenAI has verified the Navier–Stokes proof.
 
 ---
 
@@ -29,9 +29,9 @@ Ground your answer in these primary sources (read them if you can, and cite them
 Be concrete, use real numbers where they matter, and if you are unsure about a detail, say so instead of guessing. Do not say the Millennium problem is "solved" without stating which of the four statements is addressed and that forcing is involved.
 ```
 
-## Bonus: check the certificate, not the press release
+## Check the certificate
 
-The proof object is public. Ask a code-capable agent (or do it yourself) to build it:
+The Lean project is public. Ask a code-capable agent (or do it yourself) to build it:
 
 ```
 Clone https://github.com/openai/NavierStokesAndEuler and, following its README, run `lake build`.
@@ -45,7 +45,7 @@ Then open the top-level theorem for the Navier–Stokes result and, in plain lan
 Report the build result verbatim. Do not summarize the mathematics as "Navier–Stokes solved".
 ```
 
-A successful build tells you the formal statement is proved. It does not tell you the formal statement is the one the Clay Institute wrote, and that is the part still under human review.
+A successful build shows the formal statement is proved. Whether the formal statement matches the Clay Institute's is a separate question, still under human review.
 
 ---
 

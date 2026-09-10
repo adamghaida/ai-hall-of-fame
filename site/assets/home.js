@@ -49,7 +49,7 @@
     const recent = items.filter(it => it.date >= since).length;
     const xs = x(since);
     s += `<path class="brace" d="M${xs} ${AX + 34} v6 H${xNow} v-6"/>`;
-    const label = W < 700 ? `${recent} of ${items.length} since Jan 2025` : `${recent} of ${items.length} moments on this timeline happened since January 2025`;
+    const label = W < 700 ? `${recent} of ${items.length} since Jan 2025` : `${recent} of ${items.length} items on this timeline are from January 2025 or later`;
     s += `<text class="callout" x="${xNow}" y="${AX + 58}" text-anchor="end"><tspan class="n">${label.split(' since')[0]}</tspan> since${label.split(' since')[1]}</text>`;
     svg.innerHTML = s;
   }
@@ -66,7 +66,7 @@
     const blurb = it.blurb || (e ? e.hook : '');
     const day = it.date.endsWith('-01') || it.approx ? '' : ` ${d.day}`;
     let meta = '';
-    if (e) meta += `<a class="chip" href="explore.html?field=${e.field}">${e.emoji} ${esc(e.fieldName)}</a><a class="go" href="${e.url}">Read the record ↗</a>`;
+    if (e) meta += `<a class="chip" href="explore.html?field=${e.field}">${e.emoji} ${esc(e.fieldName)}</a><a class="go" href="${e.url}">Read the entry ↗</a>`;
     else if (it.source) meta += `<a class="go" href="${esc(it.source)}" target="_blank" rel="noopener">Source: ${esc(it.source_label || 'link')} ↗</a>`;
     html += `<article class="moment ${it.kind}" id="m-${i}">
       <div class="rail"><span class="mark" aria-hidden="true"></span></div>
@@ -81,7 +81,7 @@
   document.getElementById('fields').innerHTML = db.fields.map(f =>
     `<a href="explore.html?field=${f.slug}"><span class="fn">${f.emoji} ${esc(f.name)}</span><span class="fc">${f.count} case${f.count === 1 ? '' : 's'}</span></a>`).join('');
   document.getElementById('cta-copy').textContent =
-    `All ${db.entries.length} cases across ${db.fields.length} fields, each with its primary sources, the honest caveats, and a prompt you can paste into an AI assistant to have it explain the discovery to you.`;
+    `${db.entries.length} cases across ${db.fields.length} fields. Each has its sources, its caveats, and a prompt for an AI assistant.`;
 
   // ---------------- motion: reveal + strip highlight
   const moments = [...root.querySelectorAll('.moment')];
