@@ -1,0 +1,35 @@
+# 📚 Context: Google's global flood forecasting in ungauged basins
+
+**The problem.** Riverine flood forecasting needs two things: a weather forecast and a hydrological model that turns rain and snowmelt into river discharge for a specific catchment. Traditional hydrological models are calibrated per basin against a streamflow gauge. Where there is no gauge, there is no calibration, and forecasts degrade badly. The Nature paper cites nearly 1.8 billion people exposed to flood risk and notes that upgrading early-warning systems to developed-world standards could save roughly 23,000 lives a year. Prediction in ungauged basins is a long-recognised open problem in hydrology.
+
+**The lineage.** Google's flood alerting predates the paper: by its own account a 2019 expansion increased coverage roughly twelvefold and sent about 800,000 alerts, Flood Hub launched in 2022 in 20 countries (15 of them in Africa), and coverage reached 80 countries in 2023. On the research side, earlier work by Frederik Kratzert, Daniel Klotz, Grey Nearing and colleagues had shown that a single LSTM trained across many catchments can outperform individually calibrated conceptual models, including in held-out basins. The NeuralHydrology open-source library grew out of that work and is the research implementation behind this paper.
+
+**The paper.** Nearing et al. (Nature 627, 20 March 2024; preprint July 2023 as "AI Increases Global Access to Reliable Flood Forecasts") trained one model on 5,680 gauges. Inputs are meteorological forcings (reanalysis, precipitation products and weather forecasts) plus static catchment attributes. The architecture is an encoder LSTM over past inputs and a decoder LSTM over the 7-day horizon, with a probabilistic output. Evaluation was in ungauged mode: gauges were held out, and the model was scored on return-period events (1-, 2- and 5-year floods) using precision and recall against GloFAS, the operational global system run by ECMWF for the Copernicus Emergency Management Service. Three ECMWF hydrologists (Shaun Harrigan, Florian Pappenberger, Christel Prudhomme) are co-authors. Yossi Matias is last author.
+
+**The findings.** Five-day forecasts from the model are as reliable as GloFAS nowcasts; on 5-year events the model matches GloFAS's reliability on 1-year events; the model beats GloFAS at about 70% of gauges for 2-year return periods. Trained models are on Zenodo (doi 10.5281/zenodo.10397664) under CC BY 4.0 and the analysis code is on GitHub.
+
+**The 2024 model.** Google's 11 November 2024 update retrained on 15,980 gauges, added embedding networks to ingest several weather products (Google's blog lists precipitation and temperature from DeepMind's weather model, NASA IMERG, NOAA CPC and ECMWF ERA5-Land, plus HydroSHEDS catchment attributes), and reported 7-day skill equal to the old model's 5-day skill, which is the "two more days of warning" claim. Coverage went to more than 100 countries with verified gauge data (700 million people) and, via about 250,000 virtual gauges, to 150 countries for expert users. Where there are no gauges, Google validates virtual-gauge forecasts against satellite synthetic-aperture-radar flood maps, checking that modelled 10-year-plus discharge events line up with observed inundation. A pilot API and the GRRR reanalysis and reforecast dataset were released for researchers and partners; GiveDirectly used the forecasts to deliver cash assistance in Nigeria.
+
+## Why it's in the Hall of Fame
+Peer-reviewed evidence that machine learning solved a specific, long-standing problem in hydrology, ungauged prediction of extreme events, at a level that beats the operational global system, combined with a public deployment at a scale (hundreds of millions of people) that no previous flood early-warning system had reached. The order matters: the deployment came first, and the paper documented it.
+
+## Honest caveats
+- **"Reliability" is a specific metric.** The paper's claims are about precision and recall for return-period exceedance events at gauges, not about the accuracy of the full hydrograph or of inundation extent. A forecast can be reliable in this sense and still be wrong about how much water arrives.
+- **Compared with GloFAS nowcasts, and GloFAS is not the ceiling.** The headline comparison is the model's 5-day forecast against GloFAS at zero-day lead. National agencies with well-calibrated local models often do better than any global system; the model's advantage is largest exactly where such local systems do not exist.
+- **Regional variation.** The authors note that "both models show differences in reliability in different areas of the world," and that expanding hydrological data availability remains essential. Skill is uneven, and the poorest-gauged regions are also the hardest to verify.
+- **Not fully independent.** ECMWF hydrologists who work on GloFAS are co-authors, which strengthens the fairness of the comparison but means it is not an outside audit. The evaluation gauges are the same publicly available records the model family was developed on, held out by cross-validation rather than by an independent party.
+- **Coverage figures are Google's.** The 460 million, 700 million and 2 billion people figures and the country counts come from Google's own announcements and project page, and the 2 billion figure is undated on the site. The brief this entry was written from mentioned a 2025 expansion; the dated expansion that could be verified is 11 November 2024, so the entry does not assert a specific 2025 milestone.
+- **Virtual gauges are unverified forecasts.** Google itself distinguishes coverage backed by verified gauge data (100+ countries) from the 150-country virtual-gauge layer, which is validated only indirectly through satellite imagery.
+- **Weather in, hydrology out.** The system depends on the quality of the input precipitation forecasts. Improvements in the weather models upstream flow into the flood model; failures do too.
+
+## Sources
+- [Nearing et al., Global prediction of extreme floods in ungauged watersheds, Nature 627 (20 March 2024)](https://www.nature.com/articles/s41586-024-07145-1)
+- [arXiv 2307.16104 (preprint)](https://arxiv.org/abs/2307.16104)
+- [Google blog, 20 March 2024](https://blog.google/technology/ai/google-ai-global-flood-forecasting/)
+- [Google Research blog, 11 November 2024: An improved flood forecasting AI model, trained and evaluated globally](https://research.google/blog/a-flood-forecasting-ai-model-trained-and-evaluated-globally/)
+- [Google blog, 11 November 2024: expanding flood forecasting coverage and helping partners](https://blog.google/innovation-and-ai/products/expanding-flood-forecasting-coverage-helping-partners/)
+- [Google Research: Flood Forecasting project page](https://sites.research.google/gr/floodforecasting/)
+- [Trained models on Zenodo (CC BY 4.0)](https://doi.org/10.5281/zenodo.10397664) · [Analysis code](https://github.com/google-research-datasets/global_streamflow_model_paper) · [NeuralHydrology](https://neuralhydrology.github.io)
+
+---
+*Back to **[README.md](./README.md)** · **[PROMPT.md](./PROMPT.md)**.*
