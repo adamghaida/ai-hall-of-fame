@@ -4,6 +4,7 @@ Where AI first showed it could out-create, not just out-calculate — the resear
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[Chinook solves checkers](./chinook-checkers-solved/)** | July 2007 · Science | Eighteen years of search over 5 × 10^20 positions proved that perfect checkers is a draw; search and databases, not learning. |
 | **[AlphaGo & 'Move 37'](./alphago-move-37/)** | March 2016 | The moment AI showed genuine creativity, not just calculation. |
 | **[AlphaZero — mastering Go, chess, and shogi from scratch](./alphazero-self-play/)** | 2017–2018 · Science | Given only the rules, it surpassed the best programs in hours of self-play. |
 | **[AlphaStar — Grandmaster at StarCraft II](./alphastar-starcraft/)** | 2019 · Nature | Superhuman play in a real-time game of hidden information and vast action spaces. |
