@@ -14,7 +14,7 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const mobile = () => matchMedia('(max-width: 720px)').matches;
 
-  $('allcount').textContent = db.entries.length; $('allcount2').textContent = db.entries.length;
+  $('allcount').textContent = db.entries.length; $('allcount2').textContent = db.entries.length; $('pillcount').textContent = db.entries.length;
   $('fieldslist').innerHTML = db.fields.map(x => `<a href="explore.html?field=${x.slug}">${esc(x.name)}<span>${x.count}</span></a>`).join('');
   const fb = $('fieldsbtn'), fp = $('fieldspop');
   const closeMenu = () => { fp.hidden = true; fb.setAttribute('aria-expanded', 'false'); };
