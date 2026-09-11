@@ -17,6 +17,7 @@ Where AI first showed it could out-create, not just out-calculate — the resear
 | **[MuZero: planning with a model it learned itself](./muzero/)** | December 2020 · Nature | Never told the rules, it matched AlphaZero at Go, chess and shogi and set a new state of the art on 57 Atari games. |
 | **[CICERO — human-level play in Diplomacy, negotiation included](./cicero-diplomacy/)** | November 2022 · Science | An AI that had to *talk* its way to victory, blending language and strategy. |
 | **[DeepNash — expert Stratego without any search](./deepnash-stratego/)** | December 2022 · Science | Mastering a game with a game tree 10^175 times larger than Go's. |
+| **[DreamerV3 collects Minecraft diamonds from scratch](./dreamerv3-minecraft/)** | April 2025 · Nature | One fixed configuration beat specialized methods on 150+ tasks and was the first to reach Minecraft diamonds with no human data or curriculum. |
 | **[Swift beats drone-racing world champions](./swift-drone-racing/)** | August 2023 · Nature | An autonomous drone on onboard sensors alone won 15 of 25 head-to-head races against three champion pilots and set the fastest time. |
 | **[Gran Turismo Sophy — outracing the world's best sim drivers](./gran-turismo-sophy/)** | February 2022 · Nature | A racing AI that beat champion e-sport drivers wheel-to-wheel, cleanly. |
 | **[OpenAI Five — beating the Dota 2 world champions](./openai-five/)** | April 2019 | The first AI to beat reigning world champions at an esport, live on stream. |
