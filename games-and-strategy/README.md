@@ -4,6 +4,7 @@ Where AI first showed it could out-create, not just out-calculate — the resear
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[Watson wins Jeopardy!](./watson-jeopardy/)** | February 2011 | An engineered question-answering system beat the two best Jeopardy! players on television, $77,147 to $24,000 and $21,600. |
 | **[AlphaGo & 'Move 37'](./alphago-move-37/)** | March 2016 | The moment AI showed genuine creativity, not just calculation. |
 | **[AlphaZero — mastering Go, chess, and shogi from scratch](./alphazero-self-play/)** | 2017–2018 · Science | Given only the rules, it surpassed the best programs in hours of self-play. |
 | **[AlphaStar — Grandmaster at StarCraft II](./alphastar-starcraft/)** | 2019 · Nature | Superhuman play in a real-time game of hidden information and vast action spaces. |
