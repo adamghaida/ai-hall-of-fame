@@ -4,6 +4,7 @@ From reading scans to restoring speech and designing drugs now in human trials.
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[MASAI — the first randomised trial of AI in breast-cancer screening](./masai-ai-mammography-rct/)** | January 2026 · The Lancet | 105,934 women randomised: more sensitivity, fewer aggressive interval cancers, 44% less reading workload, no extra false alarms. |
 | **[Matching — and beating — radiologists at breast-cancer screening](./breast-cancer-screening/)** | January 2020 · Nature | An AI second reader that caught cancers humans missed and cut false alarms. |
 | **[A speech neuroprosthesis that restores conversation after paralysis](./speech-neuroprosthesis/)** | August 2023 · Nature | AI decoded imagined speech back into words at near-conversational speed. |
 | **[Detecting diabetic retinopathy at specialist level](./diabetic-retinopathy-detection/)** | 2016 · JAMA | One of the first deep-learning systems to match specialists on a real diagnostic task. |
