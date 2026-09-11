@@ -14,7 +14,7 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const mobile = () => matchMedia('(max-width: 720px)').matches;
 
-  $('allcount').textContent = db.entries.length; $('allcount2').textContent = db.entries.length;
+  $('allcount').textContent = db.entries.length; $('allcount2').textContent = db.entries.length; $('pillcount').textContent = db.entries.length;
   $('fieldslist').innerHTML = db.fields.map(x => `<a href="explore.html?field=${x.slug}">${esc(x.name)}<span>${x.count}</span></a>`).join('');
   const fb = $('fieldsbtn'), fp = $('fieldspop');
   const closeMenu = () => { fp.hidden = true; fb.setAttribute('aria-expanded', 'false'); };
@@ -90,7 +90,7 @@
         if (gy >= 1) html += `<div class="gap${gy >= 10 ? ' big' : ''}" aria-hidden="true"><span>+${gy} yr${gy > 1 ? 's' : ''}</span></div>`;
       }
       const foot = it.e ? `<span class="fld">${esc(it.e.fieldName)}</span><span class="go">Read the entry →</span>`
-        : it.source ? `<span class="fld">${esc(it.source_label || 'source')}</span><span class="go">Details →</span>` : '';
+        : `<span class="fld">${esc(it.source_label || 'context')}</span><span class="go">Read more →</span>`;
       const STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.7.8-4.9 4.6 1.3 6.6L12 17.3 6 20.6l1.3-6.6L2.4 9.4l6.7-.8z"/></svg>';
       html += `<article class="card ${it.kind}${it.star ? ' star' : ''}" data-i="${it.i}" id="m-${it.i}">${it.star ? `<span class="badge">${STAR}Landmark</span>` : ''}
         <div class="kind"><b><i></i>${KIND[it.kind]}</b><span>${it.i + 1} of ${items.length}</span></div>
@@ -241,7 +241,9 @@
       ${e ? `<div class="lbl">From the entry</div><p class="hook">${esc(e.hook.replace(/[*_`]/g, ''))}</p>
              <a class="cta" href="${e.url}">Read the full record →</a>
              <div class="links"><a href="explore.html?field=${e.field}">More in ${esc(e.fieldName)}</a><span style="color:var(--muted)">${e.sources.length} source${e.sources.length === 1 ? '' : 's'} cited</span></div>`
-        : it.source ? `<a class="cta" href="${esc(it.source)}" target="_blank" rel="noopener">Source: ${esc(it.source_label || 'link')} ↗</a><p style="font-size:13px;color:var(--muted)">This moment is context for the timeline. It is not a documented case in the collection.</p>` : ''}
+        : `${it.context ? `<div class="lbl">Context</div><p>${esc(it.context)}</p>` : ''}
+           ${it.slug ? `<a class="cta" href="moments/${it.slug}/">Read this moment's page →</a>` : ''}
+           <div class="links">${it.source ? `<a href="${esc(it.source)}" target="_blank" rel="noopener">Source: ${esc(it.source_label || 'link')} ↗</a>` : ''}<span style="color:var(--muted)">Context for the timeline, not a documented case.</span></div>`}
       <div class="nav">
         ${pv ? `<button id="dprev"><small>← Earlier</small>${esc(pv.title)}</button>` : '<span></span>'}
         ${nx ? `<button id="dnext" style="text-align:right"><small>Later →</small>${esc(nx.title)}</button>` : '<span></span>'}

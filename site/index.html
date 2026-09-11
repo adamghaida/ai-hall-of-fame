@@ -8,6 +8,7 @@
 <meta property="og:title" content="AI Hall of Fame">
 <meta property="og:description" content="What AI has actually done, dated and cited.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230B0F17'/%3E%3Crect x='4' y='4' width='8' height='8' fill='%23F2B84B'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('hof-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/home.css">
@@ -24,11 +25,13 @@
     <button class="menubtn" id="aboutbtn">About</button>
     <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a>
     <a class="allbtn" id="allbtn" href="explore.html">All cases <small id="allcount"></small> →</a>
+    <button class="themebtn" id="themebtn" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
   </nav>
 </header>
 
 <main class="stage" aria-label="Timeline">
   <div class="bigyear" id="bigyear" aria-hidden="true">1950</div>
+  <a class="pill" id="pill" href="explore.html">Check out all <b id="pillcount">68</b> cases <span aria-hidden="true">→</span></a>
   <div class="wrap" id="wrap"><div class="track" id="track"></div></div>
   <div class="empty" id="empty">Nothing matches. Clear a filter or try another word.</div>
   <div class="hint" id="hint"><p><b>Scroll, drag, or use ← →</b> to move through time. Click a card for the record.</p>
@@ -61,6 +64,7 @@
 <div class="veil" id="veil"></div>
 <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Moment details"><div class="in" id="drawer-in"></div></aside>
 
+<script src="assets/theme.js"></script>
 <script src="assets/home.js"></script>
 </body>
 </html>

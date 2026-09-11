@@ -7,6 +7,11 @@
   --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   --wide:1040px; --prose:680px;
 }
+:root[data-theme=dark]{
+  --bg:#0F1319; --panel:#161B23; --line:#262D38; --line-2:#39424F;
+  --text:#E9ECF1; --text-2:#B4BCC8; --muted:#8791A1; --faint:#59637A;
+  --link:#8FB0F0; --link-2:#B7CCF7;
+}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -28,6 +33,9 @@ h1,h2,h3,h4{font-weight:600;letter-spacing:-.01em;margin:0}
 .top nav a{color:var(--text-2);padding:14px 0;border-bottom:2px solid transparent}
 .top nav a:hover{color:var(--text);text-decoration:none}
 .top nav a[aria-current]{color:var(--text);border-bottom-color:var(--text)}
+.themebtn{font:inherit;font-size:15px;line-height:1;color:var(--text-2);background:none;border:1px solid var(--line-2);border-radius:50%;width:28px;height:28px;cursor:pointer;padding:0;margin-left:4px;align-self:center}
+.themebtn:hover{color:var(--text);border-color:var(--text)}
+.themebtn[aria-pressed=true]{background:var(--text);color:var(--bg);border-color:var(--text)}
 @media (max-width:600px){.top nav{gap:14px;font-size:13px}}
 
 /* ---------- page header ---------- */
