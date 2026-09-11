@@ -14,7 +14,7 @@
 [![Views](https://shieldcn.dev/views/repo/adamghaida/ai-hall-of-fame.svg)](https://github.com/adamghaida/ai-hall-of-fame)
 
 ![13 fields](https://shieldcn.dev/badge/13_fields.svg)
-![68 cases](https://shieldcn.dev/badge/68_cases.svg)
+![134 cases](https://shieldcn.dev/badge/134_cases.svg)
 ![every entry cited](https://shieldcn.dev/badge/every_entry_cited.svg)
 ![reproducible](https://shieldcn.dev/badge/reproducible.svg)
 [![PRs welcome](https://shieldcn.dev/badge/PRs_welcome.svg)](./CONTRIBUTING.md)
@@ -63,40 +63,43 @@ python3 scripts/build_site.py && python3 -m http.server 8765 --directory site
 
 | Field | Cases | A highlight |
 |-------|:-----:|-------------|
-| [🧮 Mathematics](./mathematics/) | 16 | A **Millennium Prize blowup proof** (forced case, unverified), the **Jacobian conjecture** disproved, and a perfect 42/42 at the IMO |
-| [⚛️ Physics](./physics/) | 3 | AI controlled **real fusion plasma** inside a tokamak reactor |
-| [🧪 Chemistry](./chemistry/) | 4 | AlphaFold's protein folding won a **Nobel Prize** |
-| [🧬 Biology](./biology/) | 7 | Generative AI **designs brand-new proteins** from scratch |
-| [🩺 Medicine](./medicine/) | 7 | AI **restores speech** after paralysis, at home for two years; an AI-designed drug reaches trials |
-| [💻 Computer Science](./computer-science/) | 3 | An AI-found sorting algorithm ships in the **C++ standard library** |
-| [🛡️ Cybersecurity](./cybersecurity/) | 3 | An AI-found attack got a **NIST post-quantum candidate withdrawn** |
+| [🧮 Mathematics](./mathematics/) | 24 | A **Millennium Prize blowup proof** (forced case, unverified), the **Jacobian conjecture** disproved, an 80-year-old **Erdős conjecture** refuted, and a perfect 42/42 at the IMO |
+| [⚛️ Physics](./physics/) | 7 | AI controlled **real fusion plasma** inside a tokamak reactor and quieted **LIGO's noisiest feedback loop** |
+| [🧪 Chemistry](./chemistry/) | 6 | AlphaFold's protein folding won a **Nobel Prize**; generative AI designed **antibiotics that clear MRSA** in mice |
+| [🧬 Biology](./biology/) | 15 | Generative AI **designs brand-new proteins** from scratch, including the first AI-generated **gene editor** used in human cells |
+| [🩺 Medicine](./medicine/) | 10 | AI **restores speech** after paralysis; the first **randomised trial** of AI mammography screening on 105,934 women |
+| [💻 Computer Science](./computer-science/) | 8 | An AI-found sorting algorithm ships in the **C++ standard library**; a perfect **12/12 at the ICPC World Finals** |
+| [🛡️ Cybersecurity](./cybersecurity/) | 10 | **10,000+ vulnerabilities** found across the software everyone runs; a NIST post-quantum candidate withdrawn |
 | [🔬 Materials Science](./materials-science/) | 4 | **2.2 million** new crystals discovered in one effort |
-| [🔭 Astronomy](./astronomy/) | 3 | A neural net found a **hidden 8th planet** in Kepler data |
-| [🌍 Climate & Earth Science](./climate-and-earth-science/) | 5 | AI weather models **beat the world's best** supercomputer forecasts, and now run **operationally** |
-| [🧠 Neuroscience](./neuroscience/) | 3 | The **first complete wiring map** of an adult brain |
-| [♟️ Games & Strategy](./games-and-strategy/) | 8 | "**Move 37**": the moment AI showed genuine creativity |
-| [🤖 Robotics](./robotics/) | 2 | A robot reached **amateur human level** at table tennis |
+| [🔭 Astronomy](./astronomy/) | 6 | A neural net found a **hidden 8th planet** in Kepler data; **118 new planets** validated from TESS |
+| [🌍 Climate & Earth Science](./climate-and-earth-science/) | 10 | AI weather models **beat the world's best** supercomputer forecasts, and now run **operationally** at ECMWF and NOAA |
+| [🧠 Neuroscience](./neuroscience/) | 7 | The **first complete wiring map** of an adult brain; **inner speech decoded** with a mental password |
+| [♟️ Games & Strategy](./games-and-strategy/) | 17 | "**Move 37**": the moment AI showed genuine creativity, plus Deep Blue, Watson, and a drone that **beat racing champions** |
+| [🤖 Robotics](./robotics/) | 10 | **220 million driverless miles** with 94% fewer serious-injury crashes; a humanoid runs 100 m in **8.64 seconds** |
 
 *Some landmark systems (AlphaFold, AlphaTensor, the speech neuroprosthesis, and more) matter to several fields, so each has one full write-up, cross-linked from the others.*
 
 ---
 
-## ⭐ Twelve to start with
+## ⭐ Fifteen to start with
 
 New here? These are among the most consequential entries in the collection:
 
 1. **[Navier–Stokes finite-time blowup](./mathematics/navier-stokes-finite-time-blowup/)**: an AI-produced proof for the forced case of a Millennium Prize Problem, Lean-checked, not yet independently verified, September 2026.
 2. **[Jacobian conjecture counterexample](./mathematics/jacobian-conjecture-counterexample/)**: an AI-assisted result disproving an 87-year-old conjecture (n ≥ 3), July 2026.
-3. **[AlphaFold](./chemistry/alphafold-protein-structure/)**: solved a 50-year grand challenge and won the 2024 Nobel Prize in Chemistry.
-4. **[Fusion plasma control](./physics/fusion-plasma-control/)**: reinforcement learning drove a *real* nuclear-fusion reactor.
-5. **[FunSearch](./mathematics/funsearch-cap-set/)**: first LLM to produce a verifiable, genuinely new answer to an open math problem.
-6. **[AlphaProof](./mathematics/alphaproof-alphageometry-imo-2024/)**: silver-medal mathematics at the International Math Olympiad.
-7. **[AlphaDev sorting](./computer-science/alphadev-sorting/)**: an AI-discovered algorithm merged into the C++ standard library.
-8. **[Speech neuroprosthesis](./medicine/speech-neuroprosthesis/)**: conversational-speed communication restored after paralysis.
-9. **[GNoME](./materials-science/gnome-materials-discovery/)**: 380,000 newly predicted stable materials.
-10. **[GraphCast](./climate-and-earth-science/graphcast-weather/)**: 10-day global weather forecasts in under a minute.
-11. **[AlphaGo "Move 37"](./games-and-strategy/alphago-move-37/)**: the move that showed AI could be creative.
-12. **[RFdiffusion](./biology/rfdiffusion-protein-design/)**: generative design of proteins that don't exist in nature.
+3. **[Erdős's unit distance conjecture disproved](./mathematics/erdos-90-unit-distance-disproof/)**: an 80-year-old conjecture refuted by an OpenAI model, May 2026; Gowers said he would recommend it for Annals.
+4. **[Waymo's safety record](./robotics/waymo-220m-miles/)**: 220 million driverless miles with 94% fewer serious-injury crashes than human drivers.
+5. **[Deep Blue beats Kasparov](./games-and-strategy/deep-blue-kasparov/)**: 1997, the first win by a computer over a reigning world champion under tournament conditions.
+6. **[AlphaFold](./chemistry/alphafold-protein-structure/)**: solved a 50-year grand challenge and won the 2024 Nobel Prize in Chemistry.
+7. **[Fusion plasma control](./physics/fusion-plasma-control/)**: reinforcement learning drove a *real* nuclear-fusion reactor.
+8. **[FunSearch](./mathematics/funsearch-cap-set/)**: first LLM to produce a verifiable, genuinely new answer to an open math problem.
+9. **[AlphaProof](./mathematics/alphaproof-alphageometry-imo-2024/)**: silver-medal mathematics at the International Math Olympiad.
+10. **[AlphaDev sorting](./computer-science/alphadev-sorting/)**: an AI-discovered algorithm merged into the C++ standard library.
+11. **[Speech neuroprosthesis](./medicine/speech-neuroprosthesis/)**: conversational-speed communication restored after paralysis.
+12. **[GNoME](./materials-science/gnome-materials-discovery/)**: 380,000 newly predicted stable materials.
+13. **[GraphCast](./climate-and-earth-science/graphcast-weather/)**: 10-day global weather forecasts in under a minute.
+14. **[AlphaGo "Move 37"](./games-and-strategy/alphago-move-37/)**: the move that showed AI could be creative.
+15. **[RFdiffusion](./biology/rfdiffusion-protein-design/)**: generative design of proteins that don't exist in nature.
 
 ---
 
