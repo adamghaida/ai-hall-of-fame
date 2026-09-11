@@ -3,3 +3,4 @@ site/data/entries.json
 site/entries/
 .DS_Store
 .claude/
+site/moments/
