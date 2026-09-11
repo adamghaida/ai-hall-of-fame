@@ -4,6 +4,7 @@ Where AI first showed it could out-create, not just out-calculate — the resear
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[Watson wins Jeopardy!](./watson-jeopardy/)** | February 2011 | An engineered question-answering system beat the two best Jeopardy! players on television, $77,147 to $24,000 and $21,600. |
 | **[Chinook solves checkers](./chinook-checkers-solved/)** | July 2007 · Science | Eighteen years of search over 5 × 10^20 positions proved that perfect checkers is a draw; search and databases, not learning. |
 | **[TD-Gammon: a self-taught backgammon net reaches near-world-class play](./td-gammon/)** | 1992–1995 · CACM | Learned by self-play alone, came within a point of a world champion over 40 games, and rewrote human opening theory. |
 | **[Deep Blue beats Kasparov](./deep-blue-kasparov/)** | May 1997 | The first computer to beat a reigning world chess champion in a match, by search rather than learning. |
