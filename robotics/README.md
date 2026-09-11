@@ -4,6 +4,7 @@ Learning physical skills in simulation and pulling them off in the real world.
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[Figure 02 loads 90,000 sheet-metal parts on BMW's X3 line at Spartanburg](./figure-02-bmw-spartanburg/)** | November 2025 · Figure AI report; BMW follow-up June 2026 | Company-reported: a humanoid held a takt-timed body-shop station for months, feeding parts into 30,000+ cars; BMW confirms the car count. |
 | **[A robot that plays amateur-level competitive table tennis](./robot-table-tennis/)** | August 2024 | The first learned robot to hold full rallies and win matches against people. |
 | **[Teaching a bipedal robot to play soccer](./robot-soccer/)** | April 2024 · Science Robotics | Deep RL gave toy-sized humanoids agile, emergent soccer skills: walking, kicking, blocking, and getting back up. |
 
