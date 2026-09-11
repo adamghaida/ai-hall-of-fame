@@ -17,6 +17,7 @@
   <a class="wordmark" href="./"><i aria-hidden="true"></i>AI Hall of Fame</a>
   <div class="chips" role="group" aria-label="Type" id="chips">
     <button class="chip" data-k="" aria-pressed="true">All</button>
+    <button class="chip star" data-k="star" aria-pressed="false">★ Landmarks</button>
     <button class="chip" data-k="achievement" aria-pressed="false">Cases</button>
     <button class="chip" data-k="launch" aria-pressed="false">Releases</button>
     <button class="chip" data-k="prize" aria-pressed="false">Prizes</button>
@@ -25,7 +26,8 @@
   <div class="ctl">
     <label><span class="sr">Field</span><select class="sel" id="field"><option value="">All fields</option></select></label>
     <label><span class="sr">Search</span><input class="q" id="q" type="search" placeholder="Search moments" autocomplete="off"></label>
-    <nav aria-label="Site"><a href="explore.html">All cases</a><a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a></nav>
+    <a class="allbtn" id="allbtn" href="explore.html">All cases <small id="allcount"></small> →</a>
+    <nav aria-label="Site"><a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a></nav>
   </div>
 </header>
 
@@ -34,7 +36,7 @@
   <div class="wrap" id="wrap"><div class="track" id="track"></div></div>
   <div class="empty" id="empty">Nothing matches. Clear a filter or try another word.</div>
   <div class="hint" id="hint"><p><b>Scroll, drag, or use ← →</b> to move through time. Click a card for the record.</p>
-    <div class="legend"><span class="a"><i></i>documented case</span><span class="l"><i></i>model release</span><span class="p"><i></i>prize</span><span class="o"><i></i>origin</span></div></div>
+    <div class="legend"><span class="s"><i>★</i>landmark</span><span class="a"><i></i>documented case</span><span class="l"><i></i>model release</span><span class="p"><i></i>prize</span><span class="o"><i></i>origin</span></div></div>
   <div class="hud">
     <button class="b" id="prev" aria-label="Previous moment">←</button>
     <span class="n" id="counter">1 / 36</span>
