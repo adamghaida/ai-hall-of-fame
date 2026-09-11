@@ -4,6 +4,7 @@ AI rewriting the fundamental algorithms and hardware that run on billions of dev
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[Sixteen parallel Claude agents wrote a 100,000-line C compiler that boots Linux](./claude-c-compiler/)** | February 2026 | About $20,000 of tokens and 2,000 sessions produced a Rust C compiler that builds Linux 6.9, QEMU, FFmpeg and Doom; its author does not recommend using it. |
 | **[AlphaEvolve finds new hardness-of-approximation gadgets for MAX-4-CUT and TSP](./alphaevolve-inapproximability/)** | September 2025 · arXiv | An evolved 19-node gadget tightens MAX-4-CUT's NP-hardness bound from 0.9883 to 0.987, with every gadget re-checked by brute force. |
 | **[AtCoder World Tour Finals: one human beat OpenAI in 2025, nobody did in 2026](./atcoder-world-tour-finals/)** | July 2026 | Second to Psyho by under ten percent in 2025; a perfect 5/5 and a 7x heuristic margin over the world's top twelve in 2026. |
 | **[Nemotron-3-Ultra-CC outscores the top human at IOI 2026](./nemotron-ioi-2026/)** | August 2026 | 535.4 of 600 on the live IOI 2026 set versus 498.27 for the best of 375 students; unofficial, unsupervised, self-reported. |
