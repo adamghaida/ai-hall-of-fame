@@ -1,0 +1,41 @@
+# 📚 Context: Erdős problem 728 and the first autonomous AI solution
+
+## The problem
+Writing k = a + b − n and N = a + b, the divisibility a! b! | n! k! is the same as asking that the binomial coefficient C(N, k) divides C(N, a). Erdős (1968) proved that a! b! | n! forces a + b ≤ n + O(log n), so the question of Erdős, Graham, Ruzsa and Straus (1975) is whether the gap k can genuinely reach the logarithmic scale once k! is allowed on the right. Without side conditions the question is trivial (take a and b enormous), which is why the intended reading needs a, b bounded away from both 0 and n; the AI's construction takes b = n/2 and a = n/2 + O(log n), far inside any reasonable interpretation. Tao later observed the argument is not best possible and the gap can be pushed to exp(c √log n).
+
+## How the proof works
+The argument proves a "logarithmic gap window": for prescribed 0 < C₁ < C₂, infinitely many triples with C₁ log n < k < C₂ log n. Divisibility is checked prime by prime using Kummer's theorem (the p-adic valuation of a binomial coefficient counts carries when adding in base p). For primes p > 2k a high power of p dividing some m + i forces many carries and is handled quickly; for p ≤ 2k the proof demands that many of the leading base-p digits of m are at least ⌈p/2⌉ ("carry-rich") while avoiding the rare event that some m + i is divisible by an unusually high power of p ("spike-free"). A counting argument over m in [M, 2M] shows such m exist for all large M, and k ≍ log M gives the gap. Sothanaphan's writeup notes the strategy is "in the same vein" as Pomerance's work on divisors of the middle binomial coefficient but treats a growing window k ≍ log n and a structured divisor C(m+k, k) rather than a fixed k and a single linear factor.
+
+## People and timeline
+- **Late December 2025.** Barreto (Cambridge undergraduate, previously credited on the site for a human solution to half of problem 43) and Price begin testing GPT-5.2 on open number-theory problems. Their workflow, described in Barreto's blog post: prompt the model as if it were a competition problem and forbid web search (GPT-5.2 would otherwise refuse to attempt problems it recognized as open), have it write the proof as a LaTeX paper, hand the LaTeX to Aristotle to autoformalize, rerun Aristotle until the Lean file compiles, and only then check that the main statement matches the intended problem.
+- **December 25, 2025.** Barreto announces a solution to problem 333 on X and retracts within hours after a forum user finds it in the literature. He calls it "one of the most embarrassing moments of my academic career so far."
+- **January 4, 2026.** Price's GPT-5.2 Pro produces the 728 proof. Posted after Aristotle formalizes it; the site notes C should be arbitrarily large, and Tao and Barreto notice a wasted k! factor. The model repairs the proof; Aristotle returns an elementary Lean proof on **January 6**.
+- **January 5 to 6.** Literature search turns up Pomerance's Monthly paper (Tao's wiki dates it 2014; the published version is 2015) as closely related. On **January 11** Pomerance replies to forum participants that a similar result follows by modifying his argument, and writes up a note.
+- **January 10 to 11.** Problems 729 and 401 are solved by adapting the argument; 397 is solved but matched to a 2012 China TST problem; Price gets 205 out of GPT-5.2 Thinking, formalized by Aristotle.
+- **January 12.** Sothanaphan posts the writeup on arXiv, with Boris Alexeev having run Aristotle to simplify the proof and Tao suggesting further ideas; the Lean file lives in Alexeev's repository, pinned to Lean v4.24.0.
+- **January 26.** Barreto publishes his account on the erdosproblems.com blog at Bloom's invitation.
+
+## Why it's in the Hall of Fame
+It is the point at which "AI solved an Erdős problem" stopped being a retracted headline and became a checkable fact. The sequence of events is a template that later results followed: language model proposes, formal prover certifies, humans check the statement matches the intent, and the community searches the literature before anyone celebrates. The single-prompt solution of problem 1196 in April 2026, DeepMind's AlphaProof Nexus results in May, and the [six problems solved with GPT-5.6](../erdos-problems-gpt-5.6/) in July all sit downstream of this episode, and Tao's notable-cases page records 728 as "the first autonomous and nontrivial solution to an Erdős problem by AI systems."
+
+## Honest caveats
+- **The problem was ambiguous as stated.** erdosproblems.com says so directly: "This problem is ambiguous, and there are a number of trivial solutions to the problem as written," and notes trivial solutions found by the AlphaProof team. The AI proved a strong, natural reading (a and b within O(log n) of n/2), and the site's judgement that this "appears to answer the question in the spirit it was intended" is a judgement, not a theorem. Tao's wiki has a standing disclaimer that in some cases Erdős or the site stated the problem incorrectly.
+- **Not novel in method, and close to Pomerance.** The strategy is a recognizable adaptation of Kummer-theorem carry counting used by Erdős and Pomerance for the middle binomial coefficient. Pomerance's 2026 note reaches similar results by extending his own 2015 argument. Barreto himself wrote that the Pomerance connection "took away some of the level of novelty" and that he does not think these systems are "currently capable of more novelty than just combining previously-established ideas." Tao's wiki files the Pomerance paper under "comparable literature discovered afterwards" (partial, not a full prior solution).
+- **Low-hanging fruit, by design.** Barreto and Price deliberately searched for problems that looked elementary enough to be in reach. Tao's public reaction, as reported by The Decoder, was that the result says more about speed than difficulty and that only a small percentage of open Erdős problems are simple enough for autonomous tools; the wiki's disclaimers warn that "absence of past progress may reflect obscurity rather than difficulty."
+- **Not a peer-reviewed paper.** The writeup is an arXiv preprint by a forum participant, written with ChatGPT assistance (the author links the conversation). What is machine-checked is the Lean file; the statement-fidelity check was done by forum members.
+- **Human orchestration was real, even if no human wrote mathematics.** Choosing the problem, gaslighting the model into treating an open problem as a competition problem, feeding GPT-5.2 Pro's output to Aristotle, and iterating on Aristotle's compute budget were all human steps. "Autonomous" here means the mathematical content was machine-generated and machine-verified, not that the process was unattended.
+
+## Sources
+- [Sothanaphan, *Resolution of Erdős Problem #728* (arXiv 2601.07421)](https://arxiv.org/abs/2601.07421)
+- [Erdos728b.lean in plby/lean-proofs](https://github.com/plby/lean-proofs/blob/main/src/v4.24.0/ErdosProblems/Erdos728b.lean)
+- [Erdős problem 728](https://www.erdosproblems.com/728)
+- [Barreto, "Problem 728 and the use of AI on Erdős problems" (blog, January 26, 2026)](https://www.erdosproblems.com/forum/thread/blog:2)
+- [AI contributions to Erdős problems (Tao's wiki)](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems) · [Notable cases page](https://github.com/teorth/erdosproblems/wiki/Notable-cases-of-AI-contributions-to-Erd%C5%91s-problems) · [Disclaimers page](https://github.com/teorth/erdosproblems/wiki/Disclaimers-and-caveats)
+- [The Decoder, January 16, 2026](https://the-decoder.com/terence-tao-says-gpt-5-2-pro-cracked-an-erdos-problem-but-warns-the-win-says-more-about-speed-than-difficulty/)
+- [Quanta Magazine, August 3, 2026](https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/)
+- [TechCrunch on the October 2025 OpenAI Erdős episode](https://techcrunch.com/2025/10/19/openais-embarrassing-math/)
+
+Related entries: [six Erdős problems solved with GPT-5.6](../erdos-problems-gpt-5.6/) · [Astra's ten proofs](../astra-ten-proofs/) · [AlphaEvolve](../alphaevolve-algorithm-discovery/)
+
+---
+*Back to **[README.md](./README.md)** · **[PROMPT.md](./PROMPT.md)**.*
