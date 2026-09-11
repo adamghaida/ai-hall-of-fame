@@ -1,0 +1,34 @@
+# 📚 Context: designed antitoxins for snakebite
+
+**The disease.** Snakebite envenoming kills more than 100,000 people a year and permanently disables several times that number, overwhelmingly in rural South Asia and sub-Saharan Africa. The WHO classifies it as a neglected tropical disease. The standard treatment has barely changed since the 1890s: inject a horse or a sheep with venom, harvest its plasma, purify the antibodies. That product is expensive, needs refrigeration, causes serum sickness and anaphylaxis in a meaningful fraction of patients, and is species-specific in a world with many venomous species.
+
+**Why three-finger toxins are the right target.** Elapid venoms (cobras, mambas, kraits) are dominated by **3FTx**, a family of small, disulfide-rich proteins named for their three protruding loops. Two things make them the worst case for conventional antivenom. First, they are small and poorly immunogenic, so an immunized animal makes relatively few good antibodies against them. Second, they do the most acute damage: **α-neurotoxins** block nicotinic acetylcholine receptors at the neuromuscular junction and cause the respiratory paralysis that kills, and **cytotoxins** destroy tissue around the bite. Existing antivenoms are weakest exactly where the harm is greatest.
+
+**The method.** Standard modern de novo binder design, applied properly: **RFdiffusion** generated backbones (with conditioning to specify β-strand interactions with the toxin), **ProteinMPNN** designed sequences onto them, and **AlphaFold2** filtered candidates before synthesis, with partial-diffusion rounds used to refine. Designs were then made, measured by surface plasmon resonance, crystallized, and tested in animals. The abstract's phrase "with limited experimental screening" is the load-bearing one: the point is not only that binders were found but that few had to be made.
+
+**The molecules.** Three binders against three 3FTx subfamilies, named for their targets: **SHRT** (short-chain α-neurotoxin, K<sub>D</sub> 0.9 nM, T<sub>m</sub> 78 °C), **LNG** (long-chain α-neurotoxin / α-cobratoxin, K<sub>D</sub> 1.9 nM, T<sub>m</sub> above 95 °C), and **CYTX** (cytotoxin from *Naja pallida*, K<sub>D</sub> 271 nM, T<sub>m</sub> 61 °C), with an optimized variant CYTX_B10. Crystal structures: **9BK7** (SHRT, 2.58 Å), **9BK5** (LNG complex, 2.68 Å), **9BK6** (CYTX_B10 complex, 2.0 Å), with reported design-to-structure RMSDs at or below about 1.3 Å and as low as 0.42 Å for LNG.
+
+**The people.** Co-first authors **Susana Vázquez Torres** (UW) and **Melisa Benard Valle** (DTU), with a long list including **Stephen P. Mackessy** (University of Northern Colorado), **Stefanie K. Menzies** and **Nicholas R. Casewell** (Liverpool School of Tropical Medicine, one of the world's main snakebite research groups), **Andreas H. Laustsen** (DTU), and senior authors **Timothy P. Jenkins** and **David Baker**. Vázquez Torres is quoted describing the antitoxins as easy to discover computationally, cheap to produce and robust in laboratory tests; Jenkins highlights their small size as the practical advantage over antibodies.
+
+## Why it's in the Hall of Fame
+Because the chain is complete and the target is real. Design, nanomolar binding, crystallographic confirmation that the molecule is what the model said, in vitro neutralization of all three toxin subfamilies, and then live animals surviving lethal doses, including when the antitoxin was given *after* the toxin. Very few AI protein design results get as far as a rescue experiment, and almost none do it for a disease whose current treatment is horse plasma.
+
+## Honest caveats
+- **They neutralize toxins, not venom.** This is the caveat that matters most and the one most likely to be dropped in summary. Real venom is a variable mixture containing phospholipases, metalloproteinases and other families these binders do not bind. The researchers state that conventional antivenom will remain the cornerstone of treatment for the foreseeable future and that designed antitoxins would most plausibly arrive first as supplements to existing products.
+- **Mice, under favorable conditions.** Male NSA mice, 3 × LD50 purified toxin, binder either pre-incubated for 30 minutes or injected intraperitoneally 15 or 30 minutes later, 24-hour observation, groups of five. Protection fell with delay for LNG: 100% at 15 minutes, 60% at 30 minutes at a 1:10 ratio. A human snakebite involves an unknown dose of a whole venom, delivered subcutaneously, hours from treatment.
+- **No human data of any kind.** No clinical trial, no toxicology package, no immunogenicity study in humans. Designed miniproteins are not automatically non-immunogenic.
+- **The cytotoxin binder is much weaker.** CYTX binds at 271 nM, roughly 300-fold weaker than the neurotoxin binders, and its protection was demonstrated against venom-induced cytotoxicity in **cell assays**, not in animals.
+- **Numbers here come from the preprint.** The Nature abstract describes the results qualitatively ("remarkable thermal stability, high binding affinity and near-atomic-level agreement with the computational models"). The specific K<sub>D</sub>, T<sub>m</sub>, RMSD and per-group survival figures in this entry are taken from the openly readable May 2024 preprint version. They are consistent with the published abstract and with coverage from both labs, but anyone citing exact values should check them against the paywalled paper of record.
+- **"80–100% survival" is a range across conditions, not a single result.** It aggregates different toxins, doses, ratios and designs. Quoting it as a single efficacy figure would be misleading in either direction.
+- **Cost and accessibility claims are projections.** Recombinant production is genuinely cheaper than animal plasma at scale, but no manufacturing or distribution has happened. "Democratizing therapeutic discovery" is the paper's aspiration, not an outcome.
+
+## Sources
+- [Nature: "De novo designed proteins neutralize lethal snake venom toxins"](https://www.nature.com/articles/s41586-024-08393-x) (January 15, 2025)
+- [Openly readable preprint version with the detailed tables](https://pmc.ncbi.nlm.nih.gov/articles/PMC11118692/) (May 2024, not peer reviewed)
+- [Baker Lab: "Neutralizing deadly snake toxins"](https://www.bakerlab.org/2025/01/15/neutralizing-deadly-snake-toxins/)
+- [DTU: "AI-designed proteins neutralise snake toxins"](https://www.dtu.dk/english/newsarchive/2025/01/ai-designed-proteins-neutralise-snake-toxins)
+- [Phys.org: "AI-designed proteins neutralize toxins found in snake venom"](https://phys.org/news/2025-01-ai-proteins-neutralize-toxins-snake.html)
+- [PDB 9BK5](https://www.rcsb.org/structure/9BK5) · [9BK6](https://www.rcsb.org/structure/9BK6) · [9BK7](https://www.rcsb.org/structure/9BK7)
+
+---
+*Back to **[README.md](./README.md)** · **[PROMPT.md](./PROMPT.md)**.*

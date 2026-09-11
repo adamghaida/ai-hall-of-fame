@@ -1,0 +1,30 @@
+# 📚 Context: Euclid Q1 and the Strong Lensing Discovery Engine
+
+**The people.** The paper is a **Euclid Collaboration** publication with several hundred co-authors, led by **M. Walmsley**. The citizen-science stage ran on **Space Warps**, whose public write-up of the Euclid campaign was posted by Oxford PhD student Phil Holloway. ESA's Euclid mission manager **Pierre Ferruit** described the release as "combining the strengths of Euclid, AI, citizen science and experts into a single discovery engine". The paper was posted to arXiv (2503.15324) on 19 March 2025, the day of the Q1 release. A version has since appeared in *Astronomy & Astrophysics* as Euclid Q1 paper XXVI under the title "The Strong Lensing Discovery Engine A – System overview and first lens sample"; we could not access the journal page from this environment, so the arXiv version is the one cited here.
+
+**The problem.** Galaxy-galaxy strong lenses are rare and subtle: a distant galaxy's light bent into faint arcs around a nearer elliptical, often less than an arcsecond from its centre. Before Euclid, most were found in ground-based surveys with limited resolution, or in small Hubble fields, and the total of confirmed lenses stood at a few hundred. Euclid combines Hubble-like sharpness with a survey area of roughly 14,000 square degrees (63 square degrees is 0.45% of it), so it should contain tens of thousands of lenses. Nobody can look at that many galaxies by eye.
+
+**How the engine works.** Stage one is machine ranking. Rather than a single lens-specific classifier, the team ran an ensemble of deep-learning models over the Q1 galaxies; Zoobot, a generalist model trained on Galaxy Zoo volunteer classifications rather than a lens-specific network, performed best. Stage two is Space Warps: the top-ranked images were shown to citizen scientists, where more than 1,000 volunteers made over 800,000 classifications, a stage that catches lenses the models miss and rejects false positives at scale. Stage three is expert vetting and grading (A, B, C). Stage four is lens modelling of each candidate. Euclid's Q1 area of 63 square degrees is about 0.45% of the planned survey.
+
+**The results.** 497 galaxy-galaxy strong lens candidates, of which 250 are grade A, 243 of them previously unpublished. The paper highlights four double-source-plane lenses (two background sources at different distances behind one lens, valuable for cosmology), edge-on disc lenses, complete Einstein rings and quadruply imaged sources, plus a large number of small-Einstein-radius systems (θ_E below one arcsecond) that ground-based surveys cannot resolve. Extrapolating, the authors expect about 7,000 grade A or B candidates from the first full data release by late 2026 and more than 100,000 over the full mission. ESA's release also notes that the Q1 fields contain some 26 million galaxies and that a separate Galaxy Zoo morphology campaign on Q1 drew 9,976 volunteers; those figures refer to the wider release, not to the lens search alone.
+
+**Lineage.** This is the same pattern as the Hubble archive sweep in [AnomalyMatch](../anomalymatch-hubble-archive/) and the Kepler search behind [Kepler-90i](../kepler-90i-exoplanet/): a model that ranks, humans who decide. What is new is scale and structure: a generalist vision model at the front, a thousand-plus volunteer pool in the middle, and expert grading at the end, run as a repeatable system that will be applied to every Euclid release.
+
+## Why it's in the Hall of Fame
+From under half a per cent of the survey, the pipeline roughly doubled the number of known lens candidates with space-based imaging and surfaced configurations (double source planes, sub-arcsecond Einstein radii) that are individually valuable for cosmology. It is a documented, reproducible discovery system rather than a one-off find, and the numbers are the collaboration's own.
+
+## Honest caveats
+- **Candidates, not confirmed lenses.** Grades are visual judgements by experts. No spectroscopic confirmation of the sample is reported. The paper says plainly that "all numbers are approximate due to the subjective nature of grading and the varying details of each search approach."
+- **"Doubling" is about candidates with space-based imaging.** It compares against previous space-based lens candidate samples, not against all known lenses from all surveys.
+- **Two different volunteer counts are in circulation.** The Space Warps blog reports over 1,000 volunteers and 800,000 classifications for the lens search. ESA's release mentions 9,976 volunteers for a separate Galaxy Zoo morphology campaign on Q1. They are different projects.
+- **The 7,000 and 100,000 figures are projections.** They assume the search runs unchanged on future releases with the same yield per square degree.
+- **Peer-review status.** This entry cites the arXiv version. A journal version exists in *Astronomy & Astrophysics* according to the journal's listing, but we could not fetch it to confirm its details, and its title differs slightly ("first lens sample" rather than "lens catalogue").
+- **Selection function.** The machine stage ranks; anything it scores low is never seen by volunteers or experts. Completeness for unusual lens morphologies is therefore bounded by the models, and the paper's rare-configuration finds should not be read as a complete census.
+
+## Sources
+- [Euclid Collaboration, Walmsley et al.: "Euclid Quick Data Release (Q1): The Strong Lensing Discovery Engine A – System overview and lens catalogue" (arXiv:2503.15324)](https://arxiv.org/abs/2503.15324)
+- [ESA: "Euclid opens data treasure trove, offers glimpse of deep fields" (19 March 2025)](https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_opens_data_treasure_trove_offers_glimpse_of_deep_fields)
+- [Space Warps blog: "Space Warps helps to find 497 spectacular lenses in Euclid data" (19 March 2025)](https://blog.spacewarps.org/2025/03/19/space-warps-helps-to-find-497-spectacular-lenses-in-euclid-data/)
+
+---
+*Back to **[README.md](./README.md)** · **[PROMPT.md](./PROMPT.md)**.*
