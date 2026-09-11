@@ -4,6 +4,7 @@ AI weather models that beat the supercomputer systems the world has relied on fo
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[WeatherNext Cyclones: a full extra day of hurricane warning, verified with the National Hurricane Center](./weathernext-cyclones/)** | August 2026 · Nature | 5-day track error of 230 km vs 370 km for ECMWF ENS, intensity better than HAFS, live guidance to NHC through Hurricane Melissa, then open-sourced. |
 | **[Aurora: one foundation model for weather, air quality, ocean waves and cyclone tracks](./aurora-foundation-model/)** | May 2025 · Nature | One 1.3B-parameter pretrained model, fine-tuned to beat CAMS on 74% of air-quality targets, HRES-WAM on 86% of wave variables, agency cyclone-track forecasts, and IFS HRES on 92% of 0.1-degree targets. |
 | **[AIFS: ECMWF puts a machine-learning weather model into full operations](./aifs-operational-ecmwf/)** | February 2025 · ECMWF | The first ML forecast model made fully operational at a major centre: better than the IFS on many scores, up to 20% better cyclone tracks, about 1,000x less energy, open weights. |
 | **[GraphCast — 10-day global forecasts in under a minute](./graphcast-weather/)** | November 2023 · Science | An AI weather model that beat the world's best operational system on 90% of targets. |
