@@ -4,6 +4,7 @@ AI weather models that beat the supercomputer systems the world has relied on fo
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[AIFS: ECMWF puts a machine-learning weather model into full operations](./aifs-operational-ecmwf/)** | February 2025 · ECMWF | The first ML forecast model made fully operational at a major centre: better than the IFS on many scores, up to 20% better cyclone tracks, about 1,000x less energy, open weights. |
 | **[GraphCast — 10-day global forecasts in under a minute](./graphcast-weather/)** | November 2023 · Science | An AI weather model that beat the world's best operational system on 90% of targets. |
 | **[GenCast — state-of-the-art ensemble weather forecasting](./gencast-ensemble-weather/)** | December 2024 · Nature | A diffusion model that beat the top ensemble forecast on 97% of targets. |
 | **[Pangu-Weather: the first AI model to out-forecast ECMWF's operational system](./pangu-weather/)** | July 2023 · Nature | Lower error than the operational IFS on every tested variable, in 1.4 seconds on one GPU. |
