@@ -14,7 +14,12 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const mobile = () => matchMedia('(max-width: 720px)').matches;
 
-  $('allcount').textContent = db.entries.length;
+  $('allcount').textContent = db.entries.length; $('allcount2').textContent = db.entries.length;
+  $('fieldslist').innerHTML = db.fields.map(x => `<a href="explore.html?field=${x.slug}">${esc(x.name)}<span>${x.count}</span></a>`).join('');
+  const fb = $('fieldsbtn'), fp = $('fieldspop');
+  const closeMenu = () => { fp.hidden = true; fb.setAttribute('aria-expanded', 'false'); };
+  fb.addEventListener('click', ev => { ev.stopPropagation(); const open = fp.hidden; fp.hidden = !open; fb.setAttribute('aria-expanded', String(open)); });
+  addEventListener('click', ev => { if (!fp.hidden && !ev.target.closest('#fieldsmenu')) closeMenu(); });
 
   // ---------------- filters
   const params = new URLSearchParams(location.search);
@@ -208,7 +213,7 @@
     else if (ev.key === 'Home') { stopPlay(); visible[0] && goTo(visible[0].i, true); }
     else if (ev.key === 'End') { stopPlay(); visible.length && goTo(visible[visible.length - 1].i, true); }
     else if (ev.key === 'Enter' && active >= 0 && !$('drawer').classList.contains('on')) openDrawer(active);
-    else if (ev.key === 'Escape') closeDrawer();
+    else if (ev.key === 'Escape') { closeDrawer(); closeMenu(); }
     else if (ev.key === '/') { ev.preventDefault(); $('q').focus(); }
     else if (ev.key === ' ' && !$('drawer').classList.contains('on')) { ev.preventDefault(); togglePlay(); }
   });
@@ -247,6 +252,28 @@
     nx && $('dnext').addEventListener('click', () => { goTo(nx.i, true); openDrawer(nx.i); });
     $('dx').focus();
   }
+  function openAbout() {
+    $('drawer-in').innerHTML = `<div class="about" style="display:flex;flex-direction:column;gap:12px">
+      <div class="top"><span>About</span><button class="x" id="dx" aria-label="Close">✕</button></div>
+      <h2>A record of what AI has actually done.</h2>
+      <p>Not forecasts, and not demos. ${db.entries.length} cases across ${db.fields.length} fields where an AI system did something that can be checked: a record broken, an open problem resolved, an ability restored, a real deployment. Each one links the paper, the code, or the proof certificate behind it.</p>
+      <h4>What gets in</h4>
+      <p><b>Documented.</b> A peer-reviewed paper, an official research release, or credible reporting.</p>
+      <p><b>Concrete.</b> A specific result, with a number or an artifact. No "AI is transforming" claims.</p>
+      <p><b>Notable.</b> Significant within its field.</p>
+      <p><b>Honest.</b> Contested, corrected, or proof-of-concept results say so on the page.</p>
+      <h4>What stays out</h4>
+      <p>Unsolved problems. The Riemann hypothesis and P vs NP have no entry. The Jacobian conjecture was on that list until July 2026, when an AI-assisted counterexample disproved it, and now it has one.</p>
+      <h4>This timeline</h4>
+      <p>A selection of ${items.length} moments from 1950 to today, placed to scale on the axis below. Model releases are context, not entries. Starred moments are the landmarks.</p>
+      <h4>Contribute</h4>
+      <p>Every case is a folder of markdown in the <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub repository</a>, and this site is generated from those folders. Corrections and new cases are welcome; see <a href="https://github.com/adamghaida/ai-hall-of-fame/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">the contribution guide</a>. Content is <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</p>
+      <div class="row"><a class="cta" href="explore.html">Browse all ${db.entries.length} cases →</a></div>
+    </div>`;
+    drawer.classList.add('on'); veil.classList.add('on'); drawer.setAttribute('aria-hidden', 'false');
+    $('dx').addEventListener('click', closeDrawer); $('dx').focus();
+  }
+  $('aboutbtn').addEventListener('click', () => { stopPlay(); closeMenu(); openAbout(); });
   function closeDrawer() { drawer.classList.remove('on'); veil.classList.remove('on'); drawer.setAttribute('aria-hidden', 'true'); }
   veil.addEventListener('click', closeDrawer);
 
