@@ -1,5 +1,5 @@
 {
- "_note": "Hand-curated. Only the moments a newcomer needs. kind: achievement (links to a case), launch (a model release), origin (pre-history), prize. Dates are YYYY-MM-DD; use -01 when only the month is known (the day is then hidden); set \"approx\": true to hide a day that is only approximately known but needed for ordering. star: true marks a landmark, shown with a star on the card and the axis.",
+ "_note": "Hand-curated. Only the moments a newcomer needs. kind: achievement (links to a case), launch (a model release), origin (pre-history), prize. Dates are YYYY-MM-DD; use -01 when only the month is known (the day is then hidden); set \"approx\": true to hide a day that is only approximately known but needed for ordering. star: true marks a landmark, shown with a star on the card and the axis. Items without an entry carry a slug and a context paragraph and get a page at moments/<slug>/.",
  "items": [
   {
    "date": "1950-10-01",
@@ -7,7 +7,9 @@
    "title": "Turing asks whether machines can think",
    "blurb": "Alan Turing's paper 'Computing Machinery and Intelligence' proposes the imitation game, later called the Turing test.",
    "source": "https://academic.oup.com/mind/article/LIX/236/433/986238",
-   "source_label": "Mind, vol. LIX"
+   "source_label": "Mind, vol. LIX",
+   "slug": "turing-imitation-game",
+   "context": "Turing's paper appeared in the journal Mind in October 1950. Rather than argue about the meaning of 'think', he proposed a test: an interrogator holds a text conversation with a person and a machine and tries to tell which is which. He predicted that by the year 2000 a machine would fool an average interrogator about 30% of the time after five minutes of questioning, and he closed the paper by suggesting that the way to build such a machine might be to train it like a child rather than program it outright."
   },
   {
    "date": "1956-06-18",
@@ -15,7 +17,9 @@
    "title": "The Dartmouth workshop names the field",
    "blurb": "A summer workshop at Dartmouth College coins the term 'artificial intelligence' and sets out a research programme.",
    "source": "https://en.wikipedia.org/wiki/Dartmouth_workshop",
-   "source_label": "Wikipedia"
+   "source_label": "Wikipedia",
+   "slug": "dartmouth-workshop",
+   "context": "John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon proposed the workshop in 1955, and it ran at Dartmouth College over the summer of 1956. The proposal's premise was that every feature of intelligence 'can in principle be so precisely described that a machine can be made to simulate it'. Allen Newell and Herbert Simon presented the Logic Theorist, a program that proved theorems from Principia Mathematica. The term 'artificial intelligence' comes from the proposal's title."
   },
   {
    "date": "1997-05-11",
@@ -24,7 +28,9 @@
    "blurb": "IBM's chess machine wins a six-game match against the world champion. It relies on search, not learning. First win by a computer over a reigning champion under tournament conditions.",
    "source": "https://www.ibm.com/history/deep-blue",
    "source_label": "IBM",
-   "star": true
+   "star": true,
+   "slug": "deep-blue-kasparov",
+   "context": "The rematch ran May 3 to 11, 1997, in New York. Deep Blue won 3.5 to 2.5, with two wins, one loss and three draws, after losing the first match to Kasparov 4 to 2 in February 1996. The machine searched about 200 million positions per second with custom chess chips and a hand-tuned evaluation function; it did not learn. Kasparov asked for a third match and IBM retired the system instead."
   },
   {
    "date": "2012-10-01",
@@ -32,7 +38,9 @@
    "title": "AlexNet wins ImageNet",
    "blurb": "A deep convolutional network trained on two consumer GPUs cuts the top-5 error rate from 26% to 15%. Deep learning becomes the default method in computer vision.",
    "source": "https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
-   "source_label": "NeurIPS 2012"
+   "source_label": "NeurIPS 2012",
+   "slug": "alexnet-imagenet",
+   "context": "Alex Krizhevsky, Ilya Sutskever and Geoffrey Hinton at the University of Toronto entered an eight-layer convolutional network with 60 million parameters in the 2012 ImageNet challenge. It reached a top-5 error of 15.3% against 26.2% for the runner-up, trained for about a week on two consumer GPUs. The combination of GPU training, ReLU activations and dropout became the standard recipe, and within two years every leading entry used a deep convolutional network."
   },
   {
    "date": "2016-03-10",
@@ -48,7 +56,9 @@
    "title": "'Attention Is All You Need'",
    "blurb": "Google researchers publish the Transformer architecture. Most of the systems below from 2020 on are built on it.",
    "source": "https://arxiv.org/abs/1706.03762",
-   "source_label": "arXiv"
+   "source_label": "arXiv",
+   "slug": "transformer-paper",
+   "context": "Eight Google researchers posted 'Attention Is All You Need' on June 12, 2017. The Transformer dropped recurrence entirely in favour of self-attention, which let training run in parallel across a sequence. It reached 28.4 BLEU on English to German and 41.8 on English to French translation after three and a half days on eight GPUs, better than earlier systems at a fraction of the training cost. BERT, the GPT series, and most large models since are Transformers."
   },
   {
    "date": "2017-12-05",
@@ -63,7 +73,9 @@
    "title": "GPT-3",
    "blurb": "A 175-billion-parameter language model that performs tasks from a few examples in the prompt, with no task-specific training.",
    "source": "https://arxiv.org/abs/2005.14165",
-   "source_label": "arXiv"
+   "source_label": "arXiv",
+   "slug": "gpt-3",
+   "context": "OpenAI's paper 'Language Models are Few-Shot Learners' described a 175-billion-parameter Transformer trained on about 300 billion tokens of text. Given a handful of examples in the prompt, it could translate, answer questions, do arithmetic and write code without any task-specific training, and its performance improved smoothly with scale. The model was offered through an API in June 2020, OpenAI's first commercial product."
   },
   {
    "date": "2020-11-30",
@@ -94,7 +106,9 @@
    "blurb": "OpenAI releases a chat interface on GPT-3.5. It reaches 100 million monthly users within two months.",
    "source": "https://openai.com/index/chatgpt/",
    "source_label": "OpenAI",
-   "star": true
+   "star": true,
+   "slug": "chatgpt",
+   "context": "OpenAI released ChatGPT on November 30, 2022, as a free research preview: a chat interface on a GPT-3.5 model fine-tuned with human feedback. It reached a million users in five days and an estimated 100 million monthly users by January 2023, the fastest adoption of any consumer application to that point. It changed the public conversation about AI and set off the product race that followed."
   },
   {
    "date": "2023-03-14",
@@ -102,7 +116,9 @@
    "title": "GPT-4",
    "blurb": "Accepts image input and scores in the top 10% on a simulated bar exam.",
    "source": "https://openai.com/index/gpt-4-research/",
-   "source_label": "OpenAI"
+   "source_label": "OpenAI",
+   "slug": "gpt-4",
+   "context": "GPT-4 accepted images as well as text and scored in the top 10% of test takers on a simulated bar exam, where GPT-3.5 had scored in the bottom 10%. OpenAI's technical report withheld the model's size, architecture and training data, a break with earlier practice that most labs then followed. It powered ChatGPT Plus and Microsoft's Bing Chat from launch."
   },
   {
    "date": "2023-06-07",
@@ -152,7 +168,9 @@
    "title": "OpenAI o1",
    "blurb": "A model trained to produce a chain of reasoning before answering, spending more compute at inference time.",
    "source": "https://openai.com/index/learning-to-reason-with-llms/",
-   "source_label": "OpenAI"
+   "source_label": "OpenAI",
+   "slug": "openai-o1",
+   "context": "OpenAI's o1 models were trained with reinforcement learning to produce a long, hidden chain of reasoning before answering, spending more compute at inference time on harder problems. OpenAI reported 83% on a qualifying exam for the USA Mathematical Olympiad against 13% for GPT-4o, and a Codeforces ranking in the 89th percentile. Within months every major lab shipped a reasoning model of its own."
   },
   {
    "date": "2024-10-02",
@@ -177,7 +195,9 @@
    "title": "DeepSeek-R1",
    "blurb": "An open-weights reasoning model from China at o1 level, with a reported training cost far below US labs'. Nvidia loses about $600 billion in market value in a day.",
    "source": "https://arxiv.org/abs/2501.12948",
-   "source_label": "arXiv"
+   "source_label": "arXiv",
+   "slug": "deepseek-r1",
+   "context": "DeepSeek released R1 with open weights under an MIT licence and a paper describing reasoning trained largely by reinforcement learning. It matched OpenAI's o1 on several benchmarks, and the company's reported training cost for its base model, about $5.6 million, was far below what US labs were believed to spend. On January 27, 2025, Nvidia's market value fell by about $590 billion in one trading session, the largest single-day loss for any company at the time."
   },
   {
    "date": "2025-05-14",
@@ -214,7 +234,9 @@
    "title": "Claude Mythos Preview",
    "blurb": "Anthropic announces a model it does not release publicly because of its vulnerability-finding ability, and shares it with about 40 companies under Project Glasswing.",
    "source": "https://en.wikipedia.org/wiki/Claude_Mythos",
-   "source_label": "Wikipedia"
+   "source_label": "Wikipedia",
+   "slug": "claude-mythos-preview",
+   "context": "Anthropic announced Claude Mythos Preview on April 7, 2026, and said it would not release the model publicly because of what it could do in offensive security. Access went instead to about 40 companies under a programme called Project Glasswing, which used the model to find and fix vulnerabilities in widely used software. The cryptanalysis result that led to HAWK's withdrawal from NIST standardization, and much of the 2026 vulnerability-discovery record, came from this model."
   },
   {
    "date": "2026-06-09",
@@ -222,7 +244,9 @@
    "title": "Claude Fable 5 and Mythos 5",
    "blurb": "One underlying model in two versions: Fable 5 for general availability with dual-use safeguards, Mythos 5 for approved organizations without them.",
    "source": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-   "source_label": "Anthropic"
+   "source_label": "Anthropic",
+   "slug": "claude-fable-5",
+   "context": "Anthropic released Claude Fable 5 to the API on June 9, 2026. Mythos 5 is the same underlying model without the additional safeguards on dual-use capabilities, available only to approved organizations. Fable 5 is the model credited alongside Levent Alpöge in the July 2026 counterexample to the Jacobian conjecture."
   },
   {
    "date": "2026-07-16",
@@ -268,7 +292,9 @@
    "title": "GPT-6 Astra",
    "blurb": "OpenAI's largest training run. A 'recurrent depth' architecture that hides part of its reasoning, and cyber capabilities restricted to vetted testers.",
    "source": "https://en.wikipedia.org/wiki/GPT-6_Astra",
-   "source_label": "Wikipedia"
+   "source_label": "Wikipedia",
+   "slug": "gpt-6-astra",
+   "context": "GPT-6 Astra began rolling out on September 3, 2026. OpenAI described it as its largest training run and introduced a 'recurrent depth' architecture that keeps much of the model's reasoning internal. Cyber-offensive capabilities were restricted to vetted testers. The 'Astra' name was first attached to an internal model that closed ten open problems in mathematics in August 2026."
   },
   {
    "date": "2026-09-08",

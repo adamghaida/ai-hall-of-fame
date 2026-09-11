@@ -372,6 +372,49 @@ def main():
         with open(os.path.join(outd, "index.html"), "w", encoding="utf-8") as f:
             f.write(page)
 
+    # moment pages for timeline items that are not entries
+    tl_path = os.path.join(SITE, "data", "timeline.json")
+    if os.path.isfile(tl_path):
+        tl = json.load(open(tl_path, encoding="utf-8"))["items"]
+        tl.sort(key=lambda it: it["date"])
+        mt = read(os.path.join(SITE, "templates", "moment.html"))
+        KIND = {"achievement": "Documented case", "launch": "Model release", "prize": "Prize", "origin": "Origin"}
+        MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        def when(it):
+            y, m, d = it["date"].split("-")
+            day = "" if it["date"].endswith("-01") or it.get("approx") else " " + str(int(d))
+            return "%s%s %s" % (MON[int(m) - 1], day, y)
+        def link(it, rel):
+            if it.get("entry"):
+                return "%sentries/%s/" % (rel, it["entry"])
+            return "%smoments/%s/" % (rel, it["slug"]) if it.get("slug") else (it.get("source") or rel)
+        for i, it in enumerate(tl):
+            if it.get("entry") or not it.get("slug"):
+                continue
+            rel = "../../"
+            pn = ""
+            if i > 0:
+                pv = tl[i - 1]
+                pn += '<li><span class="w">Earlier</span><a href="%s">%s</a></li>' % (html.escape(link(pv, rel), quote=True), html.escape(pv["title"]))
+            if i < len(tl) - 1:
+                nx = tl[i + 1]
+                pn += '<li><span class="w">Later</span><a href="%s">%s</a></li>' % (html.escape(link(nx, rel), quote=True), html.escape(nx["title"]))
+            page = mt
+            for k, v in {
+                "title": html.escape(it["title"]), "title_attr": html.escape(it["title"], quote=True),
+                "blurb": html.escape(it.get("blurb", "")), "blurb_attr": html.escape(it.get("blurb", ""), quote=True),
+                "context": html.escape(it.get("context", "")),
+                "when": html.escape(when(it)), "kind_label": KIND.get(it["kind"], it["kind"]),
+                "index": str(i), "n": str(i + 1), "total": str(len(tl)),
+                "source": html.escape(it.get("source", ""), quote=True), "source_label": html.escape(it.get("source_label", "Source")),
+                "prevnext": pn, "root": rel, "entries": str(len(entries)),
+            }.items():
+                page = page.replace("{{%s}}" % k, v)
+            outd = os.path.join(SITE, "moments", it["slug"])
+            os.makedirs(outd, exist_ok=True)
+            with open(os.path.join(outd, "index.html"), "w", encoding="utf-8") as f:
+                f.write(page)
+
     public = [{k: v for k, v in e.items() if not k.startswith("_")} for e in entries]
     public.sort(key=lambda e: e["date"], reverse=True)
     os.makedirs(os.path.join(SITE, "data"), exist_ok=True)

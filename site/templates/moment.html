@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{title}} — AI Hall of Fame</title>
+<meta name="description" content="{{blurb_attr}}">
+<meta property="og:title" content="{{title_attr}}">
+<meta property="og:description" content="{{blurb_attr}}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23ffffff'/%3E%3Crect x='4' y='4' width='8' height='8' fill='%23F2B84B'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('hof-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{root}}assets/site.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="wordmark" href="{{root}}">AI Hall of Fame</a>
+  <nav aria-label="Site">
+    <a href="{{root}}" aria-current="page">Timeline</a>
+    <a href="{{root}}explore.html">All cases</a>
+    <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a>
+    <button class="themebtn" id="themebtn" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <div class="head">
+    <p class="crumbs"><a href="{{root}}#m-{{index}}">Timeline</a><span>/</span><span>{{kind_label}}</span></p>
+    <h1 class="entry-title">{{title}}</h1>
+    <p class="metaline"><span>{{when}}</span><span>{{kind_label}}</span><span>Moment {{n}} of {{total}}</span></p>
+    <p class="hook">{{blurb}}</p>
+  </div>
+  <section>
+    <div class="sec-head"><h2>Context</h2></div>
+    <div class="prose"><p>{{context}}</p>
+    <p>This moment is on the timeline for context. It is not a documented case in the collection; the collection's entries are results with a paper, code, or certificate behind them. <a href="{{root}}explore.html">Browse the {{entries}} cases</a>.</p></div>
+  </section>
+  <section>
+    <div class="sec-head"><h2>Source</h2></div>
+    <p class="prose"><a href="{{source}}" target="_blank" rel="noopener">{{source_label}} ↗</a></p>
+  </section>
+  <section>
+    <div class="sec-head"><h2>On the timeline</h2></div>
+    <ul class="more-list">{{prevnext}}</ul>
+    <p style="font-size:13px;margin:12px 0 0"><a href="{{root}}#m-{{index}}">Back to this moment on the timeline</a></p>
+  </section>
+  <footer class="foot"><span>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</span><span><a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">Source on GitHub</a></span></footer>
+</main>
+<script src="{{root}}assets/theme.js"></script>
+</body>
+</html>
