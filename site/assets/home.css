@@ -215,3 +215,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .about p{margin:0;color:var(--text-2);font-size:15.5px;line-height:1.6}
 .about p b{color:var(--text);font-weight:600}
 .about .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+
+/* ---------- pill above the cards ---------- */
+.pill{position:absolute;left:50%;top:26px;transform:translateX(-50%);z-index:4;display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--amber-ink);background:var(--amber);border:1px solid rgba(0,0,0,.08);border-radius:999px;padding:9px 16px;box-shadow:0 10px 30px -12px rgba(242,184,75,.8);white-space:nowrap;transition:background .18s,transform .18s}
+.pill b{font-weight:600}
+.pill:hover{background:var(--amber-2);color:var(--amber-ink);transform:translateX(-50%) translateY(-1px)}
+@media (max-width:720px){.pill{top:12px;font-size:11px;padding:8px 13px}}
