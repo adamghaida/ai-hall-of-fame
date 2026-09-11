@@ -4,99 +4,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI Hall of Fame</title>
-<meta name="description" content="Documented cases of AI systems breaking records, solving open problems, or restoring lost abilities. A timeline of selected moments and 68 sourced entries.">
+<meta name="description" content="A journey through what AI systems have actually done, from Turing's question in 1950 to this month, with every case dated and cited.">
 <meta property="og:title" content="AI Hall of Fame">
-<meta property="og:description" content="Documented cases of what AI systems have done. Every entry cites its sources.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23ffffff'/%3E%3Crect x='2' y='11' width='3' height='3' fill='%23111418'/%3E%3Crect x='6.5' y='8' width='3' height='6' fill='%23111418'/%3E%3Crect x='11' y='2' width='3' height='12' fill='%231f4fd6'/%3E%3C/svg%3E">
+<meta property="og:description" content="What AI has actually done, dated and cited.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230B0F17'/%3E%3Crect x='4' y='4' width='8' height='8' fill='%23F2B84B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/home.css">
 </head>
 <body>
-<header class="top"><div class="wrap">
-  <a class="wordmark" href="./">AI Hall of Fame</a>
-  <nav aria-label="Site">
-    <a href="#timeline">Timeline</a>
-    <a href="explore.html">All cases</a>
-    <a href="#fields">Fields</a>
-    <a href="#criteria">Criteria</a>
-    <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a>
-  </nav>
-</div></header>
-
-<main class="wrap">
-<div class="head">
-  <h1>AI Hall of Fame</h1>
-  <p class="metaline"><span id="m-cases">68 documented cases</span><span id="m-fields">13 fields</span><span>every entry cited</span><span id="m-gen"></span></p>
-  <p class="lede">Documented cases where an AI system broke a record, solved an open problem, or restored a lost ability. Each entry cites the paper, the code, or the proof certificate, and notes where a result is contested or only a proof of concept.</p>
-
-  <figure class="figure" aria-labelledby="figcap">
-    <div class="plot"><svg id="strip" role="img" aria-label="Every timeline item placed to scale from 1950 to today. Most are in the last two years."></svg></div>
-    <figcaption>
-      <p class="figcap" id="figcap"><b>Figure 1.</b> <span id="figtext">Timeline items placed to scale, 1950 to today. Click a mark to jump to it.</span></p>
-      <div class="legend">
-        <span class="k ach"><i></i>documented case</span>
-        <span class="k lau"><i></i>model release</span>
-        <span class="k pri"><i></i>prize</span>
-        <span class="k ori"><i></i>origin</span>
-      </div>
-    </figcaption>
-  </figure>
-</div>
-
-<section id="timeline">
-  <div class="sec-head">
-    <h2>Timeline</h2>
-    <p>36 selected items. Rows with a field link have a full entry. Model releases are included for context.</p>
+<header class="bar">
+  <a class="wordmark" href="./"><i aria-hidden="true"></i>AI Hall of Fame</a>
+  <div class="chips" role="group" aria-label="Type" id="chips">
+    <button class="chip" data-k="" aria-pressed="true">All</button>
+    <button class="chip" data-k="achievement" aria-pressed="false">Cases</button>
+    <button class="chip" data-k="launch" aria-pressed="false">Releases</button>
+    <button class="chip" data-k="prize" aria-pressed="false">Prizes</button>
+    <button class="chip" data-k="origin" aria-pressed="false">Origins</button>
   </div>
-  <div class="controls tl-controls">
-    <label class="field">Type<select id="tl-kind"><option value="">All types</option><option value="achievement">Documented cases</option><option value="launch">Model releases</option><option value="prize">Prizes</option><option value="origin">Origins</option></select></label>
-    <label class="field">Field<select id="tl-field"><option value="">All fields</option></select></label>
-    <label class="field">Search<input id="tl-q" type="search" placeholder="Title or summary" autocomplete="off"></label>
+  <div class="ctl">
+    <label><span class="sr">Field</span><select class="sel" id="field"><option value="">All fields</option></select></label>
+    <label><span class="sr">Search</span><input class="q" id="q" type="search" placeholder="Search moments" autocomplete="off"></label>
+    <nav aria-label="Site"><a href="explore.html">All cases</a><a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub</a></nav>
   </div>
-  <p class="tcap"><b>Table 1.</b> <span id="tl-cap">Selected moments, 1950 to 2026, in date order.</span></p>
-  <div class="tbl-wrap"><table class="tbl" id="tl-tbl">
-    <thead><tr><th>Date</th><th>Event</th><th class="hide-sm">Link</th></tr></thead>
-    <tbody id="moments"></tbody>
-  </table></div>
-</section>
+</header>
 
-<section id="fields">
-  <div class="sec-head">
-    <h2>Fields</h2>
-    <p>The full collection, by field. <a href="explore.html">All cases</a> lists everything with search.</p>
+<main class="stage" aria-label="Timeline">
+  <div class="bigyear" id="bigyear" aria-hidden="true">1950</div>
+  <div class="wrap" id="wrap"><div class="track" id="track"></div></div>
+  <div class="empty" id="empty">Nothing matches. Clear a filter or try another word.</div>
+  <div class="hint" id="hint"><p><b>Scroll, drag, or use ← →</b> to move through time. Click a card for the record.</p>
+    <div class="legend"><span class="a"><i></i>documented case</span><span class="l"><i></i>model release</span><span class="p"><i></i>prize</span><span class="o"><i></i>origin</span></div></div>
+  <div class="hud">
+    <button class="b" id="prev" aria-label="Previous moment">←</button>
+    <span class="n" id="counter">1 / 36</span>
+    <button class="b" id="next" aria-label="Next moment">→</button>
+    <button class="b play" id="play" aria-pressed="false">▶ Play</button>
   </div>
-  <p class="tcap"><b>Table 2.</b> Fields and number of documented cases in each.</p>
-  <div class="tbl-wrap"><table class="tbl" id="fields-tbl">
-    <thead><tr><th>Field</th><th>Cases</th><th class="hide-sm">Scope</th></tr></thead>
-    <tbody></tbody>
-  </table></div>
-</section>
-
-<section id="criteria">
-  <div class="sec-head"><h2>Criteria</h2></div>
-  <div class="prose">
-    <p>An entry has to meet four conditions.</p>
-    <p><strong>Documented.</strong> Backed by a peer-reviewed paper, an official research release, or credible reporting. Every entry links at least one primary source.</p>
-    <p><strong>Concrete.</strong> A specific result: a record broken, an open problem resolved, a first of its kind, or a real deployment. Not a general claim about AI transforming a field.</p>
-    <p><strong>Notable.</strong> Significant within its field.</p>
-    <p><strong>Honest.</strong> Where a result was contested, corrected, or is only a proof of concept, the entry says so.</p>
-    <p>Unsolved problems are not listed. The Riemann hypothesis and P vs NP have no entry. The Jacobian conjecture was on that list until July 2026, when an AI-assisted counterexample disproved it for n ≥ 3; it now has an entry.</p>
-  </div>
-</section>
-
-<section id="contribute">
-  <div class="sec-head"><h2>Contribute</h2></div>
-  <div class="prose">
-    <p>Entries live as markdown folders in the <a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">GitHub repository</a>, one folder per case with a record, a context file, and a prompt. This site is generated from those folders. See <a href="https://github.com/adamghaida/ai-hall-of-fame/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a> for the format. To report an error, <a href="https://github.com/adamghaida/ai-hall-of-fame/issues" target="_blank" rel="noopener">open an issue</a>.</p>
-  </div>
-</section>
-
-<footer class="foot">
-  <span>Content <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Linked papers and trademarks belong to their owners.</span>
-  <span><a href="https://github.com/adamghaida/ai-hall-of-fame" target="_blank" rel="noopener">Source on GitHub</a></span>
-</footer>
 </main>
+
+<footer class="axis" aria-label="Every moment, to scale">
+  <svg id="axis" role="img" aria-label="Every moment placed to scale from 1950 to today. Click a mark to jump to it."></svg>
+</footer>
+
+<div class="veil" id="veil"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Moment details"><div class="in" id="drawer-in"></div></aside>
+
 <script src="assets/home.js"></script>
 </body>
 </html>
