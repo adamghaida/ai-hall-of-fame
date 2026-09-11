@@ -1,5 +1,5 @@
 {
- "_note": "Hand-curated. Only the moments a newcomer needs. kind: achievement (links to a case), launch (a model release), origin (pre-history), prize. Dates are YYYY-MM-DD; use -01 when only the month is known (the day is then hidden); set \"approx\": true to hide a day that is only approximately known but needed for ordering.",
+ "_note": "Hand-curated. Only the moments a newcomer needs. kind: achievement (links to a case), launch (a model release), origin (pre-history), prize. Dates are YYYY-MM-DD; use -01 when only the month is known (the day is then hidden); set \"approx\": true to hide a day that is only approximately known but needed for ordering. star: true marks a landmark, shown with a star on the card and the axis.",
  "items": [
   {
    "date": "1950-10-01",
@@ -23,7 +23,8 @@
    "title": "Deep Blue beats Kasparov",
    "blurb": "IBM's chess machine wins a six-game match against the world champion. It relies on search, not learning. First win by a computer over a reigning champion under tournament conditions.",
    "source": "https://www.ibm.com/history/deep-blue",
-   "source_label": "IBM"
+   "source_label": "IBM",
+   "star": true
   },
   {
    "date": "2012-10-01",
@@ -38,7 +39,8 @@
    "kind": "achievement",
    "entry": "games-and-strategy/alphago-move-37",
    "title": "AlphaGo plays Move 37",
-   "blurb": "In game two against Lee Sedol, AlphaGo plays a move it rated a 1-in-10,000 chance for a human to play. It wins the match 4–1."
+   "blurb": "In game two against Lee Sedol, AlphaGo plays a move it rated a 1-in-10,000 chance for a human to play. It wins the match 4–1.",
+   "star": true
   },
   {
    "date": "2017-06-12",
@@ -68,7 +70,8 @@
    "kind": "achievement",
    "entry": "chemistry/alphafold-protein-structure",
    "title": "AlphaFold solves protein folding",
-   "blurb": "At the CASP14 competition, DeepMind's system predicts protein structures at accuracy comparable to experiment. A 50-year-old open problem. Chemistry Nobel Prize in 2024."
+   "blurb": "At the CASP14 competition, DeepMind's system predicts protein structures at accuracy comparable to experiment. A 50-year-old open problem. Chemistry Nobel Prize in 2024.",
+   "star": true
   },
   {
    "date": "2022-02-16",
@@ -90,7 +93,8 @@
    "title": "ChatGPT",
    "blurb": "OpenAI releases a chat interface on GPT-3.5. It reaches 100 million monthly users within two months.",
    "source": "https://openai.com/index/chatgpt/",
-   "source_label": "OpenAI"
+   "source_label": "OpenAI",
+   "star": true
   },
   {
    "date": "2023-03-14",
@@ -164,7 +168,8 @@
    "title": "Two Nobel Prizes for AI work",
    "blurb": "Physics to Hopfield and Hinton for foundational work on neural networks. Chemistry to Baker, Hassabis and Jumper for protein design and AlphaFold.",
    "source": "https://www.nobelprize.org/prizes/chemistry/2024/summary/",
-   "source_label": "Nobel Prize"
+   "source_label": "Nobel Prize",
+   "star": true
   },
   {
    "date": "2025-01-20",
@@ -193,7 +198,8 @@
    "kind": "achievement",
    "entry": "mathematics/gemini-deep-think-imo-2025",
    "title": "Gold at the IMO, graded by the IMO",
-   "blurb": "Gemini Deep Think scores 35/42 working in natural language. OpenAI reports the same score the same week."
+   "blurb": "Gemini Deep Think scores 35/42 working in natural language. OpenAI reports the same score the same week.",
+   "star": true
   },
   {
    "date": "2025-12-01",
@@ -230,7 +236,8 @@
    "kind": "achievement",
    "entry": "mathematics/jacobian-conjecture-counterexample",
    "title": "The Jacobian conjecture is disproved",
-   "blurb": "Levent Alpöge and Claude Fable 5 produce an explicit polynomial map that disproves the 1939 conjecture in dimension three and up. The map can be checked by hand."
+   "blurb": "Levent Alpöge and Claude Fable 5 produce an explicit polynomial map that disproves the 1939 conjecture in dimension three and up. The map can be checked by hand.",
+   "star": true
   },
   {
    "date": "2026-07-22",
@@ -252,7 +259,8 @@
    "kind": "achievement",
    "entry": "mathematics/astra-ten-proofs",
    "title": "Ten open problems, ten Lean certificates",
-   "blurb": "OpenAI's internal model Astra closes ten open results in mathematics and theoretical computer science, including the first improvement to the sphere-packing exponent since 1978. Each proof ships machine-checked."
+   "blurb": "OpenAI's internal model Astra closes ten open results in mathematics and theoretical computer science, including the first improvement to the sphere-packing exponent since 1978. Each proof ships machine-checked.",
+   "star": true
   },
   {
    "date": "2026-09-03",
@@ -267,7 +275,8 @@
    "kind": "achievement",
    "entry": "mathematics/navier-stokes-finite-time-blowup",
    "title": "An AI claim on a Millennium Prize Problem",
-   "blurb": "OpenAI reports that about 10,000 agents proved finite-time blowup for the forced Navier–Stokes equations, with a Lean certificate. Not yet verified outside OpenAI. The unforced problem remains open."
+   "blurb": "OpenAI reports that about 10,000 agents proved finite-time blowup for the forced Navier–Stokes equations, with a Lean certificate. Not yet verified outside OpenAI. The unforced problem remains open.",
+   "star": true
   }
  ]
 }
