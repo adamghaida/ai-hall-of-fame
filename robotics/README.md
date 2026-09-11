@@ -4,6 +4,7 @@ Learning physical skills in simulation and pulling them off in the real world.
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[Zipline passes 2 million autonomous drone deliveries and 125 million autonomous miles](./zipline-2m-deliveries/)** | January 2026 · company press release | Company-reported: the largest autonomous-aircraft delivery operation on record, from blood in Rwanda to groceries in Texas, with no serious injury claimed. |
 | **[SRT-H: a robot performs the key phase of gallbladder removal autonomously, 8 for 8 on pig tissue](./srt-h-autonomous-gallbladder/)** | July 2025 · Science Robotics | A language-conditioned imitation policy chained 17 surgical steps on unseen ex vivo pig gallbladders with nobody at the controls; slower than a surgeon, and not a living patient. |
 | **[π*0.6: a robot foundation model that improves from its own deployment experience](./pi-star-06-recap/)** | November 2025 · arXiv | Company-reported: RL on the robot's own runs plus human corrections more than doubled throughput and halved failures; 18-hour espresso service, 50 novel garments, 59 factory boxes. |
 | **[Figure 02 loads 90,000 sheet-metal parts on BMW's X3 line at Spartanburg](./figure-02-bmw-spartanburg/)** | November 2025 · Figure AI report; BMW follow-up June 2026 | Company-reported: a humanoid held a takt-timed body-shop station for months, feeding parts into 30,000+ cars; BMW confirms the car count. |
