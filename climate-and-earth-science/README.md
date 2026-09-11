@@ -4,6 +4,7 @@ AI weather models that beat the supercomputer systems the world has relied on fo
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[WeatherNext Cyclones: a full extra day of hurricane warning, verified with the National Hurricane Center](./weathernext-cyclones/)** | August 2026 · Nature | 5-day track error of 230 km vs 370 km for ECMWF ENS, intensity better than HAFS, live guidance to NHC through Hurricane Melissa, then open-sourced. |
 | **[GraphCast — 10-day global forecasts in under a minute](./graphcast-weather/)** | November 2023 · Science | An AI weather model that beat the world's best operational system on 90% of targets. |
 | **[GenCast — state-of-the-art ensemble weather forecasting](./gencast-ensemble-weather/)** | December 2024 · Nature | A diffusion model that beat the top ensemble forecast on 97% of targets. |
 | **[DGMR — 'nowcasting' the next 90 minutes of rain](./dgmr-nowcasting/)** | September 2021 · Nature | Meteorologists preferred the AI's rain forecasts 89% of the time. |
