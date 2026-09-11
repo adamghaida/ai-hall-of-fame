@@ -4,6 +4,7 @@ AI weather models that beat the supercomputer systems the world has relied on fo
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[Aurora: one foundation model for weather, air quality, ocean waves and cyclone tracks](./aurora-foundation-model/)** | May 2025 · Nature | One 1.3B-parameter pretrained model, fine-tuned to beat CAMS on 74% of air-quality targets, HRES-WAM on 86% of wave variables, agency cyclone-track forecasts, and IFS HRES on 92% of 0.1-degree targets. |
 | **[GraphCast — 10-day global forecasts in under a minute](./graphcast-weather/)** | November 2023 · Science | An AI weather model that beat the world's best operational system on 90% of targets. |
 | **[GenCast — state-of-the-art ensemble weather forecasting](./gencast-ensemble-weather/)** | December 2024 · Nature | A diffusion model that beat the top ensemble forecast on 97% of targets. |
 | **[DGMR — 'nowcasting' the next 90 minutes of rain](./dgmr-nowcasting/)** | September 2021 · Nature | Meteorologists preferred the AI's rain forecasts 89% of the time. |
