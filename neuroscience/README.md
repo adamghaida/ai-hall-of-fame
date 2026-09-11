@@ -9,6 +9,7 @@ Decoding intention directly from the brain — and mapping every neuron in one.
 | **[Handwriting BCI — thinking letters onto a screen](./handwriting-bci/)** | May 2021 · Nature | Imagined handwriting decoded into text at 90 characters per minute. |
 | **[MICrONS — a cubic millimetre of mouse cortex, wired and watched](./microns-cortical-mm3/)** | April 2025 · Nature | Half a billion synapses mapped, co-registered with recordings of 75,000 of the same neurons firing. |
 | **[FlyWire — the first complete wiring map of an adult brain](./flywire-connectome/)** | October 2024 · Nature | AI segmentation mapped 140,000 neurons and 50 million connections — a whole brain. |
+| **[Mind captioning — turning brain activity into sentences about what someone saw](./mind-captioning/)** | November 2025 · Science Advances | Structured descriptions of seen and recalled videos, generated from fMRI, even without the brain's language network. |
 | **[Reconstructing seen images from brain scans with Stable Diffusion](./brain-image-reconstruction/)** | 2023 · CVPR | Show someone a photo, scan their brain, and reconstruct a recognizable version of what they saw. |
 
 ### Also relevant (full write-up in another field)
