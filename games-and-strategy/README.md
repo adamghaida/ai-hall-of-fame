@@ -14,6 +14,7 @@ Where AI first showed it could out-create, not just out-calculate — the resear
 | **[AlphaZero — mastering Go, chess, and shogi from scratch](./alphazero-self-play/)** | 2017–2018 · Science | Given only the rules, it surpassed the best programs in hours of self-play. |
 | **[AlphaStar — Grandmaster at StarCraft II](./alphastar-starcraft/)** | 2019 · Nature | Superhuman play in a real-time game of hidden information and vast action spaces. |
 | **[Pluribus — superhuman six-player poker](./pluribus-poker/)** | July 2019 · Science | The first AI to beat pros at multiplayer poker — the long-standing open case. |
+| **[MuZero: planning with a model it learned itself](./muzero/)** | December 2020 · Nature | Never told the rules, it matched AlphaZero at Go, chess and shogi and set a new state of the art on 57 Atari games. |
 | **[CICERO — human-level play in Diplomacy, negotiation included](./cicero-diplomacy/)** | November 2022 · Science | An AI that had to *talk* its way to victory, blending language and strategy. |
 | **[DeepNash — expert Stratego without any search](./deepnash-stratego/)** | December 2022 · Science | Mastering a game with a game tree 10^175 times larger than Go's. |
 | **[Gran Turismo Sophy — outracing the world's best sim drivers](./gran-turismo-sophy/)** | February 2022 · Nature | A racing AI that beat champion e-sport drivers wheel-to-wheel, cleanly. |
