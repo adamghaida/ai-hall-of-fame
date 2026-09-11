@@ -107,7 +107,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .axis .m:hover rect,.axis .m.on rect,.axis .m:hover path,.axis .m.on path{fill:var(--amber-text)}
 .axis .m:hover circle,.axis .m.on circle{stroke:var(--amber-text);fill:var(--amber)}
 .axis .head{transition:transform .35s var(--ease)}
-.axis .head line{stroke:var(--amber-text);stroke-width:1.2}
+.axis .head line{stroke:var(--amber-text);stroke-width:1.2;opacity:.55}
 .axis .head text{font-family:var(--mono);font-size:10.5px;fill:var(--amber-text);font-weight:600}
 .axis .callout{font-family:var(--mono);font-size:11px;fill:var(--text-2)}
 .axis .callout .n{fill:var(--amber-text);font-weight:600}

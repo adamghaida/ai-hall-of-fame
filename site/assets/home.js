@@ -63,7 +63,7 @@
     const since = '2025-01-01', recent = items.filter(it => it.date >= since).length, xs = x(since);
     s += `<path class="brace" d="M${xs} ${AX + 28} v5 H${xNow} v-5"/>`;
     s += `<text class="callout" x="${xNow}" y="${AX + 49}" text-anchor="end"><tspan class="n">${recent} of ${items.length}</tspan>${W < 700 ? ' since Jan 2025' : ' moments are from January 2025 or later'}</text>`;
-    s += `<g class="head" id="head"><line x1="0" y1="${AX - 62}" x2="0" y2="${AX + 8}"/><text x="0" y="${AX - 68}" text-anchor="middle" id="headlbl"></text></g>`;
+    s += `<g class="head" id="head"><line x1="0" y1="${AX - 108}" x2="0" y2="${AX + 8}"/></g>`;
     axis.innerHTML = s;
     axis.querySelectorAll('.m').forEach(m => {
       m.addEventListener('click', () => { stopPlay(); goTo(+m.dataset.i, true); });
@@ -144,7 +144,6 @@
     $('counter').textContent = `${k + 1} / ${visible.length}`;
     axis.querySelectorAll('.m').forEach(m => m.classList.toggle('on', +m.dataset.i === i));
     $('head').setAttribute('transform', `translate(${it.ax},0)`);
-    $('headlbl').textContent = year(it.date);
     history.replaceState(null, '', '#m-' + i);
   }
   // Scroll animation we control: a fixed, eased duration so nothing else can
