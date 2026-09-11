@@ -4,6 +4,7 @@ The field where an AI breakthrough earned a share of a Nobel Prize — and where
 
 | Case | When | In one line |
 |------|------|-------------|
+| **[NG1 and DN1 — antibiotics designed from scratch by generative AI](./generative-antibiotics-ng1-dn1/)** | August 2025 · Cell | Generative models invented 36 million molecules; two of the 24 synthesized cleared drug-resistant infections in mice. |
 | **[AlphaFold — solving protein folding (Nobel Prize in Chemistry 2024)](./alphafold-protein-structure/)** | 2020–2021 · Nobel 2024 | A 50-year grand challenge solved by AI — and recognized with a Nobel Prize. |
 | **[Halicin — a new antibiotic found by deep learning](./halicin-antibiotic/)** | February 2020 · Cell | The first genuinely new class of antibiotic candidate discovered primarily by AI. |
 | **[Coscientist — a GPT-4 agent that designs and runs its own experiments](./coscientist-autonomous-chemistry/)** | December 2023 · Nature | An LLM that planned real chemistry and executed it on lab robots from a plain-English prompt. |
