@@ -1,0 +1,43 @@
+# 📚 Context: the unit distance disproof
+
+## The problem
+Let ν(n) be the maximum number of unit-distance pairs among n points in the plane. Erdős (1946) showed a rescaled square grid gives ν(n) ≥ n^(1+c/log log n) and conjectured that this is the truth up to the constant, i.e. ν(n) ≤ n^(1+o(1)). The elementary upper bound is O(n^(3/2)) (unit circles meet in at most two points, so the unit-distance graph is K_{2,3}-free); the best known is O(n^(4/3)) by Spencer, Szemerédi and Trotter (1984), reproved with crossing numbers by Székely (1997). Erdős listed the problem repeatedly across five decades and attached prizes of $300 and $250 to it; erdosproblems.com records $500. Matoušek (2011) and Alon, Bucić and Sauermann (2025) showed that for "most" norms on the plane the count is only O(n log n)-ish, which was widely read as evidence that the Euclidean conjecture was true.
+
+## What the AI proof does
+The OpenAI manuscript proves ν(n) ≥ n^(1+δ) for some absolute δ > 0 and infinitely many n. The idea is a high-dimensional version of Erdős's own arithmetic: in the Gaussian integers, a product of many primes q ≡ 1 (mod 4) has many representations z·z̄, i.e. many lattice vectors of the same length. The proof replaces Q(i) by K = L(i) where L is a totally real field of degree tending to infinity, built as an infinite unramified pro-3 class field tower (Golod–Shafarevich theory guarantees the tower is infinite even after forcing prescribed Frobenius classes to be trivial, so a fixed set of primes splits completely at every layer). Elements u with u·c(u) = 1 have absolute value 1 under every complex embedding; embedding a cut-down piece of the lattice and projecting to one complex coordinate yields the planar set. The crucial quantitative point is that discriminants and class numbers stay at most exponential in the degree. The manuscript also notes the construction refutes a stronger conjecture of Erdős and Fishburn (1997) on point sets in which every point has k equidistant neighbours.
+
+## People and timeline
+- **May 20, 2026.** OpenAI publishes the manuscript and announcement. The paper is authored simply "OpenAI"; Will Sawin's paper identifies the team as Lijie Chen (running the internal model) with Mark Sellke and Mehtaab Sawhney verifying. The model is unnamed, described only as a "new general-purpose reasoning model."
+- **May 20.** The nine-author *Remarks* paper appears on arXiv (Alon, Bloom, Gowers, Litt, Sawin, Shankar, Tsimerman, Wang, Matchett Wood). Litt writes that he was asked to check correctness by Sellke and Sawhney and that "it did not take long for me to convince myself that the solution was correct, not to mention quite clever and natural."
+- **May 20.** Sawin posts the explicit n^1.014 version, stating that the simplified argument gives δ ≈ 6 × 10⁻³⁸ and that his explicit exponent differs from the O(n^(4/3)) upper bound "by a factor of less than 24," though it is "certainly not optimal."
+- **May 21 to June 9.** A group of forum contributors, using GPT-5.5 Pro alongside Sawin and Carl Schildkraut, improved the explicit bound further (recorded on Tao's wiki in the "AI collaborating with humans" section); the admissible exponent is tracked as an optimization constant on Tao's site.
+- **May 26.** Anthropic's Sholto Douglas reports that Claude Mythos produced its own proof (see caveats).
+- **May 28 to June 12.** The OpenAI proof is formalized in Lean by Aleph Prover, per the wiki; erdosproblems.com now shows problem 90 as DISPROVED (LEAN).
+- **May 31.** Bloom publishes an expository blog post on the constructions. In the same period Bloom, Sawin, Schildkraut and Zhelezov used the same circle of ideas to disprove the real-number version of the sum-product conjecture (a variant of Erdős problem 52; Bloom stresses the integer case "remains wide open").
+
+## Why it's in the Hall of Fame
+Earlier AI-resolved Erdős problems (problem 728 in January 2026, problem 1196 in April 2026) were, by the community's own account, problems that had received little expert attention. This one is different: it was a central, heavily studied question, the answer went against the consensus, and the method imported machinery from a distant field. The notable-cases page of Tao's wiki summarizes its significance as "Resolved major open problem in a mathematical area with prior widespread expert attention," a description it gives to no other problem. Gowers's "Annals" remark and Alon's description of it as "an outstanding achievement" are strong statements from people with no incentive to inflate an AI company's claims.
+
+## Honest caveats
+- **A company PDF, not a journal paper.** The proof manuscript is hosted on OpenAI's CDN, authored "OpenAI," and has not been through journal peer review. What substitutes for review is unusually strong (nine named mathematicians published a verified digest the same day, and a Lean formalization followed within weeks), but it is still not the ordinary process. Sawin's and the *Remarks* preprints are also not yet peer reviewed.
+- **The improvement only appears for astronomically large n.** The OpenAI proof gives no explicit δ; the simplified digest gives δ ≈ 6 × 10⁻³⁸. Even Sawin's n^1.014 is a statement about infinitely many n, not all n. The Conversation's coverage reports that the improved construction only beats the grid for sets of roughly 10^2,000,000 points; that figure comes from the article's reporting, not from the papers themselves, and should be read as an order-of-magnitude illustration.
+- **It is a lower bound.** The conjecture is dead, but the problem of determining the true growth rate is open: the truth lies somewhere between n^1.014 and O(n^(4/3)), and the upper bound has not moved.
+- **An independent proof by Claude Mythos, six days later.** On May 26, 2026, Anthropic's Sholto Douglas announced that Claude Mythos, running in isolated Claude Code instances, had produced a "cute, simple proof" of the same result; Anthropic says it was obtained independently of OpenAI's published solution. Tao's wiki records it as a full solution. Bloom's blog post calls the Mythos approach, which uses units rather than a completely split prime, "simpler than the original OpenAI approach," while noting "the Mythos paper chooses a worse parameter choice," and Daniel Litt was quoted assessing the Mythos result as "a bit worse." Whether the two proofs were fully independent rests on Anthropic's word.
+- **How autonomous is "autonomous"?** The prompt was AI-written, grading was by an AI pipeline, and the manuscript is a human-edited exposition of the model's output. OpenAI has not published the model, the search setup, the number of attempts, or the compute used; the announcement says the team later measured the model's success rate on this problem at varying test-time compute and shows a plot, but no reproducible figures. The verbatim model output printed in the paper is the main window into what the model actually did.
+- **The problem statement was AI-generated and the model was told partial progress "does not count."** The paper itself flags this: an O(n^(4/3−ε)) upper bound would have been a major advance, and the prompt's last paragraph "does not reflect the mathematical value of partial progress."
+
+## Sources
+- [*Planar Point Sets with Many Unit Distances*, OpenAI (PDF)](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf)
+- [OpenAI announcement, May 20, 2026](https://openai.com/index/model-disproves-discrete-geometry-conjecture/)
+- [*Remarks on the disproof of the unit distance conjecture* (arXiv 2605.20695)](https://arxiv.org/abs/2605.20695)
+- [Sawin, *An explicit lower bound for the unit distance problem* (arXiv 2605.20579)](https://arxiv.org/abs/2605.20579)
+- [Erdős problem 90](https://www.erdosproblems.com/90)
+- [Bloom, "Sum-product, unit distances, and number fields" (blog, May 31, 2026)](https://www.erdosproblems.com/forum/thread/blog:6)
+- [AI contributions to Erdős problems (Tao's wiki, frozen June 30, 2026)](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems)
+- [The Decoder on the Claude Mythos proof, May 26, 2026](https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof/)
+- [Melissa Lee, The Conversation, May 26, 2026](https://theconversation.com/an-ai-solution-to-an-80-year-old-problem-has-shocked-mathematicians-283686)
+
+Related entries: [six Erdős problems solved with GPT-5.6](../erdos-problems-gpt-5.6/) · [Astra's ten proofs](../astra-ten-proofs/) · [the Jacobian conjecture counterexample](../jacobian-conjecture-counterexample/)
+
+---
+*Back to **[README.md](./README.md)** · **[PROMPT.md](./PROMPT.md)**.*
